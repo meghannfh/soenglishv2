@@ -1,53 +1,14 @@
 import AboutHero from "../components/about/AboutHero";
-import AboutCardOne from "../components/about/AboutCardOne";
-import AboutCardTwo from "../components/about/AboutCardTwo";
-import AboutCardThree from "../components/about/AboutCardThree";
-import AboutCardFour from "../components/about/AboutCardFour";
-import AboutNextBtn from "../components/about/AboutNextBtn";
-import { useState } from 'react';
+import SectionTextbox from "../components/standalone/SectionTextbox";
 
 export default function AboutSection() {
-  const aboutCards = [
-    <AboutCardOne />,
-    <AboutCardTwo />,
-    <AboutCardThree />,
-    <AboutCardFour />
-  ];
-  const [count, setCount] = useState(0)
-
-  const handleClick = (isBackBtn) => {
-    if (isBackBtn){
-      setCount((prevCount) => prevCount - 1);
-    } else{
-      setCount((prevCount) => {
-        if (prevCount < aboutCards.length){
-          return prevCount+1;
-        } else {
-          return prevCount = 0;
-        }
-      })
-    }
-    scrollToAboutTop();
-  }
-
-  const scrollToAboutTop = () => {
-    const aboutTopElement = document.getElementById("about-top");
-    aboutTopElement.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-  });
-  };
 
   return(
     <div id="section2">
       <AboutHero />
-      <div className="flex flex-col px-6 pb-10 md:px-24 items-end">
-        {aboutCards[count]}
-        <div className="w-full flex flex-row justify-between">
-          {count > 0 && <AboutNextBtn text={"前へ"} handleClick={() => handleClick(true)}/>}
-          {count < aboutCards.length - 1 && <AboutNextBtn text={"次へ"} handleClick={() => handleClick(false)}/>}
-        </div>
-      </div>
+      <SectionTextbox 
+        title='SOの生い立ちと3度の留学経験'
+        p1='SO ENGLISH!のウェブサイトにお越しいただきありがとうございます。私は、2021年にベルギーに留学するまで、3校の専門学校勤務とSO ENGLISH!の授業を掛け持ちしていましたが、渡航をきっかけに完全ノマドになり、2023年現在は場所を選ばず、日本と海外を行き来しながらフリーランスの講師業をしています。行った国は20を超えます。国の様子はインスタグラムにまとめてあるので良かったら見てみてくださいね。趣味は国内外問わず美術館を周ることで、旅先で街や自然の風景の絵を描くことです。そして旅行先での一期一会の交流が何より好きです。昔からこのような生き方をしようと思っていたわけではありませんが、日々の経験と共に変わっていく自分自身の感覚を大切にしながら生きていたら、気が付いたらこのような場所にいたというわけです。'/>
     </div>
   )
 }

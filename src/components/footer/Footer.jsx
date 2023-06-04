@@ -18,7 +18,7 @@ export default function Footer() {
                 <div className="h-full flex-1">
                     <ul className="h-full flex flex-row footer-list">
                         <li>
-                            <a href="#section1" onClick={(e) => handleLinkClick(e, 'section1')}>Podcast</a>
+                            <a href="#section1" onClick={(e) => handleLinkClick(e, 'section1')}>Mission</a>
                             <a href="#section2" onClick={(e) => handleLinkClick(e, 'section2')}>About</a>
                             <a href="section">Services</a>
                         </li>

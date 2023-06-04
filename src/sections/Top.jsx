@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import SocialsBar from '../components/top/SocialsBar';
+import SocialsBar from '../components/standalone/SocialsBar';
 import Nav from '../components/top/Nav';
 
 export default function Top(){
@@ -63,7 +63,7 @@ export default function Top(){
         <Nav scrollPastTop={scrollPastTop}/>
       </div>
 			)}
-      <div id='top-image' className="font-bold h-[27rem] md:h-[30rem] lg:h-[40rem] xl:h-[50rem] relative overflow-hidden">
+      <div id='top-image' className="font-bold h-[35rem] sm:h-[30rem] lg:h-[40rem] xl:h-[50rem] relative overflow-hidden">
         <div className='absolute top-0 right-0 w-full h-full z-10 bg-black/25'></div>
         <img 
           alt="Soichi smiling at camera against cobbled-road backdrop" 
@@ -71,8 +71,18 @@ export default function Top(){
           src={imageSrc} 
 					onLoad={handleTopImageLoad}/>
       </div>
-      <h1 className='absolute bottom-10 md:bottom-16 lg:bottom-32 w-full flex flex-col items-center justify-center text-5xl  md:text-7xl lg:text-9xl text-white z-20'>
-        Welcome
+      <h1 className='absolute bottom-10 md:bottom-16 lg:bottom-32 w-full flex flex-col items-center justify-center text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-white z-20 font-semibold'>
+        <div className='flex flex-row'> 
+          <span className='text-[#FF7D7D]'>明</span>
+          <span className='text-[#FDC56F]'>日</span>
+          <span className='text-[#FDE06F]'>が</span>
+          もっと、
+          <span className='text-[#2FFF9B]'>楽</span>
+          <span className='text-[#38B7FF]'>し</span>
+          <span className='text-[#E587FF]'>み</span>
+          になる
+          </div>
+     
         <SocialsBar />
       </h1>
     </div>

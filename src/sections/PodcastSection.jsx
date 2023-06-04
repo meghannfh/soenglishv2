@@ -4,7 +4,7 @@
 export default function PodcastSection(){
   
   return (
-    <div className="flex justify-center flex-col items-center lg:relative h-[30rem] my-10" id="section1">
+    <div className="flex justify-center flex-col items-center lg:relative h-[30rem] my-10">
       {/* <div className="absolute md:-bottom-26 lg:right-16">
         <img src={podcast_ellipse} className="w-[300px] md:w-[400px] lg:w-[450px]" alt={'postcast player'}/>
       </div>

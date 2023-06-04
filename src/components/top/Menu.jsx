@@ -15,7 +15,7 @@ export default function Menu({ handleLinkIsClicked }){
     <div>
       <ul className="flex flex-col pt-14 h-screen text-3xl md:text-lg md:p-0 md:flex-row md:h-20 md:justify-center md:gap-6 md:items-center lg:pr-0 rainbow-bg lg:text-xl">
         <li>
-          <a href="#section1" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section1')}>podcast</a>
+          <a href="#section1" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section1')}>mission</a>
         </li>
         <li>
           <a href="#section2" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section2')}>about</a>

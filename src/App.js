@@ -1,19 +1,20 @@
 import Top from './sections/Top'
-import PodcastSection from './sections/PodcastSection';
+// import PodcastSection from './sections/PodcastSection';
+import Mission from './sections/Mission'
 import AboutSection from './sections/AboutSection';
 import MethodSection from'./sections/MethodSection';
 import KansouSection from './sections/KansouSection';
 import ContactSection from './sections/ContactSection';
 import FooterSection from './sections/FooterSection';
 
-import BackToTop from './components/top/BackToTop';
+import ConsultingBanner from './components/standalone/ConsultingBanner';
 
 function App() {
   return (
     <div className='h-screen relative fixed-width-xlg-screens'>
       <Top />
         <div>
-          <PodcastSection />
+          <Mission />
           <AboutSection />
         </div>
         <div>
@@ -24,7 +25,7 @@ function App() {
           <ContactSection />
           <FooterSection />
         </div>
-        <BackToTop />
+        <ConsultingBanner />
     </div>
   );
 }

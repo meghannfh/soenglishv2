@@ -1,0 +1,37 @@
+import { useState, useEffect } from 'react'
+import Menu from './Menu'
+
+export default function Nav({ scrollPastTop }){
+  const [open, setOpen] = useState(false);
+  const [linkIsClicked, setLinkIsClicked] = useState(false)
+  function handleClick(){
+    setOpen(prevOpen => !prevOpen)
+  }
+  function handleLinkIsClicked(){
+    setLinkIsClicked(true)
+  }
+  useEffect(() => {
+    if (linkIsClicked) {
+      setOpen(false);
+      setLinkIsClicked(false);
+    }
+  }, [linkIsClicked]);
+
+  return(
+    <div className="relative flex flex-row justify-between w-screen h-fit fixed-width-xlg-screens">
+      <div className="pl-6 w-min absolute left-0 h-[53.98px] md:h-[77.99px] flex flex-col justify-center">
+        <h1 className={`font-semibold tracking-widest md:text-lg ${scrollPastTop || open ? 'text-black' : 'text-white'}`}>SO<span className="italic uppercase">English</span></h1>
+      </div>
+      <div className="grid place-content-center p-3 md:p-6 w-min absolute right-0">
+        <button onClick={handleClick} className={`block hamburger focus:outline-none`}>
+          <span className={ open ? `open hamburger-top ${scrollPastTop || open ? 'bg-black' : 'bg-white'}` : `hamburger-top ${scrollPastTop ? 'bg-black' : 'bg-white'}`}></span>
+          <span className={ open ? `open hamburger-middle ${scrollPastTop || open ? 'bg-black' : 'bg-white'}` : `hamburger-middle ${scrollPastTop ? 'bg-black' : 'bg-white'}`}></span>
+          <span className={ open ?`open hamburger-bottom ${scrollPastTop || open ? 'bg-black' : 'bg-white'}` : `hamburger-bottom ${scrollPastTop ? 'bg-black' : 'bg-white'}`}></span>
+        </button>
+      </div>
+      <div className={ open && !linkIsClicked ? `show menu` : `menu`}>
+        <Menu handleLinkIsClicked={handleLinkIsClicked}/>
+      </div>
+    </div>
+  )
+}

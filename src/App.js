@@ -15,6 +15,7 @@ import LineQR from './components/standalone/LineQR';
 function App() {
   const [showQR, setShowQR] = useState(false)
 
+  console.log(showQR)
   const handleShowQR = () => {
     setShowQR(prevShowQR => !prevShowQR)
   }
@@ -36,8 +37,8 @@ function App() {
           <ContactSection />
           <FooterSection />
         </div>
-        <ConsultingBanner handleShowQR={handleShowQR} showQR={showQR} />
-        <LineQR />
+        <ConsultingBanner handleShowQR={handleShowQR} />
+        <LineQR showQR={showQR} />
     </div>
   );
 }

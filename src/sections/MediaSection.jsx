@@ -24,7 +24,9 @@ export default function MediaSection(){
     <div className="px-6 py-24 md:px-24 bg-slate-300" id="section3">
       <h2 className="text-5xl md:text-3xl font-semibold text-slate-900">SO's MEDIA</h2>
       {socialMedia ? socialMedia.map((medium, idx) => (
-        <MediaCard icon={medium.icon} explanation={medium.explanation} key ={idx}/>
+        <span key={idx}>
+          <MediaCard icon={medium.icon} explanation={medium.explanation} />
+        </span>
       )) : 'nada'}
     </div>
   )

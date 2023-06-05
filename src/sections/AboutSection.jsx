@@ -67,10 +67,16 @@ export default function AboutSection() {
   return(
     <div id="section2">
       <AboutHero />
-      <SectionTextbox 
-        title='SOの生い立ちと3度の留学経験' 
-        paragraphs={paragraphs}
-        />
+      <div className="flex flex-col px-6 py-24 md:px-24">
+        <h2 className="text-5xl md:text-3xl font-semibold text-slate-900">SOの生い立ちと3度の留学経験</h2>
+        {paragraphs ? paragraphs.map((paragraph, index) => (
+          <SectionTextbox 
+            subtitle={paragraph.subtitle}
+            key={index}
+            text={paragraph.text}
+          />
+        )) : 'nada'}
+      </div>
     </div>
   )
 }

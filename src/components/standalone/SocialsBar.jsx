@@ -1,4 +1,4 @@
-import SocialsIcon from '../top/SocialsIcon';
+import SocialsIcon from './SocialsIcon';
 import { BsSpotify, BsInstagram } from 'react-icons/bs';
 import {FaPodcast} from 'react-icons/fa';
 import {SiLinktree} from 'react-icons/si';

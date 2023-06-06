@@ -1,12 +1,11 @@
 // import { GrClose } from 'react-icons/gr';
+import AddFriendLineButton from './AddFriendLineButton';
 
 export default function LineQR({ showQR }){
     return (
-        <div className={showQR ? `w-full fixed flex bottom-60 justify-center z-40 transition-all ease-in-out` : `w-full fixed -bottom-96 flex justify-center z-40 transition-all ease-in-out` }>
-            <div className="relative border shadow-md shadow-slate-800">
-               {/* <span className="absolute left-2 -top-10 p-2 text-2xl flex flex-row items-center bg-white rounded-md drop-shadow-md hover:cursor-pointer">
-                <GrClose /> close
-               </span> */}
+        <div className={showQR ? `w-full fixed flex bottom-60 justify-center z-40 transition-all ease-in-out` : `fixed bottom-[-40rem] flex justify-center z-40 transition-all ease-in-out w-full`}>
+            <div className="relative flex flex-col gap-2 bg-white p-2 border-4 w-1/3 lg:w-1/4">
+                <AddFriendLineButton />
                 <img className="" src='https://qr-official.line.me/gs/M_923tlihp_GW.png' alt={'QR code to connet with SO on LINE'} />
             </div>
         </div>

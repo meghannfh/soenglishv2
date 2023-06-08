@@ -1,15 +1,15 @@
 import Textbook from './Textbook';
 
-export default function TextbooksCard({ textbooks, grayscale }){
+export default function TextbooksCard({ textbooks }){
 
   return (
     <div className="grid justify-items-center w-fit">
-      <div className='grid grid-cols-2 md:gap-6 lg:grid-cols-4 gap-3'>
-        {textbooks.map((text, idx) => {
+      <div className='flex w-[500px] flex-row gap-3 overflow-hidden border-4 border-black relative'>
+        {textbooks.map((book, idx) => {
           return (
-            <div className={`textbook-container ${grayscale[idx] ? 'grayscale' : ''}`} key={idx}>
-              <Textbook img={text.url} id={idx} title={text.title} />
-              <h3 className={`hidden absolute w-[250px] top-10 left-5 bg-white p-2 z-10`}>{text.title}</h3>
+            <div className='textbook-container' key={idx}>
+              <Textbook img={book.url} title={book.title} />
+              <h3 className={`hidden absolute w-[250px] top-10 left-5 bg-white p-2 z-10`}>{book.title}</h3>
             </div>
           )
         })}

@@ -325,8 +325,10 @@ li a{
 }
 
 .contact-form > input,
-.contact-form > textarea {
+.contact-form > textarea,
+.contact-form > select {
   padding: 1rem;
+  width: 100%;
 }
 
 /*Footer list li*/

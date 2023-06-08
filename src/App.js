@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import Top from './sections/Top'
 import Mission from './sections/Mission'
 import MediaSection from './sections/MediaSection';
@@ -10,16 +8,17 @@ import ContactSection from './sections/ContactSection';
 import FooterSection from './sections/FooterSection';
 
 import ConsultingBanner from './components/standalone/ConsultingBanner';
-import LineQR from './components/standalone/LineQR';
 
 function App() {
-  const [showQR, setShowQR] = useState(false)
 
-  console.log(showQR)
-  const handleShowQR = () => {
-    setShowQR(prevShowQR => !prevShowQR)
+  const handleBannerClick = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+    });
   }
-
 
   return (
     <div className='h-screen relative fixed-width-xlg-screens'>
@@ -37,8 +36,7 @@ function App() {
           <ContactSection />
           <FooterSection />
         </div>
-        <ConsultingBanner handleShowQR={handleShowQR} />
-        <LineQR showQR={showQR} />
+        <ConsultingBanner handleBannerClick={handleBannerClick} />
     </div>
   );
 }

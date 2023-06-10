@@ -321,7 +321,7 @@ li a{
 
 /*contact form inputs*/
 .contact-form > * {
-  outline: 2px solid black;
+  outline: 1px solid black;
 }
 
 .contact-form > input,

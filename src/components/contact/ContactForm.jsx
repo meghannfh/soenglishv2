@@ -1,13 +1,43 @@
 import { FiSend } from 'react-icons/fi'
+import { useState, useCallback } from 'react';
+import axios from 'axios';
+const endpoint = 'https://getform.io/f/6f4e5e48-7cde-4442-aa3a-c391a91f4853'
+
+const initialFormData = {
+    fullName: "",
+    email: "",
+    concern: "",
+    message: ""
+};
 
 export default function ContactForm(){
+    console.log('#### Refreshing');
+
+    const [formData, setFormData] = useState(initialFormData);
+
+    const updateFormDataHandler = useCallback(
+        (type) => (event) => {
+            setFormData({...formData, [type]: event.target.value});
+        },
+        [formData]
+    );
+
+    const formHandler = useCallback(
+        () => (event) => {
+            event.preventDefault();
+            console.log(formData);
+        },
+        [formData]
+    );
+
     return (
         <div className="w-full">
-            <form className="flex flex-row flex-wrap gap-4 contact-form" action="https://getform.io/f/6f4e5e48-7cde-4442-aa3a-c391a91f4853" method="POST">
+            <form className="flex flex-row flex-wrap gap-4 contact-form" onSubmit={formHandler()}>
                 <input
                     placeholder="名前"
-                    name="name"
-                    type="text">
+                    type="text"
+                    value={formData.fullName}
+                    onChange={updateFormDataHandler("fullname")}>
                 </input>
                 <input 
                     type="hidden" 
@@ -16,17 +46,27 @@ export default function ContactForm(){
                 <input
                     placeholder="メールアドレス"
                     name="email"
-                    type="email">
+                    type="email"
+                    value={formData.email}
+                    onChange={updateFormDataHandler("email")}>
                 </input>
-                <select name="concern">
+                <label
+                    htmlFor="concern">
+                        お問い合わせ内容:
+                    </label>
+                <select 
+                    name="concern"
+                    value={formData.concern}
+                    onChange={updateFormDataHandler("concern")}>
                     <option value="質問">質問</option>
-                    <option value="有料カウンセリング">有料カウンセリング申し込み</option>
+                    <option value="有料カウンセリング申し込み">有料カウンセリング申し込み</option>
                     <option value="その他">その他</option>
                 </select>
                 <textarea 
                     placeholder="本文"
                     type="text"
-                    name="message">
+                    name="message"
+                    onChange={updateFormDataHandler("message")}>
 
                 </textarea>
                 <button 

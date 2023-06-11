@@ -36,8 +36,9 @@ export default function ContactForm(){
                 <input
                     placeholder="名前"
                     type="text"
+                    name="fullName"
                     value={formData.fullName}
-                    onChange={updateFormDataHandler("fullname")}>
+                    onChange={updateFormDataHandler("fullName")}>
                 </input>
                 <input 
                     type="hidden" 
@@ -50,24 +51,21 @@ export default function ContactForm(){
                     value={formData.email}
                     onChange={updateFormDataHandler("email")}>
                 </input>
-                <label
-                    htmlFor="concern">
-                        お問い合わせ内容:
-                    </label>
                 <select 
                     name="concern"
                     value={formData.concern}
                     onChange={updateFormDataHandler("concern")}>
-                    <option value="質問">質問</option>
-                    <option value="有料カウンセリング申し込み">有料カウンセリング申し込み</option>
-                    <option value="その他">その他</option>
+                        <option value="no-option">お問い合わせ内容:</option>
+                        <option value="質問">質問</option>
+                        <option value="有料カウンセリング申し込み">有料カウンセリング申し込み</option>
+                        <option value="その他">その他</option>
                 </select>
                 <textarea 
                     placeholder="本文"
                     type="text"
                     name="message"
+                    value={formData.message}
                     onChange={updateFormDataHandler("message")}>
-
                 </textarea>
                 <button 
                     className="text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex flex-row items-center gap-2 font-medium px-20 py-4 text-2xl icon-transition"

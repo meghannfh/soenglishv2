@@ -1,5 +1,7 @@
-import Top from './sections/Top'
-import Mission from './sections/Mission'
+import { useState } from 'react';
+
+import Top from './sections/Top';
+import Mission from './sections/Mission';
 import MediaSection from './sections/MediaSection';
 import AboutSection from './sections/AboutSection';
 import StrategySection from'./sections/StrategySection';
@@ -8,8 +10,10 @@ import ContactSection from './sections/ContactSection';
 import FooterSection from './sections/FooterSection';
 
 import ConsultingBanner from './components/standalone/ConsultingBanner';
+import QRCode from './components/standalone/QRCode';
 
 function App() {
+  const [showQR, setShowQR] = useState(false);
 
   const handleBannerClick = (e, id) => {
     e.preventDefault();
@@ -19,6 +23,12 @@ function App() {
         block: 'start',
     });
   }
+
+  
+  const handleContactClick = () => {
+    setShowQR(prevShowQR => !prevShowQR)
+    console.log(showQR);
+  };
 
   return (
     <div className='h-screen relative fixed-width-xlg-screens'>
@@ -33,10 +43,11 @@ function App() {
           </div>
           <StrategySection />
           <KansouSection />
-          <ContactSection />
+          <ContactSection handleContactClick={handleContactClick} />
           <FooterSection />
         </div>
         <ConsultingBanner handleBannerClick={handleBannerClick} />
+        <QRCode showQR={showQR} />
     </div>
   );
 }

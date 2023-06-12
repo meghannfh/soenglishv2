@@ -10,7 +10,6 @@ export default function Contact() {
           <p className='mt-6 font-medium text-slate-900 text-2xl leading-relaxed md:leading-loose md:text-lg'>以下、メールでやり取りを希望される方は、フォームにご記入をお願いいたします。</p>
         </div>
         <div className="w-1/3">
-          {/* <h4 className='flex flex-row items-center gap-2 text-sm md:text-2xl pb-4 hover:cursor-pointer'><span className='text-lg md:text-3xl'><HiOutlineMail /></span> sosensei.soenglish@gmail.com</h4> */}
           <ContactForm />
         </div>
         <div className='flex justify-center'>

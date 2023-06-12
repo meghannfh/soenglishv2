@@ -7,15 +7,18 @@ export default function MediaSection(){
 
   const socialMedia = [
     {
-      'icon': <BsInstagram />,
+      'key': 1,
+      'icon': [<BsInstagram />],
       'explanation': 'SO ENGLISH!🏳‍🌈Warm Familyを築きたいGayのEnglish Teacher'
     },
     {
+      'key': 2,
       'icon': [<BsSpotify />, <FaPodcast />],
       'explanation': `So & Caro's That's So Carrot!~英語があれば結局ポジティブLife~`
     },
     {
-      'icon': <BsYoutube />,
+      'key': 3,
+      'icon': [<BsYoutube />],
       'explanation': `So & Caro's That's So Carrot!~英語があれば結局ポジティブLife~`
     },
   ]

@@ -50,7 +50,7 @@ export default function StudyMaterial(){
 	  };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col my-24">
 		<div className="flex flex-row gap-2 items-center justify-center">
 			<button className="text-5xl" onClick={moveToPreviousImage}>
 				<GrRewind />

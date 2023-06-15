@@ -47,7 +47,7 @@ export default function ServicesSection(){
         'レッスン内容は目標に合わせて完全オーダーメイドで、心と対話しながら英語との楽しい向き合い方を学んでいきます。', 
         '生徒の皆さんの多くは、長年私と一緒に英語に取り組んでくれていて、更に人生の枠を広げている方ばかりです!'
       ],
-      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5V_AzP5j7nU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5V_AzP5j7nU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
       'feedback': [
         {
           'studentName': 'Kさん',
@@ -124,7 +124,7 @@ export default function ServicesSection(){
           'レッスンテキストは完全オリジナルで、プライベートレッスンでは鍛えきれないけど、英会話にとって必要な「非言語力」に焦点を当てた「とにかく楽しく話す」がテーマの授業です。', 
           'ジェスチャーゲーム、連想ゲーム、お絵かきゲーム、ストーリー作り、ロールプレイなど、とにかく盛り上がります!'
       ],
-      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/oC6X0JtkmdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/oC6X0JtkmdU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
       'feedback': [
         {
           'studentName': 'Tさん',
@@ -149,7 +149,7 @@ export default function ServicesSection(){
         '第二言語習得に関する本を嚙み砕いて説明したり、SOが行っている勉強法や時間の作り方、目標達成の仕方、気持ちの切り替え方をお伝えしたりしながら、その場で自分と向き合う時間を作り、他の方々と共有します。', 
         'ワークショップに参加した後は、皆さん俄然やる気になって勉強に取りくんでくれます！'
       ],
-      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/oyTeNZnFNbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/oyTeNZnFNbQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
       'feedback': [
         {
           'studentName': 'Uさん',
@@ -214,7 +214,7 @@ export default function ServicesSection(){
         '英語教授法をそのまま活かし、英語で日本語を教える、独自のやり方です。',
         '年間100レッスンほど行っています。'
       ],
-      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0dufpsj1mUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0dufpsj1mUw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
       'fedback': [
         {
           "studentName": "",
@@ -268,15 +268,15 @@ export default function ServicesSection(){
     },
     {
       'service' : `10. Podcastラジオ配信『That's So Carrot! ~英語があれば結局ポジティブLife~』（学習法・マインド）`,
-      'startDate': '2021年~',
-      'capacity': '',
-      'frequency': '基本週1回土曜18時に配信。',
+      'startDate': '2021年~基本週1回土曜18時に配信。',
+      'capacity': '無料。',
+      'frequency': '',
       'details': [
         '留学経験豊富なラジオパートナーのキャロ先生と一緒にゆるく話しています。',
         '大人気の公開収録は年に2回ほど。大体いつも6月と12月、参加型収録で大盛り上がり。皆さんの英語学習での気づきや、海外生活でおかしかった話を聞かせてください!',
         `合言葉は、Oh my goodness! "That's So Carrot!`
       ],
-      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/05ITvNeqS0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/05ITvNeqS0U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
       'feedback': [
         {
           "studentName": "",
@@ -349,7 +349,7 @@ export default function ServicesSection(){
       ]
     },
     {
-      'service' : `12. その他の仕事`,
+      'service' : `11. その他の仕事`,
       'startDate': '',
       'capacity': '',
       'frequency': '',

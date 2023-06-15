@@ -1,3 +1,5 @@
+import Reviews from "../kansou/Reviews";
+
 export default function ServicesCard({ serviceTitle, startDate, capacity, frequency, details, projectsList, lessonVideo, feedback }) {
     const hasLessonVideo = lessonVideo && lessonVideo !== '';
   
@@ -17,10 +19,13 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
               </p>
             ))}
           {hasLessonVideo && (
-            <div className="mt-5">
+            <div className="w-full lg:h-[450px] mt-10">
               {lessonVideo} {/* Assuming the lessonVideo prop is a valid JSX element */}
             </div>
           )}
+        </div>
+        <div className={ feedback?.length > 0 ? 'block' : 'hidden'}>
+          <Reviews feedback={feedback} />
         </div>
       </div>
     );

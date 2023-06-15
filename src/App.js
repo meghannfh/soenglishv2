@@ -6,7 +6,6 @@ import MediaSection from './sections/MediaSection';
 import ServicesSection from './sections/ServicesSection';
 import AboutSection from './sections/AboutSection';
 import StrategySection from'./sections/StrategySection';
-import KansouSection from './sections/KansouSection';
 import ContactSection from './sections/ContactSection';
 import FooterSection from './sections/FooterSection';
 
@@ -44,7 +43,6 @@ function App() {
           <div className="h-screen fixed-bg-section">
           </div>
           <StrategySection />
-          <KansouSection />
           <ContactSection handleContactClick={handleContactClick} />
           <FooterSection />
         </div>

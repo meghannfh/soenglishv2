@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Top from './sections/Top';
 import Mission from './sections/Mission';
 import MediaSection from './sections/MediaSection';
+import ServicesSection from './sections/ServicesSection';
 import AboutSection from './sections/AboutSection';
 import StrategySection from'./sections/StrategySection';
 import KansouSection from './sections/KansouSection';
@@ -36,6 +37,7 @@ function App() {
         <div>
           <Mission />
           <MediaSection />
+          <ServicesSection />
           <AboutSection />
         </div>
         <div>

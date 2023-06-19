@@ -5,8 +5,8 @@ export default function ContactForm(){
   return (
     <div className="w-full">
       <form action="https://getform.io/f/6f4e5e48-7cde-4442-aa3a-c391a91f4853" method="POST" className="flex flex-row flex-wrap gap-4 contact-form">
-        <input type="text" name="name" placeholder="名前" />
-        <input type="email" name="email" placeholder="メールアドレス" />
+        <input type="text" name="name" placeholder="名前" autoComplete="off"/>
+        <input type="email" name="email" placeholder="メールアドレス" autoComplete="off" />
         <select name="concern">
           <option value="no-option">お問い合わせ内容:</option>
           <option value="質問">質問</option>

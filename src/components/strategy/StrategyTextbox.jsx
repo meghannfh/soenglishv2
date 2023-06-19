@@ -15,7 +15,9 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                 <p className="mt-6 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">
                   {paragraph}
                 </p>
-                {img && <img src={img} alt="diagram" className="mt-6" />}
+                <div className="my-10 w-full flex justify-center">
+                  {img && <img src={img} alt="diagram" className="w-full lg:w-[70%]"/>}
+                </div>
               </Fragment>
             );
           } else if (subtitle === '1. 第二言語習得論をベースにしたアプローチ' && index === 2) {

@@ -343,24 +343,9 @@ li a{
   padding-left: 1rem;
 }
 
-/*textbook carousel*/
-.smallest {
-  width: 50px;
-}
+/*Media Cards Border on Hover*/ 
 
-.smaller {
- width: 75px;
-}
-
-.small {
-  width: 100px; /* Adjust the width as per your preference */
-}
-
-.medium {
-  width: 150px; /* Adjust the width as per your preference */
-}
-
-.large {
-  width: 200px; /* Adjust the width as per your preference */
+.media-box-shadow {
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
 }
 

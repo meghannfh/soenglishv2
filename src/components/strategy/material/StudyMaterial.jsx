@@ -4,7 +4,9 @@ import { GrFastForward, GrRewind } from 'react-icons/gr';
 
 
 export default function StudyMaterial(){
-	const [position, setPosition] = useState('');
+	const [position, setPosition] = useState(280);
+
+	console.log(position)
 
 	const textbooks = [
 		{
@@ -42,16 +44,28 @@ export default function StudyMaterial(){
 	]
 
 	const moveToNextImage = () => {
-		setPosition();
+		setPosition(prevPosition => {
+			if(prevPosition === 0){
+				return prevPosition + 80;
+			} else {
+				return prevPosition + 200;
+			}
+		});
 	  };
 	
 	  const moveToPreviousImage = () => {
-		setPosition();
+		setPosition(prevPosition => {
+			if(prevPosition === 80){
+				return prevPosition - 80;
+			} else {
+				return prevPosition - 200;
+			};
+		});
 	  };
 
   return (
     <div className="flex flex-col my-24">
-		<div className="flex flex-row gap-2 items-center justify-center">
+		<div className="flex flex-row gap-2 items-center justify-center mb-20">
 			<button className="text-5xl" onClick={moveToPreviousImage}>
 				<GrRewind />
 			</button>
@@ -60,6 +74,9 @@ export default function StudyMaterial(){
 				<GrFastForward />
 			</button>
 		</div>
+		{textbooks.map((book, idx) => (
+        	<h3 key={idx}>{book.title}</h3>
+      	))}
   	</div>
   )
 }

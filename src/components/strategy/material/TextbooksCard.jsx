@@ -9,7 +9,7 @@ export default function TextbooksCard({ textbooks, position = 280 }){
       <div className='flex w-[500px] flex-row gap-3 overflow-hidden relative p-2'>
         {textbooks.map((book, idx) => {
           return (
-            <div className={`textbook-container absolute top-0 transition-all ease-in-out duration-300 -left-[${newPosition}]`} key={idx}>
+            <div className={`textbook-container absolute top-0 transition-all ease-in-out duration-300`} style={{"left": `-${newPosition} `}} key={idx}>
               <Textbook img={book.url} title={book.title} />
             </div> 
           )

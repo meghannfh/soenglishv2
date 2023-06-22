@@ -61,7 +61,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
       )}
     {subtitle === '3. オリジナルのSTUDY RECORDS™' && (
         <Fragment>
-            <div className='w-full lg:h-[450px] mt-10'>
+            <div className='w-full h-[400px] lg:h-[550px] mt-10'>
                 {embeddedVid} {/* Render the embeddedVid directly under the subtitle */}
             </div>
             {text && text.map((paragraph, index) => (
@@ -75,7 +75,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
             {examples && examples.map((example, index) => (
                 <Fragment key={index}>
                     <h4 className="mb-10 mt-24 text-xl font-semibold text-slate-900">{example.title}</h4>
-                    <div className='w-full lg:h-[450px] mt-10'>
+                    <div className='w-full h-[400px] lg:h-[550px] mt-10'>
                         {example.embeddedVid} {/* Render the embeddedVid for each example */}
                     </div>
                     {example.text.map((paragraph, idx) => (

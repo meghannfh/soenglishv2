@@ -186,8 +186,15 @@ export default function ServicesSection(){
           '英語レッスンで行う内省(自分を見つめる作業)・目標設定・目標達成の為の作戦立てとマインドトレーニングを軸に、17歳からカミングアウトしていった完全オープンリーGayのSOの経験を踏まえながら、相談者とお話します。', 
           '好きな人との恋が実る為に、どんどん変わっていって自信がついていく相談者を見られることが、一番嬉しいです。'
       ],
-      'lessonVideoL': '',
-      'feedback': []
+      'feedbackImgURL': [
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687406154/S__78233620_dfivpq.webp',
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687406154/S__78233658_uytrqm.webp',
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687406154/S__78233618_kmfvpw.webp'
+      ],
+      'adviceReportExample': [
+        '',
+        ''
+      ]
     },
     {
       'service' : `8. 翻訳(日→英・英→日)`,
@@ -350,15 +357,42 @@ export default function ServicesSection(){
     },
     {
       'service' : `11. その他の仕事`,
-      'startDate': '',
-      'capacity': '',
-      'frequency': '',
       'details': [
         '著名な先生方と共に、日常英会話・TOEIC・接客英会話のクラスを持っていました。',
       ],
-      'projectsList': [],
-      'lessonVideo': '',
-      'feedback': ''
+      'projectsList2': [
+        {
+          "title": "専門学校教員(都内3校)",
+          "detail": "著名な先生方と共に、日常英会話・TOEIC・接客英会話のクラスを持っていました。",
+          "imgURL": "",
+          "feedback": [
+            {
+              "category": "専門学校生徒たちからの感想(ウエディング系)",
+              "imgURLs": [
+
+              ]
+            },
+            {
+              "category": "専門学校生徒たちからの感想(英語系)",
+              "imgURLs": [
+
+              ]
+            }
+          ]
+        },
+        {
+          "title": "地方高校への出張授業",
+          "detail": "国際スポーツイベントの為の「おもてなし英会話」の授業を地方の高校に出張し開講しました。",
+        },
+        {
+          "title": "英会話スクール講師",
+          "detail": "大手チェーンのスクールで正社員として幼児～大人まで英会話のクラスを持っていました。",
+        },
+        {
+          "title": "検定試験の面接官",
+          "detail": "",
+        },
+      ],
     },
   ]
 

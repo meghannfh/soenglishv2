@@ -41,6 +41,14 @@ export default function StudyMaterial(){
 			'url': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1684865330/71Oq15DZsQL_ddlw0j.webp',
 			'title': '山田 暢彦『英会話に必要な瞬発力を身につける NOBU式トレーニング 実践編』(IBCパブリッシング、2017)'
 		},
+		{
+			'url': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687283091/f46e2d24-9427-41e1-ab93-e3a24829758e_jru9lm.png',
+			'title': 'ETS『公式TOEIC Listening & Reading 問題集』シリーズ (国際ビジネスコミュニケーション協会、2016~)'
+		},
+		{
+			'url': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687283091/f5bee600-6ec4-4db9-aa28-65e2b257147a_rccqaw.png',
+			'title': '藤澤 慶已『聞いて書きとる英語リスニング300問』'
+		}
 	]
 
 	const moveToNextImage = () => {

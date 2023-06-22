@@ -20,14 +20,14 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
               </p>
             ))}
           {hasLessonVideo && (
-            <div className="w-full lg:h-[450px] mt-10">
+            <div className="w-full h-[400px] lg:h-[450px] mt-10">
               {lessonVideo} {/* Assuming the lessonVideo prop is a valid JSX element */}
             </div>
           )}
         </div>
         {hasProjectsList && (
           <ul className="mt-10 w-full">
-            {projectsList.map((project, idx) => (
+            {projectsList && projectsList.map((project, idx) => (
               <li key={idx} className="text-left block mt-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">+ {project}</li>
             ))}
           </ul>

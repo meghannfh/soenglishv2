@@ -9,8 +9,8 @@ export default function SoRainbowSection(){
             '「日本だから結婚できない」と思われている方、英語が、もしからしたら明日への切符かもしれません。'
         ],
         'imgURL': [
-            '',
-            '',
+            'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687408308/DSC_1980_auej2p.webp',
+            'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687408308/DSC_2076_guhj1k.webp',
             '',
             '',
             '',

@@ -1,8 +1,9 @@
 import Reviews from "../kansou/Reviews";
 
-export default function ServicesCard({ serviceTitle, startDate, capacity, frequency, details, projectsList, lessonVideo, feedback }) {
+export default function ServicesCard({ serviceTitle, startDate, capacity, frequency, details, projectsList, lessonVideo, feedback, otherList }) {
     const hasLessonVideo = lessonVideo && lessonVideo !== '';
     const hasProjectsList = projectsList && projectsList.length > 0;
+    const hasOtherList = otherList && otherList.length > 0;
   
     return (
       <div>
@@ -29,6 +30,18 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
               <li key={idx} className="text-left block mt-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">+ {project}</li>
             ))}
           </ul>
+        )}
+        {hasOtherList && (
+          <>
+            {otherList.map((item, idx) => (
+              <div>
+                <h4>{item.title}</h4>
+                <p>{item.detail}</p>
+                {item.imgURL && <img src={item.imgURL} />}
+                {item.feedback && <Reviews />}
+              </div>
+            ))}
+          </>
         )}
         <div className={ feedback?.length > 0 ? 'block' : 'hidden'}>
           <Reviews feedback={feedback} />

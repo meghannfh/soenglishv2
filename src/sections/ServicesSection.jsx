@@ -357,7 +357,7 @@ export default function ServicesSection(){
     },
     {
       'service' : `11. その他の仕事`,
-      'projectsList2': [
+      'otherList': [
         {
           "title": "専門学校教員(都内3校)",
           "detail": "著名な先生方と共に、日常英会話・TOEIC・接客英会話のクラスを持っていました。",
@@ -366,13 +366,29 @@ export default function ServicesSection(){
             {
               "category": "専門学校生徒たちからの感想(ウエディング系)",
               "imgURLs": [
-                ''
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705348/Reviews/1_j9zxw3.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705349/Reviews/2_gr9ozp.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705349/Reviews/3_p1omus.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705349/Reviews/4_cmlael.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705349/Reviews/5_o6uust.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705350/Reviews/6_s7hl5w.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705350/Reviews/7_dqkieb.webp'
               ]
             },
             {
               "category": "専門学校生徒たちからの感想(英語系)",
               "imgURLs": [
-
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705345/Reviews/1-1_mzfnwo.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705345/Reviews/1-2_tovf6o.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705345/Reviews/1-3_m46fwp.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705347/Reviews/1-4_qebfk5.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705345/Reviews/1-5_sjybft.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705347/Reviews/1-6_iop0qd.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705348/Reviews/1-7_hqm0hl.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705347/Reviews/1-8_mcdueb.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705347/Reviews/1-9_xcjw1n.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705347/Reviews/1-10_xhuz5o.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705348/Reviews/1-11_nid6ye.webp'
               ]
             }
           ]
@@ -408,7 +424,8 @@ export default function ServicesSection(){
                             details={service.details} 
                             projectsList={service.projectsList} 
                             lessonVideo={service.lessonVideo} 
-                            feedback={service.feedback} />
+                            feedback={service.feedback}
+                            otherList={service.otherList} />
                     </div>
                 )) : "nada"}
             </div>

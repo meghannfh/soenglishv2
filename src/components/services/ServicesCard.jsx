@@ -8,19 +8,17 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
       <div>
         <h3 className="mt-20 text-2xl font-semibold text-slate-900">{serviceTitle}</h3>
         <div className="flex flex-row gap-3 mt-6 text-2xl md:text-xl">
-          <h4 className="mt-3">{startDate !== '' && startDate + ','}</h4>
-          <h4 className="mt-3">{capacity !== '' && capacity}</h4>
+          <h4 className="mt-3">{startDate && startDate !== '' && startDate + ','}</h4>
+          <h4 className="mt-3">{capacity && capacity !== '' && capacity}</h4>
         </div>
         <h4 className="mt-3 text-2xl md:text-xl leading-relaxed md:leading-loose">{frequency && frequency}</h4>
         <div className="mt-10">
-          {details.length > 0 &&
+          {details &&
             details.map((detail, idx) => (
-              <p key={idx} className="mt-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">
-                {detail}
-              </p>
+              <p key={idx} className="mt-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900" dangerouslySetInnerHTML={{__html: detail}} />
             ))}
           {hasLessonVideo && (
-            <div className="w-full h-[400px] lg:h-[450px] mt-10">
+            <div className="w-full h-[400px] lg:h-[550px] mt-10">
               {lessonVideo} {/* Assuming the lessonVideo prop is a valid JSX element */}
             </div>
           )}

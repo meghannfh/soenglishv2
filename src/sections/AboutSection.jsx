@@ -101,7 +101,7 @@ export default function AboutSection() {
         '日本に帰国する際、Motherから「あなたは私たちの本当の家族よ、いつでも帰ってきてね」と言われたことは一生忘れません。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687399799/b61f257b-e73a-436f-94f2-7f9cc83ffffb_ftwxjk.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687623105/b61f257b-e73a-436f-94f2-7f9cc83ffffb_1_mhysgs.webp'
       ]
     },
     {

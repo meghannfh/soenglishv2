@@ -177,7 +177,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
 
 /*MENU LI*/
 
-li {
+.menu-list > li {
   width: 100%;
   height: 100%;
   display: flex;
@@ -185,12 +185,12 @@ li {
   justify-content: center;
 }
 
-li a{
+.menu-list > li a{
   padding: .5rem 0 .5rem 0;
 }
 
 @media (min-width: 768px) {
-  li {
+  .menu-list > li {
     width: auto;
   }
 }

@@ -49,10 +49,10 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
             })}
           {trainingList.map((item, index) => (
             <Fragment key={index}>
-              <h4 className="my-10 text-xl font-semibold text-slate-900">{item.listTitle}</h4>
+              <h4 className="my-10 text-2xl font-semibold text-slate-900">{item.listTitle}</h4>
               <ul className="w-full">
                 {item.list.map((listItem, listItemIndex) => (
-                  <li className="text-left block pt-4" key={listItemIndex}>+ {listItem}</li>
+                  <li className="text-left block pt-10 md:pt-6 mt-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900" key={listItemIndex}>+ {listItem}</li>
                 ))}
               </ul>
             </Fragment>

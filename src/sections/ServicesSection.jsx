@@ -192,8 +192,8 @@ export default function ServicesSection(){
         'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687406154/S__78233618_kmfvpw.webp'
       ],
       'adviceReportExample': [
-        '',
-        ''
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687791373/Reviews/S__78233621_cv7mkz.webp',
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687791373/Reviews/S__78233622_yafemt.webp'
       ]
     },
     {
@@ -425,7 +425,9 @@ export default function ServicesSection(){
                             projectsList={service.projectsList} 
                             lessonVideo={service.lessonVideo} 
                             feedback={service.feedback}
-                            otherList={service.otherList} />
+                            otherList={service.otherList}
+                            feedbackImgURL={service.feedbackImgURL}
+                            adviceReportExample={service.adviceReportExample} />
                     </div>
                 )) : "nada"}
             </div>

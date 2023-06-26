@@ -48,6 +48,14 @@ export default function StudyMaterial(){
 			'url': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687283091/f5bee600-6ec4-4db9-aa28-65e2b257147a_rccqaw.png',
 			'title': '藤澤 慶已『聞いて書きとる英語リスニング300問』'
 		},
+		{
+			'url': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687735378/image_v8tgx6.webp',
+			'title': 'TED Foundation. TED. https://www.ted.com/'
+		},
+		{
+			'url': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687735372/textbooktoadd_wwfdoa.webp',
+			'title': '小倉慶郎『英語リプロダクション トレーニング』 (DHC出版、2011)'
+		},
 	]
 
 	const moveToNextImage = () => {
@@ -76,18 +84,20 @@ export default function StudyMaterial(){
 
   			if (book.title === 'SO ENGLISH!オリジナル') {
   			  categoryIndex = 0;
-  			} else if (book.title === '田地野 彰『「意味順」だからできる! 絵と図でよくわかる 小学生のための中学英文法入門』(Jリサーチ出版、2020)') {
+  			} else if (book.title === '山田 暢彦『中学英語をもう一度ひとつひとつわかりやすく。』(学研教育出版、2011)') {
   			  categoryIndex = 1;
   			} else if (book.title === 'Raymond Murphy, English Grammar in Use (Cambridge University Press, 2019)') {
   			  categoryIndex = 2;
   			} else if (book.title === 'ETS『公式TOEIC Listening & Reading 問題集』シリーズ (国際ビジネスコミュニケーション協会、2016~)') {
   			  categoryIndex = 3;
-  			}
+  			} else if (book.title === 'TED Foundation. TED. https://www.ted.com/') {
+				categoryIndex = 4;
+			}
 		
   			return (
   			  <Fragment key={idx}>
   			    {categoryIndex >= 0 && (
-  			      <h3 className="mt-10 leading-relaxed md:text-2xl font-bold text-slate-900">
+  			      <h3 className="mt-10 leading-relaxed text-xl md:leading-loose font-bold text-slate-900">
   			        {textbookCategories[categoryIndex]}
   			      </h3>
   			    )}

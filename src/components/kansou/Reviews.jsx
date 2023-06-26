@@ -1,10 +1,5 @@
 import ReviewCard from "./ReviewCard";
-
 export default function Reviews({feedback}){
-
-
-
-
   return(
     <div className="mt-10 md:grid md:place-content-center">
       <div>

@@ -7,6 +7,7 @@ import ServicesSection from './sections/ServicesSection';
 import AboutSection from './sections/AboutSection';
 import StrategySection from'./sections/StrategySection';
 import SoRainbowSection from './sections/SoRainbowSection';
+import PriceAndSignupSection from './sections/PriceAndSignupSection';
 import ContactSection from './sections/ContactSection';
 import FooterSection from './sections/FooterSection';
 
@@ -45,6 +46,7 @@ function App() {
           </div>
           <StrategySection />
           <SoRainbowSection />
+          <PriceAndSignupSection />
           <ContactSection handleContactClick={handleContactClick} />
           <FooterSection />
         </div>

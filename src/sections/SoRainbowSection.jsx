@@ -23,7 +23,7 @@ export default function SoRainbowSection(){
         <div className="flex flex-col px-6 py-24 md:px-24">
           <h2 className="text-5xl md:text-3xl font-semibold text-slate-900">SO RAINBOW!<br/> 私が使命感を持って取り組んだもう一つの仕事～「日本だから結婚できない」と思われている方へ～</h2>
           {soRainbowText.map((text, idx) => (
-            <Fragment>
+            <Fragment key={idx}>
               <p className="mt-6 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900" key={idx}>{text}</p>
             {idx === 1 && (
               <div className="mt-10 w-full flex justify-center gap-10">

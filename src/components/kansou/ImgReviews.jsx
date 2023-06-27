@@ -1,8 +1,6 @@
 import ImgReviewCard from "./ImgReviewCard";
 import { Fragment } from 'react';
 export default function ImgReviews({feedback}){
-
-    console.log(feedback)
   return(
     <div className="mt-10 w-full flex md:flex-row md:gap-4">
         {feedback && feedback.map((section, idx) => (

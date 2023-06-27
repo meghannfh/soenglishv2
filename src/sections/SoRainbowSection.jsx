@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 export default function SoRainbowSection(){
 
   const soRainbowText = [
@@ -8,23 +9,53 @@ export default function SoRainbowSection(){
     '「日本だから結婚できない」と思われている方、英語が、もしからしたら明日への切符かもしれません。'
   ]
 
-  // const soRainbowImg = [
-  //   'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687408308/DSC_1980_auej2p.webp',
-  //   'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687408308/DSC_2076_guhj1k.webp',
-  //   '',
-  //   '',
-  //   '',
-  //   ''
-  // ]
+  const soRainbowImg = [
+    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687408308/DSC_1980_auej2p.webp',
+    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687408308/DSC_2076_guhj1k.webp',
+    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687878823/0094_xlarge_pcxzrt.jpg',
+    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687878823/0076_xlarge_ovvmbc.jpg',
+    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687878823/DSC_1502_mccjph.jpg',
+    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687878823/DSC_0810_ssxsla.jpg'
+  ]
 
     return(
         <div className="w-full" id="section7">
         <div className="flex flex-col px-6 py-24 md:px-24">
           <h2 className="text-5xl md:text-3xl font-semibold text-slate-900">SO RAINBOW!<br/> 私が使命感を持って取り組んだもう一つの仕事～「日本だから結婚できない」と思われている方へ～</h2>
-          {/*start paragraphs */}
-          {/*Paragraph 1*/}
           {soRainbowText.map((text, idx) => (
-            <p className="mt-6 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900" key={idx}>{text}</p>
+            <Fragment>
+              <p className="mt-6 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900" key={idx}>{text}</p>
+            {idx === 1 && (
+              <div className="mt-10 w-full flex justify-center gap-10">
+                <div className='lg:w-[500px]'>
+                  <img src={soRainbowImg[0]} alt={''}/>
+                </div>
+                <div className='lg:w-[550px]'>
+                  <img src={soRainbowImg[1]} alt={''}  className='w-full h-full object-fill'/>
+                </div>
+              </div>
+            )}
+            {idx === 2 && (
+              <div className="mt-10 w-full flex justify-center gap-10">
+                <div className='lg:w-[500px]'>
+                  <img src={soRainbowImg[2]} alt={''} className='w-full h-full' />
+                </div>
+                <div className='lg:w-[500px]'>
+                  <img src={soRainbowImg[3]} alt={''} className='w-full h-full' />
+                </div>                
+              </div>
+            )}
+            {idx === 3 && (
+              <div className="mt-10 w-full flex justify-center gap-10">
+                <div className='lg:w-[500px]'>
+                  <img src={soRainbowImg[4]} alt={''} className='w-full h-full' />
+                </div>
+                <div className='lg:w-[500px]'>
+                  <img src={soRainbowImg[5]} alt={''} className='w-full h-full' />
+                </div>
+              </div>
+            )}
+            </Fragment>
           ))}
           <div>
             <img src='' alt=''/>

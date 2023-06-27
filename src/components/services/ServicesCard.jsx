@@ -30,7 +30,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
         {hasProjectsList && (
           <ul className="mt-10 w-full">
             {projectsList && projectsList.map((project, idx) => (
-              <li key={idx} className="text-left block mt-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">{project}</li>
+              <li key={idx} className="mt-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">{project}</li>
             ))}
           </ul>
         )}

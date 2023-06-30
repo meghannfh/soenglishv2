@@ -39,12 +39,12 @@ function App() {
           <Mission />
           <MediaSection />
           <ServicesSection />
-          <AboutSection />
+          <StrategySection />
         </div>
         <div>
           <div className="h-screen fixed-bg-section">
           </div>
-          <StrategySection />
+          <AboutSection />
           <SoRainbowSection />
           <PriceAndSignupSection />
           <ContactSection handleContactClick={handleContactClick} />

@@ -18,22 +18,22 @@ export default function Menu({ handleLinkIsClicked }){
           <a href="#section1" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section1')}>mission</a>
         </li>
         <li>
-          <a href="#section2" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section2')}>about</a>
+          <a href="#section2" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section2')}>media</a>
         </li>
         <li>
-          <a href="#section3" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section3')}>media</a>
-        </li>
-        {/* <li>
           <a href="#section3" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section3')}>services</a>
-        </li> */}
-        {/* <li>
-          <a href="#section3" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section3')}>lgbtq+</a>
-        </li> */}
-        <li>
-          <a href="#section5" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section4')}>services</a>
         </li>
         <li>
-          <a href="#section4" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section5')}>strategy</a>
+          <a href="#section4" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section4')}>strategy</a>
+        </li>
+        <li>
+          <a href="#section5" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section5')}>about</a>
+        </li>
+        <li>
+          <a href="#section6" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section6')}>lgbtq+</a>
+        </li>
+        <li>
+          <a href="#section7" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section7')}>contact</a>
         </li>
       </ul>
     </div>

@@ -17,15 +17,16 @@ export default function Footer() {
                 </div>
                 <div className="h-full flex-1">
                     <ul className="h-full flex flex-row footer-list">
-                        <li>
-                            <a href="#section1" onClick={(e) => handleLinkClick(e, 'section1')}>Mission</a>
-                            <a href="#section2" onClick={(e) => handleLinkClick(e, 'section2')}>About</a>
-                            <a href="section">Services</a>
+                        <li className="flex w-full h-full justify-center">
+                            <a href="#section1" onClick={(e) => handleLinkClick(e, 'section1')}>mission</a>
+                            <a href="#section2" onClick={(e) => handleLinkClick(e, 'section2')}>media</a>
+                            <a href="#section3" onClick={(e) => handleLinkClick(e, 'section3')}>services</a>
+                            <a href="#section4" onClick={(e) => handleLinkClick(e, 'section4')}>strategy</a>
                         </li>
-                        <li>
-                            <a href="#section3" onClick={(e) => handleLinkClick(e, 'section3')}>Method</a>
-                            <a href="#section5" onClick={(e) => handleLinkClick(e, 'section4')}>Feedback</a>
-                            <a href="#section4" onClick={(e) => handleLinkClick(e, 'section5')}>Contact</a>
+                        <li className="flex w-full h-full justify-center">
+                            <a href="#section5" onClick={(e) => handleLinkClick(e, 'section5')}>about</a>
+                            <a href="#section6" onClick={(e) => handleLinkClick(e, 'section6')}>lgbtq+</a>
+                            <a href="#section7" onClick={(e) => handleLinkClick(e, 'section7')}>contact</a>
                         </li>
                     </ul>
                 </div>

@@ -17,7 +17,7 @@ export default function SectionTextbox({ subtitle, imgURL, text, list }){
       {list && (
         <ul>
           {list.map((item, idx) => (
-            <li key={idx}>{item}</li>
+            <li key={idx} className="mt-6 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">{item}</li>
           ))}
         </ul>
       )}

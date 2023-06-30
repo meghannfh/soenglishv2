@@ -2,7 +2,7 @@ import ContactForm from "../components/contact/ContactForm"
 
 export default function ContactSection({ handleContactClick }){
     return(
-      <div id="section8">
+      <div id="section7">
         <div className='w-full px-6 py-10 md:px-24 gap-2 bg-slate-300 flex flex-col lg:flex-row items-center justify-between'>
           <div className='lg:w-1/3'>
             <h2 className="text-3xl md:text-3xl font-semibold text-slate-900">Let's have a chat</h2>

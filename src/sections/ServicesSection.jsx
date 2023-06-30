@@ -410,7 +410,7 @@ export default function ServicesSection(){
   ]
 
     return (
-        <div className="w-full" id="section4">
+        <div className="w-full" id="section3">
             <div className="flex flex-col px-6 py-24 md:px-24">
                 <h2 className="text-5xl md:text-3xl font-semibold text-slate-900">SOがお手伝いできること・してきたこと</h2>
                 <p className="mt-6 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">英語の先生ですが、LGBTQ+の相談も、翻訳も、日本語の先生も、ラジオパーソナリティーもやります。</p>

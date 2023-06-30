@@ -26,7 +26,8 @@ export default function Footer() {
                         <li className="flex w-full h-full justify-center">
                             <a href="#section5" onClick={(e) => handleLinkClick(e, 'section5')}>about</a>
                             <a href="#section6" onClick={(e) => handleLinkClick(e, 'section6')}>lgbtq+</a>
-                            <a href="#section7" onClick={(e) => handleLinkClick(e, 'section7')}>contact</a>
+                            <a href="#section7" onClick={(e) => handleLinkClick(e, 'section7')}>price</a>
+                            <a href="#section8" onClick={(e) => handleLinkClick(e, 'section8')}>contact</a>
                         </li>
                     </ul>
                 </div>

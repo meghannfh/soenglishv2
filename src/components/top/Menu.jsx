@@ -33,7 +33,10 @@ export default function Menu({ handleLinkIsClicked }){
           <a href="#section6" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section6')}>lgbtq+</a>
         </li>
         <li>
-          <a href="#section7" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section7')}>contact</a>
+          <a href="#section7" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section7')}>price</a>
+        </li>
+        <li>
+          <a href="#section8" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section8')}>contact</a>
         </li>
       </ul>
     </div>

@@ -28,9 +28,12 @@ function App() {
 
   
   const handleContactClick = () => {
-    setShowQR(prevShowQR => !prevShowQR)
-    console.log(showQR);
+    setShowQR(prevShowQR => prevShowQR = true)
   };
+
+  const handleCloseQRClick = () => {
+    setShowQR(prevShowQR => prevShowQR = false)
+  }
 
   return (
     <div className='h-screen relative fixed-width-xlg-screens'>
@@ -51,7 +54,7 @@ function App() {
           <FooterSection />
         </div>
         <ConsultingBanner handleBannerClick={handleBannerClick} />
-        <QRCode showQR={showQR} />
+        <QRCode showQR={showQR} handleCloseQRClick={handleCloseQRClick}/>
     </div>
   );
 }

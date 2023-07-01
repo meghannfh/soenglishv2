@@ -7,7 +7,7 @@ export default function ContactSection({ handleContactClick }){
           <div className='lg:w-1/3'>
             <h2 className="text-3xl md:text-3xl font-semibold text-slate-900">Let's have a chat</h2>
             <p className='mt-6 font-medium text-slate-900 text-2xl leading-relaxed md:leading-loose md:text-lg'>有料カウンセリングの申し込みを含むお問い合わせは、LINEをお持ちの方なら、より早く返信が可能ですので、
-            <span className="font-semibold hover:cursor-pointer text-xl text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-1 px-2" onClick={handleContactClick}>QRコードより公式LINEに友達追加</span>
+            <button className="text-xl text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-1 px-2 transition-transform duration-200 ease-in-out hover:cursor-pointer hover:scale-110" onClick={handleContactClick}>QRコードより公式LINEに友達追加</button>
             の上、ご連絡を頂けると幸いです。</p>
             <p className='mt-6 font-medium text-slate-900 text-2xl leading-relaxed md:leading-loose md:text-lg'>以下、メールでやり取りを希望される方は、フォームにご記入をお願いいたします。</p>
           </div>

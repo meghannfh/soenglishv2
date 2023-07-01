@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Poppins', 'Kiwi Maru', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -185,13 +185,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
   justify-content: center;
 }
 
-.menu-list > li a{
-  padding: .5rem 0 .5rem 0;
-}
-
 @media (min-width: 768px) {
   .menu-list > li {
     width: auto;
+    height: auto;
   }
 }
 

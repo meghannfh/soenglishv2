@@ -28,7 +28,7 @@ export default function MediaSection(){
       <h2 className="text-5xl md:text-3xl font-semibold text-white">SO's MEDIA</h2>
       <div className="flex flex-col gap-12 lg:gap-0 lg:flex-row lg:justify-between lg:flex-wrap mt-10">
         {socialMedia ? socialMedia.map((medium) => (
-          <a href="/" key={medium.key} className="lg:w-[30%] media-box-shadow">
+          <a href="/" key={medium.key} className="lg:w-[30%]">
             <MediaCard icon={medium.icon} explanation={medium.explanation} type={medium.key}/>
           </a>
         )) : 'nada'}

@@ -5,6 +5,10 @@ import { GrFastForward, GrRewind } from 'react-icons/gr';
 
 export default function StudyMaterial(){
 	const [position, setPosition] = useState(150);
+	const [leftArrowClicks, setLeftArrowClicks] = useState(0);
+  const [rightArrowClicks, setRightArrowClicks] = useState(0);
+
+	const textbookSizes = ['lg', 'lg', 'md', 'md', 'sm', 'sm', 'sm', 'sm', 'sm'];
 
 	const textbookWidth = 200; // Width of each textbook
 	const flexGap = 12; // Gap between textbooks
@@ -61,11 +65,13 @@ export default function StudyMaterial(){
 	const moveToNextImage = () => {
 		const newPosition = position - (textbookWidth + flexGap);
 		setPosition(newPosition);
+		setRightArrowClicks(rightArrowClicks + 1);
 	  };
 	  
 	  const moveToPreviousImage = () => {
 		const newPosition = position + (textbookWidth + flexGap);
 		setPosition(newPosition);
+		setLeftArrowClicks(leftArrowClicks + 1);
 	  };
 
   return (
@@ -74,7 +80,13 @@ export default function StudyMaterial(){
 			<button className="text-5xl" onClick={moveToPreviousImage}>
 				<GrRewind />
 			</button>
-			<TextbooksCard textbooks={textbooks} position={position}/>
+			<TextbooksCard 
+				textbooks={textbooks} 
+				position={position}
+				textbookSizes={textbookSizes}
+        leftArrowClicks={leftArrowClicks}
+        rightArrowClicks={rightArrowClicks}
+			/>
 			<button className="text-5xl" onClick={moveToNextImage}>
 				<GrFastForward />
 			</button>

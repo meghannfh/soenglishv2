@@ -162,9 +162,9 @@ export default function StrategySection(){
     }
   ]
   return(
-    <div id="section4" className="bg-[#7DB49F]">
+    <div id="section4" className="bg-orange-100">
       <div className="flex flex-col px-6 py-24 md:px-24">
-        <h2 className="text-5xl md:text-3xl font-semibold text-slate-900">SO's STRATEGY<br/>どうやって英語を話せるようになるの？</h2>
+        <h2 className="text-5xl md:text-3xl font-semibold text-orange-600">SO's STRATEGY<br/>どうやって英語を話せるようになるの？</h2>
         <StrategyCards />
         { paragraphs ? paragraphs.map((paragraph, idx) => (
           <div key={idx}>

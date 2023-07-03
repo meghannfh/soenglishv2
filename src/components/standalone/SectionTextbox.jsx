@@ -11,7 +11,7 @@ export default function SectionTextbox({ subtitle, imgURL, text, list }){
       </div>
 
       {text && text.map((paragraph, index) => (
-      <p className="mt-6 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900" key={index} dangerouslySetInnerHTML={{__html: paragraph}} />
+      <p className="mt-3 indent-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900" key={index} dangerouslySetInnerHTML={{__html: paragraph}} />
       ))}
 
       {list && (

@@ -15,11 +15,11 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
           <h4 className="mt-3">{startDate && startDate !== '' && startDate + ','}</h4>
           <h4 className="mt-3">{capacity && capacity !== '' && capacity}</h4>
         </div>
-        <h4 className="mt-3 text-2xl md:text-xl leading-relaxed md:leading-loose">{frequency && frequency}</h4>
+        <h4 className="mt-3 text-2xl md:text-xl">{frequency && frequency}</h4>
         <div className="mt-10">
           {details &&
             details.map((detail, idx) => (
-              <p key={idx} className="mt-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900" dangerouslySetInnerHTML={{__html: detail}} />
+              <p key={idx} className="mt-5 text-2xl md:text-lg font-medium text-slate-900" dangerouslySetInnerHTML={{__html: detail}} />
             ))}
           {hasLessonVideo && (
             <div className="w-full h-[400px] lg:h-[550px] mt-10">
@@ -30,7 +30,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
         {hasProjectsList && (
           <ul className="mt-10 w-full">
             {projectsList && projectsList.map((project, idx) => (
-              <li key={idx} className="mt-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">{project}</li>
+              <li key={idx} className="mt-5 text-2xl md:text-lg font-medium text-slate-900">{project}</li>
             ))}
           </ul>
         )}
@@ -38,8 +38,8 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
           <>
             {otherList.map((item, idx) => (
               <div key={idx} className="mt-12">
-                <h4 className="text-2xl leading-relaxed md:leading-loose font-semibold text-slate-900">{item.title}</h4>
-                <p className="text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">{item.detail}</p>
+                <h4 className="text-2xl font-semibold text-slate-900">{item.title}</h4>
+                <p className="text-2xl md:text-lg font-medium text-slate-900">{item.detail}</p>
                 {item.imgURL && <img src={item.imgURL} alt={item.title} className="mt-10"/>}
                 {item.feedback && <ImgReviews feedback={item.feedback} />}
               </div>

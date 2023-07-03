@@ -53,8 +53,9 @@ function App() {
           <ContactSection handleContactClick={handleContactClick} />
           <FooterSection />
         </div>
-        <ConsultingBanner handleBannerClick={handleBannerClick} />
-        <QRCode showQR={showQR} handleCloseQRClick={handleCloseQRClick}/>
+        <div className='fixed right-0 bottom-0 z-30'>
+          <ConsultingBanner handleBannerClick={handleBannerClick} />
+        </div>
     </div>
   );
 }

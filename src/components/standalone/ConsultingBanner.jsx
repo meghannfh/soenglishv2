@@ -1,8 +1,8 @@
 export default function ConsultingBanner({ handleBannerClick }){
 
   return(
-    <div onClick={(e) => handleBannerClick(e, 'section8')} className='fixed right-0 bottom-10 z-30 text-white text-2xl md:text-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-md shadow-slate-800 transition-transform ease-in-out hover:cursor-pointer hover:scale-110'>
-        <h5 className="p-4">有料カウンセリングに申し込む</h5>
+    <div onClick={(e) => handleBannerClick(e, 'section8')} className='text-white text-2xl md:text-3xl bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 transition-transform ease-in-out hover:cursor-pointer hover:scale-110'>
+        <h5 className="px-9 py-6">有料カウンセリングに申し込む</h5>
     </div>
   )
 }

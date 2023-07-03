@@ -17,10 +17,20 @@ export default function Nav({ scrollPastTop }){
     }
   }, [linkIsClicked]);
 
+  const handleLinkClick = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+    });
+    handleLinkIsClicked()
+  }
+
   return(
     <div className="relative flex flex-row justify-between w-screen h-fit fixed-width-xlg-screens">
       <div className="pl-6 w-min absolute left-0 h-[53.98px] md:h-[77.99px] flex flex-col justify-center">
-        <h1 className={`font-semibold tracking-widest md:text-lg ${scrollPastTop || open ? 'text-black' : 'text-white'}`}>SO<span className="italic uppercase">English</span></h1>
+        <a href="#top" className={`font-semibold tracking-widest md:text-lg ${scrollPastTop || open ? 'text-black' : 'text-white'}`}>SO<span className="italic uppercase" onClick={(e) => handleLinkClick(e, 'top')}>English</span></a>
       </div>
       <div className="grid place-content-center p-3 md:p-6 w-min absolute right-0">
         <button onClick={handleClick} className={`block hamburger focus:outline-none`}>

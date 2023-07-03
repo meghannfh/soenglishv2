@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import SocialsBar from '../components/standalone/SocialsBar';
 import Nav from '../components/top/Nav';
 
 export default function Top(){
@@ -58,7 +57,7 @@ export default function Top(){
 
 
   return(
-    <div className='relative'>
+    <div className='relative' id="top">
       {imageLoaded && (<div className="fixed top-0 z-30">
         <Nav scrollPastTop={scrollPastTop}/>
       </div>
@@ -82,8 +81,6 @@ export default function Top(){
           <span className='text-[#E587FF]'>み</span>
           になる
           </div>
-     
-        <SocialsBar />
       </h1>
     </div>
   )

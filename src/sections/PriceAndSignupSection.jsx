@@ -1,4 +1,5 @@
 import SectionTextbox from "../components/standalone/SectionTextbox"
+import ConsultingBanner from "../components/standalone/ConsultingBanner";
 import { Fragment } from 'react'; 
 
 export default function PriceAndSignupSection(){
@@ -60,6 +61,9 @@ export default function PriceAndSignupSection(){
                 />
             </Fragment>
         ))}
+      </div>
+      <div className="flex w-full justify-center mb-10">
+        <ConsultingBanner />
       </div>
     </div>
   )

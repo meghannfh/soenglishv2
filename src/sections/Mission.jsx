@@ -17,7 +17,7 @@ export default function Mission(){
   return(
     <div className="w-full" id="section1">
       <div className="flex flex-col px-6 py-24 md:px-24">
-        <h2 className="text-5xl md:text-3xl font-semibold text-slate-900">SO ENGLISH!のMissionは、英語学習を通して「明日がもっと、楽しみになる」こと</h2>
+        <h2 className="text-5xl md:text-4xl font-semibold text-purple-500">SO ENGLISH!のMissionは、英語学習を通して「明日がもっと、楽しみになる」こと</h2>
         {paragraphs ? paragraphs.map((paragraph, index) => (
           <SectionTextbox 
             subtitle={paragraph.subtitle}

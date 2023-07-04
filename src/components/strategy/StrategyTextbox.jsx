@@ -6,7 +6,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
 
   return (
     <div>
-      <h3 className="mt-20 text-2xl font-semibold text-slate-900">{subtitle}</h3>
+      <h3 className="mt-20 text-3xl font-semibold text-slate-900">{subtitle}</h3>
       {text && subtitle === '1. 第二言語習得論をベースにしたアプローチ' &&
         text.map((paragraph, index) => {
           if (index === 1) {

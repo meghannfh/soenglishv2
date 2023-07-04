@@ -21,7 +21,7 @@ export default function SoRainbowSection(){
     return(
         <div className="w-full bg-sorainbow-image bg-cover" id="section6">
         <div className="flex flex-col px-6 py-24 md:px-24 bg-white/50">
-          <h2 className="text-5xl md:text-3xl font-semibold text-slate-900">SO RAINBOW!<br/> 私が使命感を持って取り組んだもう一つの仕事～「日本だから結婚できない」と思われている方へ～</h2>
+          <h2 className="text-5xl md:text-4xl font-semibold text-slate-900">SO RAINBOW!<br/> 私が使命感を持って取り組んだもう一つの仕事～「日本だから結婚できない」と思われている方へ～</h2>
           {soRainbowText.map((text, idx) => (
             <Fragment key={idx}>
               <p className="mt-6 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900" key={idx}>{text}</p>

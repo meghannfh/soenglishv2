@@ -206,7 +206,7 @@ export default function AboutSection() {
     <div id="section5">
       <AboutHero />
       <div className="flex flex-col px-6 py-24 md:px-24">
-        <h2 className="text-5xl md:text-3xl font-semibold text-slate-900">SOの生い立ちと3度の留学経験</h2>
+        <h2 className="text-5xl md:text-4xl font-semibold text-yellow-500">SOの生い立ちと3度の留学経験</h2>
         {paragraphs ? paragraphs.map((paragraph, index) => (
           <SectionTextbox 
             subtitle={paragraph.subtitle}

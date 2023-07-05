@@ -75,9 +75,8 @@ export default function AboutSection() {
         '一番好きな授業はChoir(合唱)で、ニューヨークに修学旅行で行った際、Statue of Liberty(自由の女神)の前でみんなで左胸に手を当て、アメリカ国歌を歌ったことは今も鮮明に覚えています。',
         'アメリカの高校は、日本の学校とは違うことだらけで、本当に毎日がカルチャーショックでした。一番の衝撃は、授業中に寝ている生徒がいないこと。それどころか、円に並べた机に座った生徒たちから出る、質問と意見の嵐。彼らの姿勢に影響を受けて、日本に帰国後、人が変わったように成績優秀者になり、クラスメイトに逆ショックを与えたことは忘れずに記しておきましょう。'
       ],
-      'imgURl': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687399798/0b9e237d-a498-4a08-ace7-6754a3e98148_lc4kgr.webp',
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687399798/2da0033f-6466-4048-890c-7c0ade19e37b_rl4vue.webp'
+      'imgURL': [
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688571656/Aboutsectiontwo_odqhdd.png',
       ]
     },
     {
@@ -88,8 +87,7 @@ export default function AboutSection() {
         '下手くそでも、チャレンジをみんなで応援する国、それがアメリカだと思います。私にとって、もしかすると初めて、居心地が良いと思えた場所だったかもしれません。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687399799/d25d9695-ffc0-406e-976f-92d9c0409c38_zdvmr8.webp',
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687407464/dbcce6b0-ee78-4994-ba25-7082e1572188_lvogk9.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688575331/Aboutsectiontwo2_evq9sb.webp'
       ]
     },
     {
@@ -120,9 +118,7 @@ export default function AboutSection() {
         '限られた時間を充実させられるかどうかは、とにかく勇気を出した行動にかかっていると思います。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687399799/b99f113c-6109-4ef2-b627-b5672fe877a6_e34sla.webp',
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687399798/a18d8599-6b1e-445a-88af-8ac38838dc29_roisg9.webp',
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687399798/77fe03e9-a9a0-4d94-b2ae-8993c3bd7585_qbht3f.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688534160/aboutimagethree_un3q5n.webp'
       ]
     },
     {

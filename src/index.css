@@ -10,6 +10,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 1700px;
+  background-image: url('media/images/IMG_6944.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title-font
@@ -32,22 +37,6 @@ span.icon-transition {
 button.icon-transition:hover,
 span.icon-transition:hover {
   transform: scale(1.1);
-}
-
-/*fixed bg*/
-.fixed-bg-section {
-  background-image: url('media/images/IMG_6944.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.hover-bg {
-  background: rgb(255,110,110);
-  background: -moz-linear-gradient(48deg, rgba(255,110,110,1) 0%, rgba(114,191,250,1) 43%, rgba(214,255,93,1) 88%);
-  background: -webkit-linear-gradient(48deg, rgba(255,110,110,1) 0%, rgba(114,191,250,1) 43%, rgba(214,255,93,1) 88%);
-  background: linear-gradient(48deg, rgba(255,110,110,1) 0%, rgba(114,191,250,1) 43%, rgba(214,255,93,1) 88%);
 }
 
 /*rainbow bg*/
@@ -87,10 +76,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
 .hamburger-bottom{
   transform: translateY(24px);
 }
-
-/* .open{
-  transform: rotate(90deg);
-} */
 
 .hamburger-top.open {
   transform: translate(0px, 12px) rotate(45deg);

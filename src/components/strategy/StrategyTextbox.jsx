@@ -74,7 +74,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
             ))}
             {examples && examples.map((example, index) => (
                 <Fragment key={index}>
-                    <h4 className="mb-10 mt-24 text-xl font-semibold text-slate-900">{example.title}</h4>
+                    <h4 className="mb-10 mt-24 text-xl md:text-2xl font-semibold text-slate-900">{example.title}</h4>
                     <div className='w-full h-[400px] lg:h-[550px] mt-10'>
                         {example.embeddedVid} {/* Render the embeddedVid for each example */}
                     </div>

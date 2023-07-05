@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -6,7 +7,7 @@ module.exports = {
   theme: {
     extend : {
       backgroundImage: {
-        'sorainbow-image': "url('https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688085425/rainbow_background_kwp1ov.webp')",
+        'sorainbow-image': "url('https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688509948/SoRainbowbg_ibdagw.webp')",
       }
     }
   },

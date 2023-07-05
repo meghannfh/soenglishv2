@@ -203,7 +203,7 @@ export default function AboutSection() {
   ]
 
   return(
-    <div id="section5">
+    <div id="section5" className="bg-white">
       <AboutHero />
       <div className="flex flex-col px-6 py-24 md:px-24">
         <h2 className="text-5xl md:text-4xl font-semibold text-yellow-500">SOの生い立ちと3度の留学経験</h2>

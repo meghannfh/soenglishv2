@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import Top from './sections/Top';
 import Mission from './sections/Mission';
 import MediaSection from './sections/MediaSection';
@@ -12,10 +10,8 @@ import ContactSection from './sections/ContactSection';
 import FooterSection from './sections/FooterSection';
 
 import ConsultingBanner from './components/standalone/ConsultingBanner';
-import QRCode from './components/standalone/QRCode';
 
 function App() {
-  const [showQR, setShowQR] = useState(false);
 
   const handleBannerClick = (e, id) => {
     e.preventDefault();
@@ -26,36 +22,29 @@ function App() {
     });
   }
 
-  
-  const handleContactClick = () => {
-    setShowQR(prevShowQR => prevShowQR = true)
-  };
-
-  const handleCloseQRClick = () => {
-    setShowQR(prevShowQR => prevShowQR = false)
-  }
-
   return (
-    <div className='h-screen relative fixed-width-xlg-screens'>
+    <div className='relative fixed-width-xlg-screens'>
       <Top />
-        <div>
-          <Mission />
-          <MediaSection />
-          <ServicesSection />
-          <StrategySection />
-        </div>
-        <div>
-          <div className="h-screen fixed-bg-section">
-          </div>
-          <AboutSection />
-          <SoRainbowSection />
-          <PriceAndSignupSection />
-          <ContactSection handleContactClick={handleContactClick} />
-          <FooterSection />
-        </div>
-        <div className='fixed right-0 bottom-0 z-30'>
-          <ConsultingBanner handleBannerClick={handleBannerClick} />
-        </div>
+      <div className='h-[500px]'/>
+      <Mission />
+      <div className='h-[500px]'/>
+      <MediaSection />
+      <div className='h-[500px]'/>
+      <ServicesSection />
+      <div className='h-[500px]'/>
+      <StrategySection />
+      <div className='h-[500px]'/>
+      <AboutSection />
+      <div className='h-[500px]'/>
+      <SoRainbowSection />
+      <div className='h-[500px]'/>
+      <PriceAndSignupSection />
+      <div className='h-[500px]'/>
+      <ContactSection />
+      <FooterSection />
+      <div className='fixed right-0 bottom-0 z-30'>
+        <ConsultingBanner handleBannerClick={handleBannerClick} />
+      </div>
     </div>
   );
 }

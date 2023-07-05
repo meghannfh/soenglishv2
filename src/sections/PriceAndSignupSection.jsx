@@ -49,9 +49,9 @@ export default function PriceAndSignupSection(){
   ]
 
   return(
-    <div className="w-full" id="section7">
+    <div className="w-full bg-white pb-10" id="section7">
       <div className="flex flex-col px-6 py-24 md:px-24">
-        <h2 className="text-5xl md:text-4xl font-semibold text-slate-900">料金形態と受講方法(単発60分有料カウンセリングの受け方)</h2>
+        <h2 className="text-5xl md:text-4xl font-semibold text-lime-500">料金形態と受講方法(単発60分有料カウンセリングの受け方)</h2>
         {paragraphs && paragraphs.map((paragraph, index) => (
             <Fragment key={index}>
                 <SectionTextbox 
@@ -62,7 +62,7 @@ export default function PriceAndSignupSection(){
             </Fragment>
         ))}
       </div>
-      <div className="flex w-full justify-center mb-10">
+      <div className="flex w-full justify-center">
         <ConsultingBanner />
       </div>
     </div>

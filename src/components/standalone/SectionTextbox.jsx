@@ -1,11 +1,11 @@
-export default function SectionTextbox({ subtitle, imgURL, text, list }){
+export default function SectionTextbox({ subtitle, imgURL, text, list, increaseImgSize }){
   return (
     <>
-      <div className="w-full flex lg:flex-col">
+      <div className="w-full flex flex-col justify-center">
         <h3 className="mt-12 text-2xl lg:text-3xl lg:leading-relaxed font-semibold text-slate-900">{subtitle !== '' && subtitle}</h3>
         {imgURL && imgURL.map((img, index) => (
-        <div className="mt-6 w-fit lg:full lg:flex lg:justify-center" key={index}>
-          <img src={img} alt={''} className="w-2/3"/>
+        <div className="mt-6 w-full lg:flex justify-center" key={index}>
+          <img src={img} alt={''} className={increaseImgSize ? "w-[750px]" :"w-[500px]"}/>
         </div>
         ))}
       </div>

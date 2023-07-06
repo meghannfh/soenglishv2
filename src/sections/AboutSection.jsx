@@ -16,7 +16,7 @@ export default function AboutSection() {
         '1989(平成元)年2月20日、東京都下で日本人の両親の元に生まれました。難産の末の2000グラム台の未熟児で、生まれた時は呼吸をしていなかった為泣き声を上げなかったようです。その3年後妹が生まれ、病弱だった私に対比してとても元気に育ちました。そのまた2年後に突発的な病気で1カ月間の入院。その後も小児喘息で病院通いの幼少期を過ごしました。助産師、医師の方々に二度命を救ってもらった事実を、今でもふと思い出しては、元気に生きられていることの有難さを深く噛みしめています。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687399798/992a9c3d-d109-43b3-893c-7ec7d03d3303_ry763p.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688596431/Aboutsectionchildhoodphotoedit_cenav0.webp'
       ]
     },
     {
@@ -58,7 +58,7 @@ export default function AboutSection() {
         '現地の学校に行く前の1か月の事前研修に、世界各地(日本、フランス、中国、台湾)から留学生17名集められたが、なんと私は、英語のクラス分けで一番下のレベルでした。ほぼ出川イングリッシュで他の国の人とコミュニケーションをとっていました。でも、楽しかった!あれから約20年経った今も、彼らとはたまに連絡を取っています。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687399798/51288b54-6106-48e8-a1ca-87b499c7ae8e_ltqmhd.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688606075/Studyabroadtwophotoedit_1_trcoei.webp'
       ]
     },
     {
@@ -77,7 +77,8 @@ export default function AboutSection() {
       ],
       'imgURL': [
         'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688571656/Aboutsectiontwo_odqhdd.png',
-      ]
+      ],
+      'increaseImgSize': true
     },
     {
       'subtitle': 'チャレンジを応援する国、アメリカ。',
@@ -88,7 +89,8 @@ export default function AboutSection() {
       ],
       'imgURL': [
         'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688575331/Aboutsectiontwo2_evq9sb.webp'
-      ]
+      ],
+      'increaseImgSize': true
     },
     {
       'subtitle': 'アメリカの、もう一つの家族。',
@@ -99,7 +101,7 @@ export default function AboutSection() {
         '日本に帰国する際、Motherから「あなたは私たちの本当の家族よ、いつでも帰ってきてね」と言われたことは一生忘れません。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687623105/b61f257b-e73a-436f-94f2-7f9cc83ffffb_1_mhysgs.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688590421/Hostfamilyphotoedit_hvevxp.webp'
       ]
     },
     {
@@ -118,8 +120,9 @@ export default function AboutSection() {
         '限られた時間を充実させられるかどうかは、とにかく勇気を出した行動にかかっていると思います。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688534160/aboutimagethree_un3q5n.webp'
-      ]
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688575987/Aboutsectionthree_redhpq.webp'
+      ],
+      'increaseImgSize': true
     },
     {
       'subtitle': '大学卒業後、英語を教える仕事につく。',
@@ -155,7 +158,7 @@ export default function AboutSection() {
         '結果的には、多くの人に支えられ、友人ができた1年間になりました。この経験を通して、何歳になってからでも楽しい留学はできる!という結論にいたりました。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687399799/d9853681-fe66-4f9c-bffb-378f89b3ccb0_osxekp.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688605926/Sodinnertablephotoedit_1_tm2unj.webp'
       ]
     },
     {
@@ -166,7 +169,7 @@ export default function AboutSection() {
         '大切なのは、どんな生き方をするか、それに尽きると思います。だからSOは、これからも止まりません。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687407693/europepic3_v1y6yb.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688596438/Socastlephotoedit_tvozdp.webp'
       ]
     },
     {
@@ -176,7 +179,7 @@ export default function AboutSection() {
         'その時Motherが私に"You have always been a part of our family(あなたはずっと、私たちの大事な家族よ)"と言ってくれ、留学後もこうして英語を勉強を続け、連絡を取り続けていて良かった、と心から思いました。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687408082/b664caaf-62c1-44f2-b201-cef644f3df17_ki3bgj.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688593992/Familytripphotoedit_y0thsh.webp'
       ]
     },
     {
@@ -209,6 +212,7 @@ export default function AboutSection() {
             key={index}
             imgURL={paragraph.imgURL}
             text={paragraph.text}
+            increaseImgSize={paragraph.increaseImgSize && paragraph.increaseImgSize}
           />
         )) : 'nada'}
       </div>

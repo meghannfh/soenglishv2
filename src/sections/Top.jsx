@@ -38,7 +38,7 @@ export default function Top(){
         <Nav scrollPastTop={scrollPastTop}/>
       </div>
 			)}
-      <div id='top-image' className="font-bold h-[35rem] sm:h-[30rem] lg:h-[40rem] xl:h-[50rem] relative overflow-hidden">
+      <div id='top-image' className="font-bold h-[35rem] sm:h-[30rem] lg:h-screen xl:h-screen relative overflow-hidden border-4">
         <div className='absolute top-0 right-0 w-full h-full z-10 bg-black/25'></div>
         <img 
           srcSet={`${smallImg} 1x ${largeImg} 3x`}

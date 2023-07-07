@@ -147,6 +147,34 @@ export default function StrategySection(){
             'Podcastラジオ&Youtube(学習法・留学・海外生活)',
             'InstagramなどのSNS(ライブトーク・ショート教材・勉強になる英語の投稿シェア・学習マインド)'
           ],
+          'contentMedia': [
+            {
+              'title': 'オリジナル教材：フォニックス練習動画',
+              'imgUrl': '',
+              'imgAlt': ''
+            },
+            {
+              'title': '公式LINE',
+              'imgUrl': '',
+              'imgAlt': ''
+            },
+            {
+              'title': `Podcastラジオ:That's So Carrot! ~英語があれば結局ポジティブLife~`,
+              'imgUrl': '',
+              'imgAlt': ''
+            },
+            {
+              'title': `YouTube:That's So Carrot!`,
+              'text': '15歳だった頃の私があったら嬉しかったアカウント"をテーマに海外の同性婚・LGBT事情、英語学習、海外生活、カルチャーショック、価値観、生き方などについて発信しています。',
+              'imgUrl': '',
+              'imgAlt': ''
+            },
+            {
+              'title': 'Instagram:@so_english_gay',
+              'imgUrl': '',
+              'imgAlt': ''
+            },
+          ]
         },
         {
           'listTitle': '複数人用',
@@ -156,6 +184,18 @@ export default function StrategySection(){
             'サマープログラム(夏季集中講座。希望者で少人数グループを作り、1カ月間学習を共にする)',
             'イングリッシュキャンプ(少人数で英語オンリーの環境で1泊2日の旅行。大人気)',
             'SO ENGLISH!英会話カフェ(英語オンリーのカフェを定期的に開催)'
+          ],
+          'contentMedia': [
+            {
+              'title': 'サマープログラム：グループライン',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688744705/section4comment_tc7xwd.webp',
+              'imgAlt': 'chat screenshot of summer program group line'
+            },
+            {
+              'title': 'イングリッシュキャンプ',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688744705/4D1E090A-A03D-47C2-98CE-1BE78F69CA36_L0_001-6_4_2023_4_41_36_PM_f3xnx9.webp',
+              'imgAlt': 'soichi and caro-sensei in front of church'
+            }
           ]
         }
       ]

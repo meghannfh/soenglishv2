@@ -150,29 +150,29 @@ export default function StrategySection(){
           'contentMedia': [
             {
               'title': 'オリジナル教材：フォニックス練習動画',
-              'imgUrl': '',
-              'imgAlt': ''
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688755530/section4PPTImg_dgj7up.webp',
+              'imgAlt': 'phonix lession example powerpoint screenshot'
             },
             {
               'title': '公式LINE',
-              'imgUrl': '',
-              'imgAlt': ''
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688755530/section4LineImg_lhywbl.webp',
+              'imgAlt': 'public line message screenshot'
             },
             {
               'title': `Podcastラジオ:That's So Carrot! ~英語があれば結局ポジティブLife~`,
-              'imgUrl': '',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688756493/section4PodcastImg_jhru28.webp',
               'imgAlt': ''
             },
             {
               'title': `YouTube:That's So Carrot!`,
               'text': '15歳だった頃の私があったら嬉しかったアカウント"をテーマに海外の同性婚・LGBT事情、英語学習、海外生活、カルチャーショック、価値観、生き方などについて発信しています。',
-              'imgUrl': '',
-              'imgAlt': ''
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688755530/section4YoutubeImg_seonsl.webp',
+              'imgAlt': `that's so carrot youtube channel screenshot`
             },
             {
               'title': 'Instagram:@so_english_gay',
-              'imgUrl': '',
-              'imgAlt': ''
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688755530/section4InstaImg_bfbrgt.webp',
+              'imgAlt': 'so engilsh instagram examples'
             },
           ]
         },
@@ -223,6 +223,7 @@ export default function StrategySection(){
               trainingList={paragraph.trainingList && paragraph.trainingList} 
               embeddedVid={paragraph.embeddedVid && paragraph.embeddedVid} 
               examples={paragraph.examples && paragraph.examples}
+              contentList={paragraph.contentList && paragraph.contentList}
           />
           </div>
         )) : 'nada'}

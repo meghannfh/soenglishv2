@@ -38,7 +38,7 @@ export default function Top(){
         <Nav scrollPastTop={scrollPastTop}/>
       </div>
 			)}
-      <div id='top-image' className="font-bold h-[35rem] sm:h-[30rem] lg:h-screen xl:h-screen relative overflow-hidden border-4">
+      <div id='top-image' className="font-bold h-[35rem] sm:h-[30rem] lg:h-screen xl:h-screen relative overflow-hidden">
         <div className='absolute top-0 right-0 w-full h-full z-10 bg-black/25'></div>
         <img 
           srcSet={`${smallImg} 1x ${largeImg} 3x`}
@@ -48,7 +48,7 @@ export default function Top(){
           src={smallImg} 
 					onLoad={handleTopImageLoad}/>
       </div>
-      <h1 className='absolute bottom-28 md:bottom-16 lg:bottom-32 w-full flex flex-col items-center justify-center text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-white z-20 font-bold'>
+      <h1 className='absolute bottom-28 md:bottom-16 lg:bottom-32 xl:bottom-56 w-full flex flex-col items-center justify-center text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-white z-20 font-bold'>
         <div className='flex flex-row'> 
           <span className='text-[#FF7D7D]'>明</span>
           <span className='text-[#FDC56F]'>日</span>

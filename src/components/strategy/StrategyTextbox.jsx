@@ -1,9 +1,10 @@
 import { Fragment } from 'react';
 import StudyMaterial from './material/StudyMaterial';
 
-export default function StrategyTextbox({ subtitle, text, img, subcategories, trainingList, embeddedVid, examples }) {
+export default function StrategyTextbox({ subtitle, text, img, subcategories, trainingList, embeddedVid, examples, contentList }) {
   let renderStudyMaterial = false;
 
+  console.log(contentList)
   return (
     <div>
       <h3 className="mt-20 text-3xl font-semibold text-slate-900">{subtitle}</h3>
@@ -114,6 +115,36 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
             </div>
           );
         })}
+        {contentList && contentList.map((list, idx) => (
+          <div className='mt-10' key={idx}>
+            <h3 className='text-2xl font-semibold'>{list.listTitle}</h3>
+            <ul className='pl-5'>
+              {list.contentList.map((item, idx) => (
+                <li key={idx} className='mt-3 text-xl list-disc'>{item}</li>
+              ))}
+            </ul>
+            <div className='flex flex-row flex-wrap w-full gap-4'>
+              {list.listTitle === '一人用' && list.contentMedia.map((mediumItem, idx) => (
+                <div key={idx} className='mt-10 w-[30%] h-[500px] flex flex-col overflow-hidden p-2 bg-white rounded-md'>
+                  <h5 className='text-2xl'>{mediumItem.title}</h5>
+                  <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='rounded-md mt-5'/>
+                </div>
+              ))}   
+            </div>
+            <div className='flex flex-row w-full gap-4'>
+            {list.listTitle === '複数人用' && list.contentMedia.map((mediumItem, idx) => (
+                <div key={idx} className='mt-10 h-[500px] overflow-hidden w-[45%] rounded-md'>
+                  <h5 className='text-2xl'>{mediumItem.title}</h5>
+                  <div className='h-full overflow-hidden'>
+                    {idx === 1 ? (
+                      <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='rounded-md w-full object-none object-bottom'/>
+                    ) : <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='rounded-md w-full'/> }
+                  </div>
+                </div>
+              ))} 
+            </div>
+          </div>
+        ))}
     </div>
   );
 }

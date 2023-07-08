@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Menu from './Menu'
 
 export default function Nav({ scrollPastTop }){
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [linkIsClicked, setLinkIsClicked] = useState(false)
   function handleClick(){
     setOpen(prevOpen => !prevOpen)

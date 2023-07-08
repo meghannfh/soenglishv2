@@ -154,14 +154,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
   animation-delay: 1.1s;
   }
 
-  /* .scale-up {
-    transition: transform .3s ease-in-out;
-  }
-
-  .scale-up:hover {
-    transform: scale(1.5);
-  } */
-
 /*MENU LI*/
 
 .menu-list > li {
@@ -325,19 +317,5 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
   align-items: flex-start;
   gap: 1rem;
   padding-left: 1rem;
-}
-
-/*Media Cards Border on Hover*/ 
-
-.media-box-shadow {
-  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
-}
-
-/*ABOUT SECTION IMG BOX SHADOW*/
-
-.img-shadow{
-  -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
--moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
 }
 

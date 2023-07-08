@@ -1,16 +1,30 @@
 import Reviews from "../kansou/Reviews";
 import ImgReviews from "../kansou/ImgReviews";
 
-export default function ServicesCard({ serviceTitle, startDate, capacity, frequency, details, projectsList, lessonVideo, feedback, otherList, feedbackImgURL, adviceReportExample }) {
+export default function ServicesCard({ serviceTitle, startDate, capacity, frequency, details, projectsList, lessonVideo, feedback, otherList, feedbackImgURL, adviceReportExample, currentIdx }) {
     const hasLessonVideo = lessonVideo && lessonVideo !== '';
     const hasProjectsList = projectsList && projectsList.length > 0;
     const hasOtherList = otherList && otherList.length > 0;
     const hasFeedbackImgURL = feedbackImgURL && feedbackImgURL.length > 0;
     const hasAdviceReportExample = adviceReportExample && adviceReportExample.length > 0;
+
+    const titleColors = [
+      'text-red-500',
+      'text-orange-500',
+      'text-yellow-500',
+      'text-green-500',
+      'text-emerald-500',
+      'text-teal-500',
+      'text-cyan-500',
+      'text-blue-500',
+      'text-indigo-500',
+      'text-fuchsia-500',
+      'text-pink-500'
+    ]
   
     return (
       <div>
-        <h3 className="mt-20 text-5xl md:text-3xl font-semibold text-slate-900">{serviceTitle}</h3>
+        <h3 className={`mt-20 text-5xl md:text-3xl font-semibold ${titleColors[currentIdx]}`}>{serviceTitle}</h3>
         <div className="flex flex-row gap-3 mt-6 text-2xl md:text-xl">
           <h4 className="mt-3">{startDate && startDate !== '' && startDate + ','}</h4>
           <h4 className="mt-3">{capacity && capacity !== '' && capacity}</h4>
@@ -40,7 +54,11 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
               <div key={idx} className="mt-12">
                 <h4 className="text-2xl font-semibold text-slate-900">{item.title}</h4>
                 <p className="mt-2 text-2xl md:text-lg font-medium text-slate-900">{item.detail}</p>
-                {item.imgURL && <img src={item.imgURL} alt={item.title} className="mt-10"/>}
+                {item.imgURL && (
+                  <div className="w-full mt-10 flex justify-center">
+                    <img src={item.imgURL} alt={item.title} className="xl:w-1/3"/>
+                  </div>
+                  )}
                 {item.feedback && <ImgReviews feedback={item.feedback} />}
               </div>
             ))}

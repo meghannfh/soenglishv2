@@ -12,7 +12,7 @@ export default function ServicesSection(){
         '毎日の学習と報告ができると、覚悟を決めた方はぜひお申込みください。3か月後のあなたの目の前には、英語の道が開けているはずです。'
       ],
       'lessonVideo': '',
-      'feedback': []
+      'feedback': [],
     },
     {
       'service' : '2. 朝活グループセッション(瞑想音読™でリフレッシュ!)',
@@ -361,7 +361,7 @@ export default function ServicesSection(){
         {
           "title": "専門学校教員(都内3校)",
           "detail": "著名な先生方と共に、日常英会話・TOEIC・接客英会話のクラスを持っていました。",
-          "imgURL": "https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687666327/S__78249990_v3b9bp.webp",
+          "imgURL": "https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688780597/Positiveteacherimgedit_upwprf.webp",
           "feedback": [
             {
               "category": "専門学校生徒たちからの感想(ウエディング系)",
@@ -427,7 +427,8 @@ export default function ServicesSection(){
                             feedback={service.feedback}
                             otherList={service.otherList}
                             feedbackImgURL={service.feedbackImgURL}
-                            adviceReportExample={service.adviceReportExample} />
+                            adviceReportExample={service.adviceReportExample}
+                            currentIdx={idx} />
                     </div>
                 )) : "nada"}
             </div>

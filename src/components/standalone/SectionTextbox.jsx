@@ -1,8 +1,31 @@
-export default function SectionTextbox({ subtitle, imgURL, text, list, increaseImgSize }){
+export default function SectionTextbox({ subtitle, imgURL, text, list, increaseImgSize, currentIdx }){
+
+  const titleColors = [
+    'text-rose-500',
+    'text-red-500',
+    'text-orange-500',
+    'text-amber-500',
+    'text-yellow-500',
+    'text-lime-500',
+    'text-green-500',
+    'text-emerald-500',
+    'text-teal-500',
+    'text-cyan-500',
+    'text-sky-500',
+    'text-blue-500',
+    'text-indigo-500',
+    'text-violet-500',
+    'text-purple-500',
+    'text-fuchsia-500',
+    'text-pink-500',
+  ]
+
+  const subtitleColor = titleColors[currentIdx % titleColors.length]
+
   return (
     <>
       <div className="w-full flex flex-col justify-center">
-        <h3 className="mt-12 text-2xl lg:text-3xl lg:leading-relaxed font-semibold text-slate-900">{subtitle !== '' && subtitle}</h3>
+      {subtitle !== '' &&  <h3 className={`mt-12 text-2xl lg:text-3xl lg:leading-relaxed font-semibold ${subtitleColor}`}>{subtitle}</h3>}
         {imgURL && imgURL.map((img, index) => (
         <div className="mt-6 w-full lg:flex justify-center" key={index}>
           <img src={img} alt={''} className={increaseImgSize ? "w-[750px]" :"w-[500px]"}/>

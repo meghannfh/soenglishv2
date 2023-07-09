@@ -62,17 +62,23 @@ export default function StudyMaterial(){
 		},
 	]
 
+	console.log(position);
+
 	const moveToNextImage = () => {
 		const newPosition = position - (textbookWidth + flexGap);
-		setPosition(newPosition);
-		setRightArrowClicks(rightArrowClicks + 1);
-	  };
-	  
-	  const moveToPreviousImage = () => {
+		if (newPosition >= -1546) {
+			setPosition(newPosition);
+			setRightArrowClicks(rightArrowClicks + 1);
+		}
+	};
+	
+	const moveToPreviousImage = () => {
 		const newPosition = position + (textbookWidth + flexGap);
-		setPosition(newPosition);
-		setLeftArrowClicks(leftArrowClicks + 1);
-	  };
+		if (newPosition <= 150) {
+			setPosition(newPosition);
+			setLeftArrowClicks(leftArrowClicks + 1);
+		}
+	};
 
   return (
     <div className="flex flex-col my-24">
@@ -84,8 +90,8 @@ export default function StudyMaterial(){
 				textbooks={textbooks} 
 				position={position}
 				textbookSizes={textbookSizes}
-        		leftArrowClicks={leftArrowClicks}
-        		rightArrowClicks={rightArrowClicks}
+				rightArrowClicks={rightArrowClicks}
+				leftArrowClicks={leftArrowClicks}
 			/>
 			<button className="text-5xl" onClick={moveToNextImage}>
 				<GrFastForward />

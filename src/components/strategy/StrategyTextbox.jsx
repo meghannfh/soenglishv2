@@ -4,7 +4,6 @@ import StudyMaterial from './material/StudyMaterial';
 export default function StrategyTextbox({ subtitle, text, img, subcategories, trainingList, embeddedVid, examples, contentList }) {
   let renderStudyMaterial = false;
 
-  console.log(contentList)
   return (
     <div>
       <h3 className="mt-20 text-3xl font-semibold text-slate-900">{subtitle}</h3>

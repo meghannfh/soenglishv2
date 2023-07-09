@@ -48,6 +48,15 @@ export default function PriceAndSignupSection(){
       }
   ]
 
+  const handleBannerClick = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+    });
+  }
+
   return(
     <div className="w-full bg-white pb-10" id="section7">
       <div className="flex flex-col px-6 py-24 md:px-24">
@@ -63,7 +72,7 @@ export default function PriceAndSignupSection(){
         ))}
       </div>
       <div className="flex w-full justify-center">
-        <ConsultingBanner />
+        <ConsultingBanner handleBannerClick={handleBannerClick} />
       </div>
     </div>
   )

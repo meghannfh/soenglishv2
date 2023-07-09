@@ -39,7 +39,7 @@ export default function MediaSection(){
   return (
     <div className="px-6 py-24 md:px-24 bg-red-100" id="section2">
       <h2 className="text-5xl md:text-4xl font-semibold text-[#AD4173]">SO's MEDIA</h2>
-      <div className="flex flex-col gap-12 lg:flex-row lg:justify-between lg:flex-wrap mt-10">
+      <div className="flex flex-col gap-y-12 lg:flex-row lg:justify-between lg:flex-wrap mt-10">
         {socialMedia ? socialMedia.map((medium) => (
           <a href={medium.url && medium.url} key={medium.key} className="lg:w-[30%] h-[100px]">
             <MediaCard icon={medium.icon} explanation={medium.explanation} type={medium.key}/>

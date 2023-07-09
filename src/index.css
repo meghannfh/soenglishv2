@@ -319,3 +319,148 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
   padding-left: 1rem;
 }
 
+
+/*So painting containers*/
+.parent1 {
+  display: grid;
+  grid-template-areas:
+    "one one two two"
+    "one one two two"
+    "one one three three"
+    "one one three three";
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .uno {
+    grid-area: one;
+  }
+  .dos { 
+    grid-area: two;
+  }
+  .tres { 
+    grid-area: three;
+  }
+
+  .parent2 {
+    display: grid;
+    grid-template-areas:
+      "one one two two"
+      "one one two two"
+      "one one two two"
+      "one one two two";
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .quatro {
+    grid-area: one;
+  }
+  .cinco { 
+    grid-area: two;
+  }
+
+  .parent3 {
+    display: grid;
+    grid-template-areas:
+      "one one two two"
+      "one one two two"
+      "three three two two"
+      "three three four four"
+      "three three four four";
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .seis {
+    grid-area: one;
+  }
+  .siete { 
+    grid-area: three;
+  }
+  .ocho {
+    grid-area: two;
+  }
+  .nueve { 
+    grid-area: four;
+  }
+
+  .parent4 {
+    display: grid;
+    grid-template-areas:
+      "one one three three"
+      "one one three three"
+      "two two three three"
+      "two two three three";
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .diez {
+    grid-area: one;
+  }
+  .once {
+    grid-area: two;
+  }
+  .doce{
+    grid-area: three;
+  }
+
+  .parent5 {
+    display: grid;
+    grid-template-areas:
+      "one one two two"
+      "one one four four"
+      "three three four four";
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .trece {
+    grid-area: one;
+  }
+  .quatorce { 
+    grid-area: three;
+  }
+  .quince {
+    grid-area: two;
+  }
+  .dieziseis { 
+    grid-area: four;
+  }
+
+  .parent6 {
+    display: grid;
+    grid-template-areas:
+      "one one two two"
+      "three three four four"
+      "three three five five"
+      ". six six .";
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .diezisiete {
+    grid-area: one;
+  }
+  .dieziocho{
+    grid-area: two;
+  }
+  .diezinueve{
+    grid-area: three;
+  }
+  .vente{
+    grid-area: four;
+  }
+  .ventiuno{
+    grid-area: five;
+  }
+  .ventidos{
+    grid-area: six;
+  }

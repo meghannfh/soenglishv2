@@ -7,6 +7,7 @@ import StrategySection from'./sections/StrategySection';
 import SoRainbowSection from './sections/SoRainbowSection';
 import PriceAndSignupSection from './sections/PriceAndSignupSection';
 import ContactSection from './sections/ContactSection';
+import SoPaintingsSection from './sections/SoPaintingsSection';
 import FooterSection from './sections/FooterSection';
 
 import ConsultingBanner from './components/standalone/ConsultingBanner';
@@ -39,6 +40,8 @@ function App() {
       <SoRainbowSection />
       <div className='h-[500px]'/>
       <PriceAndSignupSection />
+      <div className='h-[500px]'/>
+      <SoPaintingsSection />
       <div className='h-[500px]'/>
       <ContactSection />
       <FooterSection />

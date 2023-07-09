@@ -188,12 +188,12 @@ export default function StrategySection(){
           'contentMedia': [
             {
               'title': 'サマープログラム：グループライン',
-              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688744705/section4comment_tc7xwd.webp',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688944736/chatscreenshotedit_kc2whz.webp',
               'imgAlt': 'chat screenshot of summer program group line'
             },
             {
               'title': 'イングリッシュキャンプ',
-              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688744705/4D1E090A-A03D-47C2-98CE-1BE78F69CA36_L0_001-6_4_2023_4_41_36_PM_f3xnx9.webp',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688944736/Strategy_photo_edit_kssfkr.webp',
               'imgAlt': 'soichi and caro-sensei in front of church'
             }
           ]

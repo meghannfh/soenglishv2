@@ -13,7 +13,7 @@ export default function Menu({ handleLinkIsClicked }){
 /*have the height & text dynamically switch to screen and text 3xl only when it is shown */
   return(
     <div className="w-screen rainbow-bg md:h-20 md:flex md:justify-center">
-      <ul className="flex flex-col pt-14 h-screen w-full text-3xl gap-6 md:gap-0 md:text-xl md:p-0 md:flex-row md:flex-wrap md:gap-x-6 md:w-[470px] md:h-full md:justify-center lg:gap-6 lg:items-center lg:w-full lg:text-xl menu-list">
+      <ul className="flex flex-col pt-4 h-screen w-full text-3xl md:gap-0 md:text-xl md:p-0 md:flex-row md:flex-wrap md:gap-x-6 md:w-[470px] md:h-full md:justify-center lg:gap-6 lg:items-center lg:w-full lg:text-xl menu-list">
         <li>
           <a href="#section1" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section1')}>mission</a>
         </li>

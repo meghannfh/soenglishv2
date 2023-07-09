@@ -45,7 +45,7 @@ function App() {
       <div className='h-[500px]'/>
       <ContactSection />
       <FooterSection />
-      <div className='fixed right-0 bottom-0 z-30'>
+      <div className='fixed right-0 bottom-0 z-10'>
         <ConsultingBanner handleBannerClick={handleBannerClick} />
       </div>
     </div>

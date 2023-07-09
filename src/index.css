@@ -203,8 +203,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
   width: 100vw;
   position: absolute;
   top: -1050px;
-  z-index: -10;
   transition: top .3s ease-in-out;
+  z-index: 20;
 }
 
 .menu.show{

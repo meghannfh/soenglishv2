@@ -56,7 +56,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
                 <p className="mt-2 text-2xl md:text-lg font-medium text-slate-900">{item.detail}</p>
                 {item.imgURL && (
                   <div className="w-full mt-10 flex justify-center">
-                    <img src={item.imgURL} alt={item.title} className="xl:w-1/3"/>
+                    <img src={item.imgURL} alt={item.title} className="w-1/2 xl:w-1/3"/>
                   </div>
                   )}
                 {item.feedback && <ImgReviews feedback={item.feedback} />}

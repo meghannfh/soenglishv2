@@ -4,7 +4,7 @@ import { GrFastForward, GrRewind } from 'react-icons/gr';
 
 
 export default function StudyMaterial(){
-	const [position, setPosition] = useState(150);
+	const [position, setPosition] = useState(-62);
 	const [leftArrowClicks, setLeftArrowClicks] = useState(0);
   const [rightArrowClicks, setRightArrowClicks] = useState(0);
 
@@ -84,8 +84,8 @@ export default function StudyMaterial(){
 				textbooks={textbooks} 
 				position={position}
 				textbookSizes={textbookSizes}
-        leftArrowClicks={leftArrowClicks}
-        rightArrowClicks={rightArrowClicks}
+        		leftArrowClicks={leftArrowClicks}
+        		rightArrowClicks={rightArrowClicks}
 			/>
 			<button className="text-5xl" onClick={moveToNextImage}>
 				<GrFastForward />

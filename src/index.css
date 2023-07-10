@@ -17,7 +17,9 @@ body {
   background-repeat: no-repeat;
 }
 
-.title-font
+.title-font {
+  font-family: 'Zen Kaku Gothic New';
+}
 
 *{
   box-sizing: border-box;

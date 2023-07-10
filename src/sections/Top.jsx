@@ -48,7 +48,7 @@ export default function Top(){
           src={smallImg} 
 					onLoad={handleTopImageLoad}/>
       </div>
-      <h1 className='absolute bottom-28 md:bottom-56 lg:bottom-32 xl:bottom-56 w-full flex flex-col items-center justify-center text-4xl md:text-6xl xl:text-8xl text-white z-20 font-bold'>
+      <h1 className='title-font absolute top-32 flex justify-center w-full text-4xl md:text-6xl xl:text-8xl text-white z-20 font-extrabold'>
         <div className='flex flex-row'> 
           <span className='text-[#FF7D7D]'>明</span>
           <span className='text-[#FDC56F]'>日</span>

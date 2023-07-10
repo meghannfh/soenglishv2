@@ -35,8 +35,8 @@ export default function SoPaintingsSection(){
 
   return(
     <div className="w-full bg-white pb-10" id="section9">
-      <div className="flex flex-col px-6 py-24 md:px-24">
-      <h2 className="text-5xl md:text-4xl font-semibold text-lime-500">SO's PAINTINGS<br/>アートでちょっと、人生が豊かになる</h2>
+      <div className="flex flex-col px-6 py-24 md:px-40">
+      <h2 className="text-2xl md:text-3xl font-semibold text-lime-500">SO's PAINTINGS<br/>アートでちょっと、人生が豊かになる</h2>
         {paragraphs.map((text, idx) => (
           <p className="mt-3 indent-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900" key={idx} dangerouslySetInnerHTML={{__html: text}} />
         ))}

@@ -1,4 +1,4 @@
-export default function Menu({ handleLinkIsClicked }){
+export default function Menu(){
 
   /*check for truthy of open. if true then on click of one of the links we need to set the top of the menu to 0 again*/
   const handleLinkClick = (e, id) => {
@@ -8,7 +8,6 @@ export default function Menu({ handleLinkIsClicked }){
         behavior: 'smooth',
         block: 'start',
     });
-    handleLinkIsClicked()
   }
 /*have the height & text dynamically switch to screen and text 3xl only when it is shown */
   return(

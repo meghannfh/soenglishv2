@@ -25,7 +25,7 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, increaseI
   return (
     <>
       <div className="w-full flex flex-col justify-center">
-      {subtitle !== '' &&  <h3 className={`mt-12 text-2xl lg:text-3xl lg:leading-relaxed font-semibold ${subtitleColor}`}>{subtitle}</h3>}
+      {subtitle !== '' &&  <h3 className={`mt-12 text-xl lg:text-2xl lg:leading-relaxed font-semibold ${subtitleColor}`}>{subtitle}</h3>}
         {imgURL && imgURL.map((img, index) => (
         <div className="mt-6 w-full flex justify-center" key={index}>
           <img src={img} alt={''} className={increaseImgSize ? "w-[750px]" :"w-[500px]"}/>
@@ -40,7 +40,7 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, increaseI
       {list && (
         <ul>
           {list.map((item, idx) => (
-            <li key={idx} className="mt-6 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">{item}</li>
+            <li key={idx} className="mt-6 text-2xl leading-relaxed md:text-lg font-medium text-slate-900">{item}</li>
           ))}
         </ul>
       )}

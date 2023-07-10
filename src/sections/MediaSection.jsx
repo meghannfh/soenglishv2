@@ -26,19 +26,21 @@ export default function MediaSection(){
     {
       'key': 'youtube',
       'icon': [<BsYoutube />],
-      'url': '',
+      'url': 'https://www.youtube.com/@socarosthatssocarrotlife3496',
       'explanation': `So & Caro's That's So Carrot!~英語があれば結局ポジティブLife~`,
     },
     {
       'key': 'other',
       'icon': [<FaLink />],
+      'url': 'https://linktr.ee/Mr_SoEnglish',
       'explanation': `その他リンク`,
     },
   ]
   
   return (
-    <div className="px-6 py-24 md:px-24 bg-red-100" id="section2">
-      <h2 className="text-5xl md:text-4xl font-semibold text-[#AD4173]">SO's MEDIA</h2>
+    <div className="bg-red-100" id="section2">
+      <div className="px-6 py-24 md:mx-40">
+      <h2 className="text-2xl md:text-3xl font-semibold text-[#AD4173]">SO's MEDIA</h2>
       <div className="flex flex-col gap-y-12 lg:flex-row lg:justify-between lg:flex-wrap mt-10">
         {socialMedia ? socialMedia.map((medium) => (
           <a href={medium.url && medium.url} key={medium.key} className="lg:w-[30%] h-[100px]">
@@ -46,6 +48,8 @@ export default function MediaSection(){
           </a>
         )) : 'nada'}
       </div>
+      </div>
+      
     </div>
   )
 }

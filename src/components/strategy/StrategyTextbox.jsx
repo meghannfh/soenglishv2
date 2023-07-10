@@ -6,13 +6,13 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
 
   return (
     <div>
-      <h3 className="mt-20 text-3xl font-semibold text-slate-900">{subtitle}</h3>
+      <h3 className="mt-20 text-2xl font-semibold text-slate-900">{subtitle}</h3>
       {text && subtitle !== '3. オリジナルのSTUDY RECORDS™' &&
         text.map((paragraph, index) => {
           if (index === 1) {
             return (
               <Fragment key={index}>
-                <p className="mt-3 indent-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">
+                <p className="mt-3 indent-5 text-xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">
                   {paragraph}
                 </p>
                 <div className="my-10 w-full flex justify-center">
@@ -26,7 +26,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
           } else {
             return (
               <p
-                className="mt-3 indent-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900"
+                className="mt-3 indent-5 text-xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900"
                 key={index}
               >
                 {paragraph}
@@ -40,7 +40,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
             text.map((paragraph, index) => {
               return (
                 <p
-                  className="mt-3 indent-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900"
+                  className="mt-3 indent-5 text-xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900"
                   key={index}
                 >
                   {paragraph}
@@ -52,7 +52,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
               <h4 className="my-10 text-2xl font-semibold text-slate-900">{item.listTitle}</h4>
               <ul className="w-full pl-5 list-disc flex flex-col">
                 {item.list.map((listItem, listItemIndex) => (
-                  <li className="mt-5 text-2xl md:text-lg font-medium text-slate-900" key={listItemIndex}>{listItem}</li>
+                  <li className="mt-5 text-xl md:text-lg font-medium text-slate-900" key={listItemIndex}>{listItem}</li>
                 ))}
               </ul>
             </Fragment>
@@ -66,7 +66,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
             </div>
             {text && text.map((paragraph, index) => (
                 <p
-                className="mt-3 indent-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900"
+                className="mt-3 indent-5 text-xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900"
                 key={index}
                 >
                     {paragraph}
@@ -116,16 +116,16 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
         })}
         {contentList && contentList.map((list, idx) => (
           <div className='mt-10' key={idx}>
-            <h3 className='text-2xl font-semibold'>{list.listTitle}</h3>
+            <h3 className='text-xl font-semibold'>{list.listTitle}</h3>
             <ul className='pl-5'>
               {list.contentList.map((item, idx) => (
-                <li key={idx} className='mt-3 text-xl list-disc'>{item}</li>
+                <li key={idx} className='mt-3 text-lg list-disc'>{item}</li>
               ))}
             </ul>
             <div className='flex flex-col md:flex-row flex-wrap w-full gap-4'>
               {list.listTitle === '一人用' && list.contentMedia.map((mediumItem, idx) => (
                 <div key={idx} className='mt-10 md:w-[40%] md:h-[400px] flex flex-col overflow-hidden p-2 bg-white rounded-md'>
-                  <h5 className='text-2xl'>{mediumItem.title}</h5>
+                  <h5 className='text-xl'>{mediumItem.title}</h5>
                   <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='rounded-md mt-5'/>
                 </div>
               ))}   

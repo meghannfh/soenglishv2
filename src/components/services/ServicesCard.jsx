@@ -24,8 +24,8 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
   
     return (
       <div>
-        <h3 className={`mt-20 text-5xl md:text-3xl font-semibold ${titleColors[currentIdx]}`}>{serviceTitle}</h3>
-        <div className="flex flex-row gap-3 mt-6 text-2xl md:text-xl">
+        <h3 className={`mt-20 text-xl lg:text-2xl font-semibold ${titleColors[currentIdx]}`}>{serviceTitle}</h3>
+        <div className="flex flex-row gap-3 mt-6 text-lg md:text-xl">
           <h4 className="mt-3">{startDate && startDate !== '' && startDate + ','}</h4>
           <h4 className="mt-3">{capacity && capacity !== '' && capacity}</h4>
         </div>
@@ -33,7 +33,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
         <div className="mt-5">
           {details &&
             details.map((detail, idx) => (
-              <p key={idx} className="mt-3 indent-5 text-2xl md:text-lg font-medium text-slate-900" dangerouslySetInnerHTML={{__html: detail}} />
+              <p key={idx} className="mt-3 indent-5 text-lg md:text-xl font-medium text-slate-900" dangerouslySetInnerHTML={{__html: detail}} />
             ))}
           {hasLessonVideo && (
             <div className="w-full h-[400px] lg:h-[550px] mt-10">
@@ -44,7 +44,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
         {hasProjectsList && (
           <ul className="mt-10 w-full">
             {projectsList && projectsList.map((project, idx) => (
-              <li key={idx} className="mt-3 text-2xl md:text-lg font-medium text-slate-900">{project}</li>
+              <li key={idx} className="mt-3 text-lg md:text-xl font-medium text-slate-900">{project}</li>
             ))}
           </ul>
         )}
@@ -53,7 +53,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
             {otherList.map((item, idx) => (
               <div key={idx} className="mt-12">
                 <h4 className="text-2xl font-semibold text-slate-900">{item.title}</h4>
-                <p className="mt-2 text-2xl md:text-lg font-medium text-slate-900">{item.detail}</p>
+                <p className="mt-2 text-lg md:text-xl font-medium text-slate-900">{item.detail}</p>
                 {item.imgURL && (
                   <div className="w-full mt-10 flex justify-center">
                     <img src={item.imgURL} alt={item.title} className="w-1/2 xl:w-1/3"/>

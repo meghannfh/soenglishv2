@@ -60,6 +60,9 @@ export default function Top(){
           になる
           </div>
       </h1>
+      <div className='absolute bottom-48 z-10 w-full flex justify-end pr-10'>
+        <img src='https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688971927/Hellotmrsoenglishtext_kahx0i.webp'  className='w-[40%]' alt='hello, tomorrow so english!'/>
+      </div>
     </div>
   )
 }

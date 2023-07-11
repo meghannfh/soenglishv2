@@ -24,7 +24,7 @@ export default function SoRainbowSection(){
           <h2 className="mb-10 text-2xl md:text-3xl font-semibold text-white">SO RAINBOW!<br/> 私が使命感を持って取り組んだもう一つの仕事～「日本だから結婚できない」と思われている方へ～</h2>
           {soRainbowText.map((text, idx) => (
             <Fragment key={idx}>
-              <p className="mt-6 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-white" key={idx}>{text}</p>
+              <p className="mt-6 leading-relaxed md:leading-loose text-lg font-medium text-white" key={idx}>{text}</p>
             {idx === 1 && (
               <div className="mt-10 w-full flex justify-center gap-10">
                 <div className='lg:w-[500px]'>

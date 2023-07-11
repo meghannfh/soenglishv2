@@ -1,20 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Menu from './Menu';
 
 export default function Nav({ scrollPastTop }) {
   const [open, setOpen] = useState(true);
-
-  useEffect(() => {
-    function handleScroll() {
-      const scrollPosition = window.scrollY;
-      const threshold = 200; // Adjust this value as needed
-
-      setOpen(scrollPosition < threshold);
-    }
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   function handleClick() {
     setOpen(prevOpen => !prevOpen);

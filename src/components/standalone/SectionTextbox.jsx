@@ -34,13 +34,13 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, increaseI
       </div>
 
       {text && text.map((paragraph, index) => (
-      <p className="mt-3 indent-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900" key={index} dangerouslySetInnerHTML={{__html: paragraph}} />
+      <p className="mt-3 indent-5 leading-relaxed md:leading-loose text-lg font-medium text-slate-900" key={index} dangerouslySetInnerHTML={{__html: paragraph}} />
       ))}
 
       {list && (
         <ul>
           {list.map((item, idx) => (
-            <li key={idx} className="mt-6 text-2xl leading-relaxed md:text-lg font-medium text-slate-900">{item}</li>
+            <li key={idx} className="mt-6 leading-relaxed text-lg font-medium text-slate-900">{item}</li>
           ))}
         </ul>
       )}

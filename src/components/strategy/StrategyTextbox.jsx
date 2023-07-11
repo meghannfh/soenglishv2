@@ -12,7 +12,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
           if (index === 1) {
             return (
               <Fragment key={index}>
-                <p className="mt-3 indent-5 text-xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">
+                <p className="mt-3 indent-5 leading-relaxed md:leading-loose text-lg font-medium text-slate-900">
                   {paragraph}
                 </p>
                 <div className="my-10 w-full flex justify-center">
@@ -26,7 +26,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
           } else {
             return (
               <p
-                className="mt-3 indent-5 text-xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900"
+                className="mt-3 indent-5 leading-relaxed md:leading-loose text-lg font-medium text-slate-900"
                 key={index}
               >
                 {paragraph}
@@ -40,7 +40,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
             text.map((paragraph, index) => {
               return (
                 <p
-                  className="mt-3 indent-5 text-xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900"
+                  className="mt-3 indent-5 leading-relaxed md:leading-loose text-lg font-medium text-slate-900"
                   key={index}
                 >
                   {paragraph}
@@ -49,7 +49,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
             })}
           {trainingList.map((item, index) => (
             <Fragment key={index}>
-              <h4 className="my-10 text-2xl font-semibold text-slate-900">{item.listTitle}</h4>
+              <h4 className="my-10 text-xl md:text-2xl font-semibold text-slate-900">{item.listTitle}</h4>
               <ul className="w-full pl-5 list-disc flex flex-col">
                 {item.list.map((listItem, listItemIndex) => (
                   <li className="mt-5 text-xl md:text-lg font-medium text-slate-900" key={listItemIndex}>{listItem}</li>
@@ -66,7 +66,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
             </div>
             {text && text.map((paragraph, index) => (
                 <p
-                className="mt-3 indent-5 text-xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900"
+                className="mt-3 indent-5 leading-relaxed md:leading-loose text-lg font-medium text-slate-900"
                 key={index}
                 >
                     {paragraph}
@@ -80,7 +80,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                     </div>
                     {example.text.map((paragraph, idx) => (
                         <p
-                        className="mt-3 indent-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900"
+                        className="mt-3 indent-5 leading-relaxed md:leading-loose text-lg font-medium text-slate-900"
                         key={idx}
                         >
                             {paragraph}
@@ -104,7 +104,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
               {subcategory.text &&
                 subcategory.text.map((text, idx) => (
                   <p
-                    className="mt-3 indent-5 text-2xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900"
+                    className="mt-3 indent-5 leading-relaxed md:leading-loose text-lg font-medium text-slate-900"
                     key={idx}
                   >
                     {text}

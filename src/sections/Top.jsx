@@ -38,7 +38,7 @@ export default function Top(){
         <Nav scrollPastTop={scrollPastTop}/>
       </div>
 			)}
-      <div id='top-image' className="font-bold h-[35rem] sm:h-[30rem] md:h-screen relative overflow-hidden">
+      <div id='top-image' className="font-bold h-screen md:h-screen relative overflow-hidden">
         <div className='absolute top-0 right-0 w-full h-full z-10 bg-black/25'></div>
         <img 
           srcSet={`${smallImg} 1x ${largeImg} 3x`}
@@ -48,7 +48,7 @@ export default function Top(){
           src={smallImg} 
 					onLoad={handleTopImageLoad}/>
       </div>
-      <h1 className='title-font absolute top-32 flex justify-center w-full text-4xl md:text-6xl xl:text-8xl text-white z-20 font-extrabold'>
+      <h1 className='title-font absolute bottom-44 md:top-32 flex justify-center w-full text-3xl md:text-6xl xl:text-8xl text-white z-20 font-extrabold'>
         <div className='flex flex-row'> 
           <span className='text-[#FF7D7D]'>明</span>
           <span className='text-[#FDC56F]'>日</span>
@@ -60,8 +60,8 @@ export default function Top(){
           になる
           </div>
       </h1>
-      <div className='absolute bottom-48 z-10 w-full flex justify-end pr-10'>
-        <img src='https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689074309/Hellotmrsoenglishtext_cufeyp.png'  className='w-[40%]' alt='hello, tomorrow so english!'/>
+      <div className='absolute bottom-24 md:bottom-48 z-10 w-full flex justify-end pr-10'>
+        <img src='https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689074309/Hellotmrsoenglishtext_cufeyp.png'  className='w-[45%] md:w-[40%]' alt='hello, tomorrow so english!'/>
       </div>
     </div>
   )

@@ -25,11 +25,11 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
     return (
       <div>
         <h3 className={`mt-20 text-xl lg:text-2xl font-semibold ${titleColors[currentIdx]}`}>{serviceTitle}</h3>
-        <div className="flex flex-row gap-3 mt-6 text-lg md:text-xl">
+        <div className="flex flex-row gap-3 mt-6 text-lg mmd:text-xl">
           <h4 className="mt-3">{startDate && startDate !== '' && startDate + ','}</h4>
           <h4 className="mt-3">{capacity && capacity !== '' && capacity}</h4>
         </div>
-        {frequency && <h4 className="mt-3 text-2xl md:text-xl" dangerouslySetInnerHTML={{__html: frequency}}/>}
+        {frequency && <h4 className="mt-3 text-lg md:text-xl" dangerouslySetInnerHTML={{__html: frequency}}/>}
         <div className="mt-5">
           {details &&
             details.map((detail, idx) => (

@@ -119,7 +119,7 @@ export default function StudyMaterial(){
   			        {textbookCategories[categoryIndex]}
   			      </h3>
   			    )}
-  			    <h3 className="mt-4 text-2xl leading-relaxed md:text-lg font-medium text-slate-900">
+  			    <h3 className="mt-4 leading-relaxed text-lg font-medium text-slate-900">
   			      {book.title}
   			    </h3>
   			  </Fragment>

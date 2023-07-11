@@ -9,6 +9,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.show-background{
   max-width: 1700px;
   background-image: url('media/images/IMG_6944.jpeg');
   background-attachment: fixed;

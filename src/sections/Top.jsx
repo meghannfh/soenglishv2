@@ -3,11 +3,10 @@ import Nav from '../components/top/Nav';
 import largeImg from '../media/images/UpdatedTopImageSoEnglish.webp';
 import smallImg from '../media/images/UpdatedTopImgSmallSoEnglish.webp'
 
-export default function Top(){
+export default function Top({isTopImageLoaded}){
   const [imageLoaded, setImageLoaded] = useState(false);
   const [topImageHeight, setTopImageHeight] = useState(0);
   const [scrollPastTop, setScrollPastTop] = useState(false);
-  // const [imageSrc, setImageSrc] = useState('');
 
   useEffect(() => {
     function handleScroll() {
@@ -30,6 +29,7 @@ export default function Top(){
 	const handleTopImageLoad = () => {
     setTopImageHeight(document.getElementById("top-image").clientHeight - 10);
     setImageLoaded(true);
+    isTopImageLoaded();
   };
 
   return(

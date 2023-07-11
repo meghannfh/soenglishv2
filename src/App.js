@@ -1,3 +1,5 @@
+import {useState} from 'react';
+
 import Top from './sections/Top';
 import Mission from './sections/Mission';
 import MediaSection from './sections/MediaSection';
@@ -14,6 +16,12 @@ import ConsultingBanner from './components/standalone/ConsultingBanner';
 
 function App() {
 
+  const [isTopImageLoaded, setIsTopImageLoaded] = useState(false);
+
+  const handleTopImageLoad = () => {
+    setIsTopImageLoaded(true);
+  };
+
   const handleBannerClick = (e, id) => {
     e.preventDefault();
     const element = document.getElementById(id);
@@ -24,8 +32,8 @@ function App() {
   }
 
   return (
-    <div className='relative fixed-width-xlg-screens'>
-      <Top />
+    <div className={isTopImageLoaded ? 'relative fixed-width-xlg-screens show-background' : 'relative fixed-width-xlg-screens'}>
+      <Top isTopImageLoaded={handleTopImageLoad}/>
       <div className='h-[300px]'/>
       <Mission />
       <div className='h-[100px]'/>

@@ -188,7 +188,7 @@ export default function StrategySection(){
           'contentMedia': [
             {
               'title': 'サマープログラム：グループライン',
-              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688944736/chatscreenshotedit_kc2whz.webp',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689075937/chatscreenshotedit_kml18i.webp',
               'imgAlt': 'chat screenshot of summer program group line'
             },
             {

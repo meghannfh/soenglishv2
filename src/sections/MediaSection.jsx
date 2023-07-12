@@ -14,7 +14,7 @@ export default function MediaSection(){
     {
       'key': 'spotify',
       'icon': [<BsSpotify />],
-      'url': 'https://open.spotify.com/show/6Ryzytf0Kf2jq4Vpz9RPWL?si=17762e1704264f76',
+      'url': 'https://podcasters.spotify.com/pod/show/thatssocarrot/episodes/3-SoCaro----Our-favorite-English-quotes--Part1-erah16?%24web_only=true&_branch_match_id=1207702973486861218&utm_source=web&utm_campaign=web-share&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq0zMS87IL9ItT03SSywo0MvJzMvWT9XPTYz0z45IS81ySgIAsbZb5zAAAAA%3D',
       'explanation': `So & Caro's That's So Carrot!~英語があれば結局ポジティブLife~`,
     },
     {

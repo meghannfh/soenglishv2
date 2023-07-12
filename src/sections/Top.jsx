@@ -32,10 +32,11 @@ export default function Top({isTopImageLoaded}){
     isTopImageLoaded();
   };
 
+
   return(
     <div className='relative' id="top">
       {imageLoaded && (<div className="fixed top-0 z-30">
-        <Nav scrollPastTop={scrollPastTop}/>
+        <Nav scrollPastTop={scrollPastTop} />
       </div>
 			)}
       <div id='top-image' className="font-bold h-screen md:h-screen relative overflow-hidden">

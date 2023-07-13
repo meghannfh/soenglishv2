@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import 'swiper/css';
 
 import Top from './sections/Top';
 import Mission from './sections/Mission';

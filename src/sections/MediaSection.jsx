@@ -6,15 +6,15 @@ export default function MediaSection(){
 
   const socialMedia = [
     {
-      'key': 'instagram',
-      'icon': [<BsInstagram />],
-      'url': 'https://www.instagram.com/so_english_gay/',
-      'explanation': 'SO ENGLISH!🏳‍🌈Warm Familyを築きたいGayのEnglish Teacher',
-    },
-    {
       'key': 'spotify',
       'icon': [<BsSpotify />],
       'url': 'https://podcasters.spotify.com/pod/show/thatssocarrot/episodes/3-SoCaro----Our-favorite-English-quotes--Part1-erah16?%24web_only=true&_branch_match_id=1207702973486861218&utm_source=web&utm_campaign=web-share&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq0zMS87IL9ItT03SSywo0MvJzMvWT9XPTYz0z45IS81ySgIAsbZb5zAAAAA%3D',
+      'explanation': `So & Caro's That's So Carrot!~英語があれば結局ポジティブLife~`,
+    },
+    {
+      'key': 'youtube',
+      'icon': [<BsYoutube />],
+      'url': 'https://www.youtube.com/@socarosthatssocarrotlife3496',
       'explanation': `So & Caro's That's So Carrot!~英語があれば結局ポジティブLife~`,
     },
     {
@@ -24,10 +24,10 @@ export default function MediaSection(){
       'explanation': `So & Caro's That's So Carrot!~英語があれば結局ポジティブLife~`,
     },
     {
-      'key': 'youtube',
-      'icon': [<BsYoutube />],
-      'url': 'https://www.youtube.com/@socarosthatssocarrotlife3496',
-      'explanation': `So & Caro's That's So Carrot!~英語があれば結局ポジティブLife~`,
+      'key': 'instagram',
+      'icon': [<BsInstagram />],
+      'url': 'https://www.instagram.com/so_english_gay/',
+      'explanation': 'SO ENGLISH!🏳‍🌈Warm Familyを築きたいGayのEnglish Teacher',
     },
     {
       'key': 'other',
@@ -39,17 +39,14 @@ export default function MediaSection(){
   
   return (
     <div className="bg-red-100" id="section2">
-      <div className="px-6 py-24 md:mx-40">
+      <div className="py-24 md:mx-40">
       <h2 className="text-2xl md:text-3xl font-semibold text-[#AD4173]">SO's MEDIA</h2>
-      <div className="flex flex-col gap-y-12 lg:flex-row lg:justify-between lg:flex-wrap mt-10">
-        {socialMedia ? socialMedia.map((medium) => (
-          <a href={medium.url && medium.url} key={medium.key} className="lg:w-[30%] h-[100px]">
-            <MediaCard icon={medium.icon} explanation={medium.explanation} type={medium.key}/>
-          </a>
-        )) : 'nada'}
+      <div className="mt-10 grid grid-cols-2 auto-cols-fr gap-4 place-content-center items-stretch w-full">
+        {socialMedia && socialMedia.map((medium) => (
+          <MediaCard icon={medium.icon} explanation={medium.explanation} type={medium.key} url={medium.url}/>
+        ))}
       </div>
-      </div>
-      
-    </div>
+    </div>    
+  </div>
   )
 }

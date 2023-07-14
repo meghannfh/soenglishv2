@@ -469,3 +469,36 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
   .ventidos{
     grid-area: six;
   }
+
+  /*strategy section 4 grid*/
+  .grid-parent-strategy {
+    display: grid;
+    grid-template-areas:
+      "one two"
+      "three two"
+      "five two"
+      "four four";
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px);
+  }
+
+  #strategy_one{
+    grid-area: one;
+  }
+
+  #strategy_two{
+    grid-area: two;
+  }
+
+  #strategy_three{
+    grid-area: three;
+  }
+
+  #strategy_four{
+    grid-area: four;
+  }
+
+  #strategy_five{
+    grid-area: five;
+  }

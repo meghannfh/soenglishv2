@@ -122,14 +122,22 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                 <li key={idx} className='mt-3 text-lg list-disc'>{item}</li>
               ))}
             </ul>
-            <div className='flex flex-col md:flex-row flex-wrap w-full gap-4'>
-              {list.listTitle === '一人用' && list.contentMedia.map((mediumItem, idx) => (
-                <div key={idx} className='mt-10 md:w-[40%] md:h-[400px] flex flex-col overflow-hidden p-2 bg-white rounded-md'>
-                  <h5 className='text-xl'>{mediumItem.title}</h5>
-                  <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='rounded-md mt-5'/>
-                </div>
-              ))}   
-            </div>
+            {list.listTitle === '一人用' && <div className='grid-parent-strategy w-full mt-10 gap-4'>
+              {list.contentMedia.map((mediumItem, idx) => {
+                const indexNames = {
+                  0: 'strategy_one',
+                  1: 'strategy_two',
+                  2: 'strategy_three',
+                  3: 'strategy_four',
+                  4: 'strategy_five'
+                }
+                
+                return (  
+                  <div key={idx} className='flex flex-col overflow-hidden p-2 bg-white rounded-md' id={indexNames[idx]}>
+                    <h5 className='text-xl'>{mediumItem.title} {idx}</h5>
+                    <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='rounded-md mt-5'/>
+                  </div>)})}    
+            </div>}
             <div className='flex flex-col items-center md:flex-row w-full md:justify-between'>
             {list.listTitle === '複数人用' && list.contentMedia.map((mediumItem, idx) => (
                 <div key={idx} className='mt-10 md:w-[48%] flex flex-col content-center items-center'>

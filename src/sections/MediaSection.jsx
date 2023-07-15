@@ -42,8 +42,8 @@ export default function MediaSection(){
       <div className="py-24 md:mx-40">
       <h2 className="text-2xl md:text-3xl font-semibold text-[#AD4173]">SO's MEDIA</h2>
       <div className="mt-10 grid grid-cols-2 auto-cols-fr gap-4 place-content-center items-stretch w-full">
-        {socialMedia && socialMedia.map((medium) => (
-          <MediaCard icon={medium.icon} explanation={medium.explanation} type={medium.key} url={medium.url}/>
+        {socialMedia && socialMedia.map((medium, idx) => (
+          <MediaCard icon={medium.icon} explanation={medium.explanation} type={medium.key} url={medium.url} key={idx}/>
         ))}
       </div>
     </div>    

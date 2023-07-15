@@ -5,6 +5,7 @@ export default function Mission(){
  const paragraphs = [
     {
       'subtitle': '',
+      'sectionImg': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689462168/talkinggraphic_cx1es8.webp',
       'text': [
         '<b>「明日がもっと、楽しみになる」</b>をSO ENGLISH!の新たなスローガンにしたのは2023年、SO ENGLISH!R(セーラームーンRからとっています)と題し、10年やってきた教室に革命(Revolution)が必要だと思ったからです。',
         'これまで、器用に相手によっ﻿て好かれる自分に変えることばかり得意になっていた私ですが、3度の留学体験を経て、Gayであることだけでなく、海外で同性結婚をして子供を育てたい夢があることや、絵や音楽やセーラームーンが大好きな自分を、誰に対しても出していこうと決めると、人生がより一層楽しく、生きやすくなった気がします。',
@@ -16,13 +17,14 @@ export default function Mission(){
 
   return(
     <div className="w-full bg-white" id="section1">
-      <div className="flex flex-col px-6 py-24 md:mx-40">
+      <div className="px-6 py-24 md:mx-40">
         <h2 className="text-2xl md:text-3xl font-semibold text-purple-500">SO ENGLISH!のMissionは、英語学習を通して「明日がもっと、楽しみになる」こと</h2>
         {paragraphs ? paragraphs.map((paragraph, index) => (
           <SectionTextbox 
-            subtitle={paragraph.subtitle}
             key={index}
+            subtitle={paragraph.subtitle}
             text={paragraph.text}
+            sectionImg={paragraph.sectionImg & paragraph.sectionImg}
           />
         )) : 'nada'}
       </div>

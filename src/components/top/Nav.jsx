@@ -3,11 +3,9 @@ import Menu from './Menu';
 
 export default function Nav({ scrollPastTop }) {
   const [open, setOpen] = useState(true);
-  const [hideMenu, setHideMenu] = useState(false);
 
   function handleClick() {
     setOpen(prevOpen => !prevOpen);
-    setHideMenu(false); // Reset hideMenu when the hamburger is clicked
   }
 
   useEffect(() => {
@@ -16,12 +14,13 @@ export default function Nav({ scrollPastTop }) {
     function handleScroll() {
       const scrollPosition = window.scrollY;
 
-      if (scrollPosition > 0 && isInitialScroll) {
-        setHideMenu(true);
+      console.log(scrollPosition)
+      if (scrollPosition > 600 && isInitialScroll) {
+        setOpen(false);
         isInitialScroll = false;
       }
 
-      if (scrollPosition === 0) {
+      if (scrollPosition === 600) {
         isInitialScroll = true;
       }
     }
@@ -45,7 +44,7 @@ export default function Nav({ scrollPastTop }) {
   return (
     <div className="relative flex flex-row justify-between w-screen h-fit fixed-width-xlg-screens">
       <div className="pl-6 w-min absolute left-0 h-[53.98px] md:h-[77.99px] flex flex-col justify-center z-30">
-        <a href="#top" className={`font-semibold tracking-widest md:text-lg ${scrollPastTop || (open && !hideMenu) ? 'text-black' : 'text-white'}`}>
+        <a href="#top" className={`font-semibold tracking-widest md:text-lg ${scrollPastTop || (open) ? 'text-black' : 'text-white'}`}>
           SO<span className="italic uppercase" onClick={(e) => handleLogoClick(e, 'top')}>English!</span>
         </a>
       </div>
@@ -56,7 +55,7 @@ export default function Nav({ scrollPastTop }) {
           <span className={open ? `open hamburger-bottom ${scrollPastTop || (open) ? 'bg-black' : 'bg-white'}` : `hamburger-bottom ${scrollPastTop ? 'bg-black' : 'bg-white'}`}></span>
         </button>
       </div>
-      <div className={open && !hideMenu ? `menu show` : `menu`}>
+      <div className={open ? `menu show` : `menu`}>
         <Menu />
       </div>
     </div>

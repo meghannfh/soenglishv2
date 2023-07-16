@@ -133,23 +133,23 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                 }
                 
                 return (  
-                  <div key={idx} className='flex flex-col overflow-hidden p-2 bg-white rounded-md' id={indexNames[idx]}>
-                    <h5 className='text-xl'>{mediumItem.title} {idx}</h5>
-                    <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='rounded-md mt-5'/>
+                  <div key={idx} className='flex flex-col relative rounded-md overflow-hidden' id={indexNames[idx]}>
+                    <h5 className='text-sm md:text-md absolute right-0 md:top-1 md:right-1 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
+                    <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} />
                   </div>)})}    
             </div>}
-            <div className='flex flex-col items-center md:flex-row w-full md:justify-between'>
-            {list.listTitle === '複数人用' && list.contentMedia.map((mediumItem, idx) => (
-                <div key={idx} className='mt-10 md:w-[48%] flex flex-col content-center items-center'>
-                  <h5 className='text-xl'>{mediumItem.title}</h5>
-                  <div className='mt-5'>
+            {list.listTitle === '複数人用' && <div className='flex flex-col gap-3 items-center w-full lg:flex-row mt-10 lg:h-96'>
+            {list.contentMedia.map((mediumItem, idx) => (
+                <div key={idx} className='relative flex content-center w-2/3 md:w-full md:h-full'>
+                  <h5 className='text-sm md:text-md absolute top-2 right-2 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
+                  <div className='h-full'>
                     {idx === 1 ? (
-                      <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='h-[300px]'/>
-                    ) : <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='h-[300px]'/> }
+                      <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='h-full lg:h-full'/>
+                    ) : <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='lg:w-full'/> }
                   </div>
                 </div>
               ))} 
-            </div>
+            </div>}
           </div>
         ))}
     </div>

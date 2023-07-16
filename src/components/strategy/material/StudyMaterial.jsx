@@ -6,14 +6,12 @@ import { GrFastForward, GrRewind } from 'react-icons/gr';
 export default function StudyMaterial(){
 	const [position, setPosition] = useState(-62);
 	const [leftArrowClicks, setLeftArrowClicks] = useState(0);
-  const [rightArrowClicks, setRightArrowClicks] = useState(0);
+	const [rightArrowClicks, setRightArrowClicks] = useState(0);
 
 	const textbookSizes = ['lg', 'lg', 'md', 'md', 'sm', 'sm', 'sm', 'sm', 'sm'];
 
 	const textbookWidth = 200; // Width of each textbook
 	const flexGap = 12; // Gap between textbooks
-
-	console.log(position)
 
 	const textbookCategories = [
 		'①発音トレーニング用フォニックス教材',
@@ -98,32 +96,31 @@ export default function StudyMaterial(){
 			</button>
 		</div>
 		{textbooks.map((book, idx) => {
-  			let categoryIndex = -1; // Initialize category index to -1
-
-  			if (book.title === 'SO ENGLISH!オリジナル') {
-  			  categoryIndex = 0;
-  			} else if (book.title === '山田 暢彦『中学英語をもう一度ひとつひとつわかりやすく。』(学研教育出版、2011)') {
-  			  categoryIndex = 1;
-  			} else if (book.title === 'Raymond Murphy, English Grammar in Use (Cambridge University Press, 2019)') {
-  			  categoryIndex = 2;
-  			} else if (book.title === 'ETS『公式TOEIC Listening & Reading 問題集』シリーズ (国際ビジネスコミュニケーション協会、2016~)') {
-  			  categoryIndex = 3;
-  			} else if (book.title === 'TED Foundation. TED. https://www.ted.com/') {
-				categoryIndex = 4;
+  		let categoryIndex = -1; // Initialize category index to -1
+  		if (book.title === 'SO ENGLISH!オリジナル') {
+  		  categoryIndex = 0;
+  		} else if (book.title === '山田 暢彦『中学英語をもう一度ひとつひとつわかりやすく。』(学研教育出版、2011)') {
+  		  categoryIndex = 1;
+  		} else if (book.title === 'Raymond Murphy, English Grammar in Use (Cambridge University Press, 2019)') {
+  		  categoryIndex = 2;
+  		} else if (book.title === 'ETS『公式TOEIC Listening & Reading 問題集』シリーズ (国際ビジネスコミュニケーション協会、2016~)') {
+  		  categoryIndex = 3;
+  		} else if (book.title === 'TED Foundation. TED. https://www.ted.com/') {
+			categoryIndex = 4;
 			}
 		
-  			return (
-  			  <Fragment key={idx}>
-  			    {categoryIndex >= 0 && (
-  			      <h3 className="mt-10 leading-relaxed text-xl md:leading-loose font-bold text-slate-900">
-  			        {textbookCategories[categoryIndex]}
-  			      </h3>
-  			    )}
-  			    <h3 className="mt-4 leading-relaxed text-lg font-medium text-slate-900">
-  			      {book.title}
-  			    </h3>
-  			  </Fragment>
-  			);
+  		return (
+  		  <Fragment key={idx}>
+  		    {categoryIndex >= 0 && (
+  		      <h3 className="mt-10 leading-relaxed text-xl md:leading-loose font-bold text-slate-900">
+  		        {textbookCategories[categoryIndex]}
+  		      </h3>
+  		    )}
+  		    <h3 className="mt-4 leading-relaxed text-lg font-medium text-slate-900">
+  		      {book.title}
+  		    </h3>
+  		  </Fragment>
+  		);
 		})}
   	</div>
   )

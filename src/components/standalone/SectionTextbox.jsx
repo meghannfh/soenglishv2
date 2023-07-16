@@ -1,4 +1,4 @@
-export default function SectionTextbox({ subtitle, imgURL, text, list, increaseImgSize, currentIdx }){
+export default function SectionTextbox({ subtitle, imgURL, text, list, increaseImgSize, currentIdx, sectionImg }){
 
   const titleColors = [
     'text-rose-500',
@@ -24,7 +24,7 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, increaseI
 
   return (
     <>
-      <div className="w-full flex flex-col justify-center">
+      <div className="w-full mt-10">
       {subtitle !== '' &&  <h3 className={`mt-12 text-xl lg:text-2xl lg:leading-relaxed font-semibold ${subtitleColor}`}>{subtitle}</h3>}
         {imgURL && imgURL.map((img, index) => (
         <div className="mt-6 w-full flex justify-center" key={index}>
@@ -32,6 +32,7 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, increaseI
         </div>
         ))}
       </div>
+      {sectionImg && <img src={sectionImg} className="w-1/5 float-left" alt="graphic" />}
       {text && text.map((paragraph, index) => (
         <p className="mt-3 indent-5 leading-relaxed md:leading-loose text-lg font-medium text-slate-900 clear-right" key={index} dangerouslySetInnerHTML={{__html: paragraph}} />
       ))}

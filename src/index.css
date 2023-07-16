@@ -474,13 +474,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
   .grid-parent-strategy {
     display: grid;
     grid-template-areas:
-      "one two"
-      "three two"
-      "five two"
-      "four four";
+      "one one two two"
+      "three three two two"
+      "four four four four"
+      ". five five .";
     gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   #strategy_one{

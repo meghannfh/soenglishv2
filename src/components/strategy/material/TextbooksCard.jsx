@@ -3,7 +3,6 @@ import Textbook from './Textbook';
 export default function TextbooksCard({ textbooks, position, textbookSizes, leftArrowClicks, rightArrowClicks }){
 
   let newPosition = `${position}px`;
-  console.log(newPosition)
   return (
     <div className="grid justify-items-center w-fit">
       <div className='flex w-[200px] md:w-[500px] flex-row gap-3 overflow-hidden relative'>

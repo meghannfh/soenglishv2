@@ -24,7 +24,7 @@ export default function Mission(){
             key={index}
             subtitle={paragraph.subtitle}
             text={paragraph.text}
-            sectionImg={paragraph.sectionImg & paragraph.sectionImg}
+            sectionImg={paragraph.sectionImg && paragraph.sectionImg}
           />
         )) : 'nada'}
       </div>

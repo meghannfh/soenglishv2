@@ -150,28 +150,28 @@ export default function StrategySection(){
           'contentMedia': [
             {
               'title': 'オリジナル教材：フォニックス練習動画',
-              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688755530/section4PPTImg_dgj7up.webp',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689545311/Pptedit_fywaxo.webp',
               'imgAlt': 'phonix lession example powerpoint screenshot'
             },
             {
               'title': '公式LINE',
-              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688755530/section4LineImg_lhywbl.webp',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689545311/Lineedit_p3dcgx.webp',
               'imgAlt': 'public line message screenshot'
             },
             {
               'title': `Podcastラジオ:That's So Carrot! ~英語があれば結局ポジティブLife~`,
-              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688756493/section4PodcastImg_jhru28.webp',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689545311/Spotify_edit_ir7sij.webp',
               'imgAlt': ''
             },
             {
               'title': `YouTube:That's So Carrot!`,
               'text': '15歳だった頃の私があったら嬉しかったアカウント"をテーマに海外の同性婚・LGBT事情、英語学習、海外生活、カルチャーショック、価値観、生き方などについて発信しています。',
-              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688755530/section4YoutubeImg_seonsl.webp',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689545311/YouTube_edit_kf233f.webp',
               'imgAlt': `that's so carrot youtube channel screenshot`
             },
             {
               'title': 'Instagram:@so_english_gay',
-              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688755530/section4InstaImg_bfbrgt.webp',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689545312/Insta_edit_eewu1i.webp',
               'imgAlt': 'so engilsh instagram examples'
             },
           ]

@@ -478,7 +478,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
       "three three two two"
       "four four four four"
       ". five five .";
-    gap: 10px;
+    gap: 30px;
     grid-template-columns: repeat(4, 1fr);
   }
 

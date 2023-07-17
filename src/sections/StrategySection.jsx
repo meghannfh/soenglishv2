@@ -155,7 +155,7 @@ export default function StrategySection(){
             },
             {
               'title': '公式LINE',
-              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689545311/Lineedit_p3dcgx.webp',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689555069/Lineedit_ypsck1.webp',
               'imgAlt': 'public line message screenshot'
             },
             {
@@ -166,7 +166,7 @@ export default function StrategySection(){
             {
               'title': `YouTube:That's So Carrot!`,
               'text': '15歳だった頃の私があったら嬉しかったアカウント"をテーマに海外の同性婚・LGBT事情、英語学習、海外生活、カルチャーショック、価値観、生き方などについて発信しています。',
-              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689545311/YouTube_edit_kf233f.webp',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689555062/YouTube_edit_bwczmq.webp',
               'imgAlt': `that's so carrot youtube channel screenshot`
             },
             {

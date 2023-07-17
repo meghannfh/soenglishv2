@@ -32,7 +32,7 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, increaseI
         </div>
         ))}
       </div>
-      {sectionImg && <img src={sectionImg} className="w-1/5 float-left" alt="graphic" />}
+      {sectionImg && <img src={sectionImg} className="w-1/5 float-left -scale-x-100" alt="graphic" />}
       {text && text.map((paragraph, index) => (
         <p className="mt-3 indent-5 leading-relaxed md:leading-loose text-lg font-medium text-slate-900 clear-right" key={index} dangerouslySetInnerHTML={{__html: paragraph}} />
       ))}

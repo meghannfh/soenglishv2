@@ -1,7 +1,7 @@
 import Reviews from "../kansou/Reviews";
 import ImgReviews from "../kansou/ImgReviews";
 
-export default function ServicesCard({ serviceTitle, startDate, capacity, frequency, details, projectsList, lessonVideo, feedback, otherList, feedbackImgURL, adviceReportExample, currentIdx }) {
+export default function ServicesCard({ serviceTitle, startDate, capacity, frequency, details, projectsList, lessonVideo, feedback, otherList, feedbackImgURL, adviceReportExample, sectionImg, currentIdx }) {
     const hasLessonVideo = lessonVideo && lessonVideo !== '';
     const hasProjectsList = projectsList && projectsList.length > 0;
     const hasOtherList = otherList && otherList.length > 0;
@@ -29,18 +29,20 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
           <h4 className="mt-3">{startDate && startDate !== '' && startDate + ','}</h4>
           <h4 className="mt-3">{capacity && capacity !== '' && capacity}</h4>
         </div>
-        {frequency && <h4 className="mt-3 text-lg md:text-xl" dangerouslySetInnerHTML={{__html: frequency}}/>}
-        <div className="mt-5">
-          {details &&
-            details.map((detail, idx) => (
+          <>
+          {sectionImg && <img src={sectionImg} className="w-1/6 float-right -scale-x-100" alt="graphic" />}
+            {frequency && <h4 className="mt-3 text-lg md:text-xl" dangerouslySetInnerHTML={{__html: frequency}}/>}
+            {details && details.map((detail, idx) => (
               <p key={idx} className="mt-3 indent-5 text-lg md:text-xl font-medium text-slate-900" dangerouslySetInnerHTML={{__html: detail}} />
-            ))}
-          {hasLessonVideo && (
-            <div className="w-full h-[400px] lg:h-[550px] mt-10">
-              {lessonVideo} {/* Assuming the lessonVideo prop is a valid JSX element */}
-            </div>
-          )}
-        </div>
+          ))}
+          </>
+        
+        {hasLessonVideo && (
+          <div className="w-full h-[400px] lg:h-[550px] mt-10">
+            {lessonVideo} {/* Assuming the lessonVideo prop is a valid JSX element */}
+          </div>
+        )}
+
         {hasProjectsList && (
           <ul className="mt-10 w-full">
             {projectsList && projectsList.map((project, idx) => (

@@ -13,6 +13,7 @@ export default function ServicesSection(){
       ],
       'lessonVideo': '',
       'feedback': [],
+      'sectionImg': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689462147/pointinggraphic_q28kdq.webp'
     },
     {
       'service' : '2. 朝活グループセッション(瞑想音読™でリフレッシュ!)',
@@ -416,19 +417,21 @@ export default function ServicesSection(){
                 <p className="mt-6 text-xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">英語の先生ですが、LGBTQ+の相談も、翻訳も、日本語の先生も、ラジオパーソナリティーもやります。</p>
                 {services ? services.map((service, idx) => (
                     <div key={idx}>
-                        <ServicesCard 
-                            serviceTitle={service.service} 
-                            startDate={service.startDate} 
-                            capacity={service.capacity} 
-                            frequency={service.frequency} 
-                            details={service.details} 
-                            projectsList={service.projectsList} 
-                            lessonVideo={service.lessonVideo} 
-                            feedback={service.feedback}
-                            otherList={service.otherList}
-                            feedbackImgURL={service.feedbackImgURL}
-                            adviceReportExample={service.adviceReportExample}
-                            currentIdx={idx} />
+                      <ServicesCard 
+                        serviceTitle={service.service} 
+                        startDate={service.startDate} 
+                        capacity={service.capacity} 
+                        frequency={service.frequency} 
+                        details={service.details} 
+                        projectsList={service.projectsList} 
+                        lessonVideo={service.lessonVideo && service.lessonVideo} 
+                        sectionImg={service.sectionImg && service.sectionImg}
+                        feedback={service.feedback && service.feedback}
+                        otherList={service.otherList}
+                        feedbackImgURL={service.feedbackImgURL}
+                        adviceReportExample={service.adviceReportExample}
+                        currentIdx={idx} 
+                      />
                     </div>
                 )) : "nada"}
             </div>

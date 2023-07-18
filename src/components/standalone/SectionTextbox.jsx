@@ -1,4 +1,4 @@
-export default function SectionTextbox({ subtitle, imgURL, text, list, increaseImgSize, currentIdx, sectionImg }){
+export default function SectionTextbox({ subtitle, imgURL, text, list, increaseImgSize, decreaseImgSize, currentIdx, sectionImg }){
 
   const titleColors = [
     'text-rose-500',
@@ -28,13 +28,14 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, increaseI
       {subtitle !== '' &&  <h3 className={`mt-12 text-xl lg:text-2xl font-semibold ${subtitleColor}`}>{subtitle}</h3>}
         {imgURL && imgURL.map((img, index) => (
         <div className="mt-6 w-full flex justify-center" key={index}>
-          <img src={img} alt={''} className={increaseImgSize ? "w-[750px]" :"w-[500px]"}/>
+          {/*the sections that have a large image of multiple images needed to be increased to fit the needs of the client so a key was added to those sections equal to a boolean indicating whether to increase or decrease the size of the image and those widths would be conditionally added in the class on the img tag. only the single */}
+          <img src={img} alt={''} className={increaseImgSize ? "w-[750px]" : decreaseImgSize ? "w-[300px]" : "w-[500px]"}/>
         </div>
         ))}
       </div>
       {sectionImg && <img src={sectionImg} className="w-1/5 float-left -scale-x-100" alt="graphic" />}
       {text && text.map((paragraph, index) => (
-        <p className="mt-3 indent-5 text-lg font-medium text-slate-900 clear-right" key={index} dangerouslySetInnerHTML={{__html: paragraph}} />
+        <p className="mt-3 indent-5 text-lg font-medium md:leading-loose text-slate-900 clear-right" key={index} dangerouslySetInnerHTML={{__html: paragraph}} />
       ))}
 
       {list && (

@@ -8,7 +8,7 @@ export default function AboutSection() {
       'text': [
         'SO ENGLISH!のウェブサイトにお越しいただきありがとうございます。私は、2021年にベルギーに留学するまで、3校の専門学校勤務とSO ENGLISH!の授業を掛け持ちしていましたが、渡航をきっかけに完全ノマドになり、2023年現在は場所を選ばず、日本と海外を行き来しながらフリーランスの講師業をしています。行った国は20を超えます。国の様子はインスタグラムにまとめてあるので良かったら見てみてくださいね。趣味は国内外問わず美術館を周ることで、旅先で街や自然の風景の絵を描くことです。そして旅行先での一期一会の交流が何より好きです。昔からこのような生き方をしようと思っていたわけではありませんが、日々の経験と共に変わっていく自分自身の感覚を大切にしながら生きていたら、気が付いたらこのような場所にいたというわけです。',
         'ここでは、簡単に私の生い立ちと、どのようにして私が今の仕事をし、現在の人生観を持ったのかをお伝えしておきます。'
-      ]
+      ],
     },
     {
       'subtitle': '病弱だった幼少期が、現在の「一秒も無駄にする時間はない」という生き方の原点です。',
@@ -17,7 +17,8 @@ export default function AboutSection() {
       ],
       'imgURL': [
         'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688596431/Aboutsectionchildhoodphotoedit_cenav0.webp'
-      ]
+      ],
+      'decreaseImgSize': true
     },
     {
       'subtitle': '一味も二味も違った、本間家の教育。',
@@ -28,19 +29,19 @@ export default function AboutSection() {
       ]
     },
     {
-      'subtitle': '発音から始まった、英語の旅',
+      'subtitle': '発音から始まった、英語の旅。',
       'text': [
         '英会話スクールで最初に学んだのはフォニックスです。今でこそ周知の英語のスペルと音の関係を学ぶものですが、あの頃にカリキュラムに取り入れていたスクールは少なかったと思います。私は日本語に無いRの音がとても好きでした。Rabbit、Run、Really?と、Rが付く単語を知っていくことや、スペルと音のルールを覚えたことで、誰の助けも無く、いわば自転車の補助輪なしで、今まで読めなかったものが読めるようになったのも嬉しかった。横田基地のネイティブの先生と、発音ネイティブの日本人の先生の会話もとってもかっこよかったですし、それを真似て自分の口から英語っぽい音が出てくるのもとても心地よかったのです。'
       ]
     },
     {
-      'subtitle': '自分のセクシャリティに悩んだ思春期',
+      'subtitle': '自分のセクシャリティに悩んだ思春期。',
       'text': [
         '12歳の時、初めて男性に興味があると自覚しました。あの頃は、他の人にばれたらもう生きていられないと思っていたものです。神社に行けば「普通の人に戻れますように!」と本気で神頼みをしていました。'
       ]
     },
     {
-      'subtitle': '発音から始まった、英語の旅',
+      'subtitle': '発音から始まった、英語の旅。',
       'text': [
         '英会話スクールで最初に学んだのはフォニックスです。今でこそ周知の英語のスペルと音の関係を学ぶものですが、あの頃にカリキュラムに取り入れていたスクールは少なかったと思います。私は日本語に無いRの音がとても好きでした。Rabbit、Run、Really?と、Rが付く単語を知っていくことや、スペルと音のルールを覚えたことで、誰の助けも無く、いわば自転車の補助輪なしで、今まで読めなかったものが読めるようになったのも嬉しかった。横田基地のネイティブの先生と、発音ネイティブの日本人の先生の会話もとってもかっこよかったですし、それを真似て自分の口から英語っぽい音が出てくるのもとても心地よかったのです。'
       ]
@@ -62,7 +63,7 @@ export default function AboutSection() {
       ]
     },
     {
-      'subtitle': 'ホストファミリーと現地高校の英語漬けの生活',
+      'subtitle': 'ホストファミリーと現地高校の英語漬けの生活。',
       'text': [
         '9月、ミネソタ州のホストファミリーと住み始めました。1か月の研修だけですぐに英語が話せるようになるほど甘くはないので、とにかく「誤解」の連続!とても優しい家族でしたが、よくケンカはしていました。でもその度に「喧嘩できるぐらい英語が伸びてる!」と少し嬉しかったのです。',
         '半年経った時初めて英語で夢を見ました。ネットも家に無い、LINEもSkypeも無い、国際電話はめちゃくちゃ高いから日本の友達や家族と話す機会はほとんどない。学校でも家でも夢の中でも24時間英語だけの生活のおかげで、みるみる英語が伸びていきました。'
@@ -205,7 +206,7 @@ export default function AboutSection() {
     <div id="section5" className="bg-white">
       <AboutHero />
       <div className="flex flex-col px-6 py-24 md:mx-40">
-        <h2 className="text-2xl md:text-3xl font-semibold text-yellow-500">SOの生い立ちと3度の留学経験</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold text-yellow-500">Who's SO? <br/>SOの生い立ちと3度の留学経験</h2>
         {paragraphs && paragraphs.map((paragraph, index) => (
           <SectionTextbox 
             subtitle={paragraph.subtitle}
@@ -213,6 +214,7 @@ export default function AboutSection() {
             imgURL={paragraph.imgURL}
             text={paragraph.text}
             increaseImgSize={paragraph.increaseImgSize && paragraph.increaseImgSize}
+            decreaseImgSize={paragraph.decreaseImgSize && paragraph.decreaseImgSize}
             currentIdx={index}
           />
         ))}

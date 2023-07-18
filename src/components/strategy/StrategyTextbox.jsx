@@ -12,7 +12,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
           if (index < 3) {
           // Render the first 3 paragraphs
             return (
-              <p className="mt-3 indent-5 text-lg font-medium text-slate-900" key={index}>
+              <p className="mt-3 indent-5 text-lg font-medium md:leading-loose text-slate-900" key={index}>
                 {paragraph}
               </p>
             );
@@ -25,7 +25,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                     <img src={img} alt="diagram" className="w-full lg:w-[70%]" />
                   )}
                 </div>
-                <p className="mt-3 indent-5 text-lg font-medium text-slate-900" key={index + 1}>
+                <p className="mt-3 indent-5 text-lg font-medium md:leading-loose text-slate-900" key={index + 1}>
                   {paragraph}
                 </p>
               </Fragment>
@@ -61,9 +61,11 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
       )}
     {subtitle === '3. オリジナルのSTUDY RECORDS™' && (
         <Fragment>
-            <div className='w-full h-[400px] lg:h-[550px] mt-10'>
-                {embeddedVid} {/* Render the embeddedVid directly under the subtitle */}
+          <div className="w-full flex justify-center">
+            <div className="w-full h-[400px] md:h-[400px] md:w-[600px] mt-6">
+              {embeddedVid} {/* Render the embeddedVid directly under the subtitle */}
             </div>
+          </div>
             {text && text.map((paragraph, index) => (
                 <p
                 className="mt-3 indent-5 leading-relaxed md:leading-loose text-lg font-medium text-slate-900"
@@ -74,10 +76,13 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
             ))}
             {examples && examples.map((example, index) => (
                 <Fragment key={index}>
-                    <h4 className="mb-10 mt-24 text-xl md:text-2xl font-semibold text-slate-900">{example.title}</h4>
-                    <div className='w-full h-[400px] lg:h-[550px] mt-10'>
-                        {example.embeddedVid} {/* Render the embeddedVid for each example */}
+                    <h4 className="mt-24 text-xl md:text-2xl font-semibold text-slate-900">{example.title}</h4>
+                    <div className="w-full flex justify-center">
+                      <div className="w-full h-[400px] md:h-[400px] md:w-[600px] mt-6">
+                          {example.embeddedVid} {/* Render the embeddedVid for each example */}
+                      </div>
                     </div>
+                   
                     {example.text.map((paragraph, idx) => (
                         <p
                         className="mt-3 indent-5 leading-relaxed md:leading-loose text-lg font-medium text-slate-900"

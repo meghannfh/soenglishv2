@@ -6,10 +6,10 @@ export default function ServicesSection(){
       'service' : '1. 英語プライベートコーチング',
       'startDate': '2023年~開講',
       'capacity': '定員1名/3カ月。',
-      'frequency': '短期集中の<b>ファストパス</b>。「毎日」英語学習のサポートをします。セッションは月4回、90分/回。LINEでのサポートは24時間受け付けます。',
+      'frequency': '短期集中の<b>ファストパス</b>。「毎日」英語学習のサポートをします。レッスンは月4回、90分/回。LINEでのサポートは24時間受け付けます。',
       'details': [
         '月に数回のプライベートレッスンではフォローしきれない日々の英語学習を、このコースでなら毎日みっちり二人三脚でサポートできます！', 
-        '毎日の学習と報告ができると、覚悟を決めた方はぜひお申込みください。3か月後のあなたの目の前には、英語の道が開けているはずです。'
+        '毎日の学習と報告ができると、覚悟を決めた方はぜひお申込みください。修了後のあなたの目の前には、英語の道が開けているはずです。'
       ],
       'lessonVideo': '',
       'feedback': [],
@@ -275,7 +275,7 @@ export default function ServicesSection(){
       ]
     },
     {
-      'service' : `10. Podcastラジオ配信『That's So Carrot! ~英語があれば結局ポジティブLife~』（学習法・マインド）`,
+      'service' : `10. Podcastラジオ配信『That's So Carrot! ~英語があれば結局ポジティブLife~』(学習法・マインド)`,
       'startDate': '2021年~基本週1回土曜18時に配信。',
       'capacity': '無料。',
       'frequency': '',
@@ -284,7 +284,7 @@ export default function ServicesSection(){
         '大人気の公開収録は年に2回ほど。大体いつも6月と12月、参加型収録で大盛り上がり。<b>皆さんの英語学習での気づきや、海外生活でおかしかった話を聞かせてください!</b>',
         `合言葉は、Oh my goodness! "That's So Carrot!`
       ],
-      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/05ITvNeqS0U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+      'lessonVideo': <iframe width="100%" height="400px" src="https://www.youtube.com/embed/05ITvNeqS0U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
       'feedback': [
         {
           "studentName": "",
@@ -414,7 +414,7 @@ export default function ServicesSection(){
         <div className="w-full bg-white" id="section3">
             <div className="flex flex-col px-6 py-24 md:mx-40">
                 <h2 className="text-2xl md:text-3xl font-semibold text-emerald-500">SOがお手伝いできること・してきたこと</h2>
-                <p className="mt-6 text-xl leading-relaxed md:leading-loose md:text-lg font-medium text-slate-900">英語の先生ですが、LGBTQ+の相談も、翻訳も、日本語の先生も、ラジオパーソナリティーもやります。</p>
+                <p className="indent-5 mt-6 text-xl md:text-lg font-medium text-slate-900">英語の先生ですが、LGBTQ+の相談も、翻訳も、日本語の先生も、ラジオパーソナリティーもやります。</p>
                 {services ? services.map((service, idx) => (
                     <div key={idx}>
                       <ServicesCard 

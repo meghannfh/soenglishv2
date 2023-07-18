@@ -49,7 +49,7 @@ export default function Top({isTopImageLoaded}){
           src={smallImg} 
 					onLoad={handleTopImageLoad}/>
       </div>
-      <h1 className='title-font absolute bottom-44 md:top-32 flex justify-center w-full text-3xl md:text-6xl xl:text-8xl text-white z-20 font-extrabold'>
+      <h1 className='title-font absolute bottom-44 md:bottom-64 flex justify-center w-full text-3xl md:text-6xl xl:text-8xl text-white z-20 font-extrabold'>
         <div className='flex flex-row'> 
           <span className='text-[#FF7D7D]'>明</span>
           <span className='text-[#FDC56F]'>日</span>
@@ -61,8 +61,8 @@ export default function Top({isTopImageLoaded}){
           になる
           </div>
       </h1>
-      <div className='absolute bottom-24 md:bottom-48 z-10 w-full flex justify-end pr-10'>
-        <img src='https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689074309/Hellotmrsoenglishtext_cufeyp.png'  className='w-[45%] md:w-[40%]' alt='hello, tomorrow so english!'/>
+      <div className='absolute bottom-24 md:bottom-30 z-10 w-full flex justify-end pr-10'>
+        <img src='https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689074309/Hellotmrsoenglishtext_cufeyp.png'  className='w-[35%] md:w-[25%]' alt='hello, tomorrow so english!'/>
       </div>
     </div>
   )

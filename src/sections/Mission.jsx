@@ -5,7 +5,7 @@ export default function Mission(){
  const paragraphs = [
     {
       'subtitle': '',
-      'sectionImg': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689462168/talkinggraphic_cx1es8.webp',
+      'sectionImg': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689782080/Graphic1edit_v4c2r4.webp',
       'text': [
         '<b>「明日がもっと、楽しみになる」</b>をSO ENGLISH!の新たなスローガンにしたのは2023年、SO ENGLISH!R(セーラームーンRからとっています)と題し、10年やってきた教室に革命(Revolution)が必要だと思ったからです。',
         '以前は、相手によって出す自分を変え、他人から好かれることに徹底していた私ですが、3度の留学を経て、Gayであることだけでなく、海外で同性結婚をして子供を育てたい夢があることや、絵や音楽やセーラームーンが大好きな自分を、誰に対しても出していこうと決めると、人生がより一層楽しく、生きやすくなりました。',

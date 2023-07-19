@@ -112,11 +112,11 @@ export default function StudyMaterial(){
   		return (
   		  <Fragment key={idx}>
   		    {categoryIndex >= 0 && (
-  		      <h3 className="mt-10 leading-relaxed text-xl md:leading-loose font-bold text-slate-900">
+  		      <h3 className="mt-10 text-xl font-bold text-slate-900">
   		        {textbookCategories[categoryIndex]}
   		      </h3>
   		    )}
-  		    <h3 className="mt-4 leading-relaxed text-lg font-medium text-slate-900">
+  		    <h3 className="mt-2 text-lg font-medium text-slate-900">
   		      {book.title}
   		    </h3>
   		  </Fragment>

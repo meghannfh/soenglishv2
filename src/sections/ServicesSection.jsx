@@ -13,7 +13,7 @@ export default function ServicesSection(){
       ],
       'lessonVideo': '',
       'feedback': [],
-      'sectionImg': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689462147/pointinggraphic_q28kdq.webp'
+      'sectionImg': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689782100/Graphic3edit_stnzqh.webp'
     },
     {
       'service' : '2. 朝活グループセッション(瞑想音読™でリフレッシュ!)',

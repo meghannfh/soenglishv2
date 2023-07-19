@@ -79,7 +79,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                     <h4 className="mt-24 text-xl md:text-2xl font-semibold text-slate-900">{example.title}</h4>
                     <div className="w-full flex justify-center">
                       <div className="w-full h-[400px] md:h-[400px] md:w-[600px] mt-6">
-                          {example.embeddedVid} {/* Render the embeddedVid for each example */}
+                        {example.embeddedVid} {/* Render the embeddedVid for each example */}
                       </div>
                     </div>
                    

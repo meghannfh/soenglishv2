@@ -20,9 +20,9 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
           // Render the image after the first 3 paragraphs
             return (
               <Fragment key={index}>
-                {img && (<div className="my-10 w-full flex justify-center">
+                {img && <div className="my-10 w-full flex justify-center">
                     <img src={img} alt="diagram" className="w-full lg:w-[70%]" />
-                </div>)}
+                </div>}
                 <p className="mt-3 indent-5 text-lg font-medium md:leading-loose text-slate-900" key={index + 1}>
                   {paragraph}
                 </p>
@@ -93,6 +93,11 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
             ))}
         </Fragment>
     )}
+    {(subtitle === '4. 授業外時間のモチベーション維持の仕組み' || subtitle === '5. 密な対話') && text.map((paragraph, index) => {
+      return (<p className="mt-3 indent-5 text-lg font-medium md:leading-loose text-slate-900" key={index}>
+      {paragraph}
+    </p>)
+    })}
     {subcategories &&
         subcategories.map((subcategory, idx) => {
           if (subcategory.subcatTitle === 'データベース') {

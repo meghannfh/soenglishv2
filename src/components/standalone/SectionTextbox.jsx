@@ -24,7 +24,7 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, increaseI
 
   return (
     <>
-      <div className="w-full mt-10">
+      <div className="w-full">
       {subtitle !== '' &&  <h3 className={`mt-12 text-xl lg:text-2xl font-semibold ${subtitleColor}`}>{subtitle}</h3>}
         {imgURL && imgURL.map((img, index) => (
         <div className="mt-6 w-full flex justify-center" key={index}>
@@ -35,13 +35,13 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, increaseI
       </div>
       {sectionImg && <img src={sectionImg} className="w-1/5 float-left -scale-x-100" alt="graphic" />}
       {text && text.map((paragraph, index) => (
-        <p className="mt-3 indent-5 text-lg font-medium md:leading-loose text-slate-900 clear-right" key={index} dangerouslySetInnerHTML={{__html: paragraph}} />
+        <p className="mt-4 indent-5 text-lg font-medium md:leading-loose text-slate-900 clear-right" key={index} dangerouslySetInnerHTML={{__html: paragraph}} />
       ))}
 
       {list && (
         <ul>
           {list.map((item, idx) => (
-            <li key={idx} className="mt-6 text-lg font-medium text-slate-900">{item}</li>
+            <li key={idx} className="mt-4 text-lg font-medium text-slate-900">{item}</li>
           ))}
         </ul>
       )}

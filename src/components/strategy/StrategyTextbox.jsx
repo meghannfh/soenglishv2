@@ -6,7 +6,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
 
   return (
     <div>
-      <h3 className="mt-10 text-2xl font-semibold text-slate-900">{subtitle}</h3>
+      <h3 className="mt-20 text-2xl font-semibold text-slate-900">{subtitle}</h3>
       {text && subtitle === '1. 第二言語習得論をベースにしたアプローチ' && 
         text.map((paragraph, index) => {
           if (index < 3) {
@@ -20,11 +20,9 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
           // Render the image after the first 3 paragraphs
             return (
               <Fragment key={index}>
-                <div className="my-10 w-full flex justify-center">
-                  {img && (
+                {img && (<div className="my-10 w-full flex justify-center">
                     <img src={img} alt="diagram" className="w-full lg:w-[70%]" />
-                  )}
-                </div>
+                </div>)}
                 <p className="mt-3 indent-5 text-lg font-medium md:leading-loose text-slate-900" key={index + 1}>
                   {paragraph}
                 </p>

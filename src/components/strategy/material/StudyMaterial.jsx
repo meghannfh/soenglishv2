@@ -1,5 +1,5 @@
 import TextbooksCard from "./TextbooksCard"
-import { useState, Fragment } from 'react';
+import { useState } from 'react';
 import { GrFastForward, GrRewind } from 'react-icons/gr';
 
 
@@ -79,7 +79,7 @@ export default function StudyMaterial(){
 	};
 
   return (
-    <div className="flex flex-col my-24">
+    <div className="flex flex-col mt-10">
 		<div className="flex flex-row gap-2 items-center justify-center mb-20">
 			<button className="text-5xl" onClick={moveToPreviousImage}>
 				<GrRewind />
@@ -110,7 +110,7 @@ export default function StudyMaterial(){
 			}
 		
   		return (
-  		  <Fragment key={idx}>
+  		  <div key={idx}>
   		    {categoryIndex >= 0 && (
   		      <h3 className="mt-10 text-xl font-bold text-slate-900">
   		        {textbookCategories[categoryIndex]}
@@ -119,7 +119,7 @@ export default function StudyMaterial(){
   		    <h3 className="mt-2 text-lg font-medium text-slate-900">
   		      {book.title}
   		    </h3>
-  		  </Fragment>
+  		  </div>
   		);
 		})}
   	</div>

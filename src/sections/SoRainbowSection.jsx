@@ -20,13 +20,13 @@ export default function SoRainbowSection(){
 
     return(
         <div className="w-full bg-sorainbow-image bg-cover" id="section6">
-        <div className="flex flex-col px-6 py-24 md:mx-40">
+        <div className="flex flex-col px-6 py-10 md:mx-40">
           <h2 className="mb-10 text-2xl md:text-3xl font-semibold text-white">SO RAINBOW!<br/> 私が使命感を持って取り組んだもう一つの仕事～「日本だから結婚できない」と思われている方へ～</h2>
           {soRainbowText.map((text, idx) => (
             <Fragment key={idx}>
               <p className="mt-6 leading-relaxed md:leading-loose text-lg font-medium text-white" key={idx}>{text}</p>
             {idx === 1 && (
-              <div className="mt-10 w-full flex justify-center gap-10">
+              <div className="mt-10 w-full flex flex-col gap-6 md:flex-row justify-center md:gap-10">
                 <div className='lg:w-[500px]'>
                   <img src={soRainbowImg[0]} alt={''}/>
                 </div>
@@ -36,7 +36,7 @@ export default function SoRainbowSection(){
               </div>
             )}
             {idx === 2 && (
-              <div className="mt-10 w-full flex justify-center gap-10">
+              <div className="mt-10 w-full flex flex-col gap-6 md:flex-row justify-center md:gap-10">
                 <div className='lg:w-[500px]'>
                   <img src={soRainbowImg[2]} alt={''} className='w-full h-full' />
                 </div>
@@ -46,7 +46,7 @@ export default function SoRainbowSection(){
               </div>
             )}
             {idx === 3 && (
-              <div className="mt-10 w-full flex justify-center gap-10">
+              <div className="mt-10 w-full flex flex-col gap-6 md:flex-row justify-center md:gap-10">
                 <div className='lg:w-[500px]'>
                   <img src={soRainbowImg[4]} alt={''} className='w-full h-full' />
                 </div>

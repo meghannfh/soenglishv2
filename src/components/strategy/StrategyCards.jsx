@@ -9,11 +9,15 @@ export default function StrategyCards () {
     return (
         <div>
             <h3 className="mt-12 text-2xl font-semibold text-slate-900">SO ENGLISH! 5つのStrategy</h3>
-            <ul className="mt-8 flex gap-4 flex-col justify-between w-full md:flex-row md:flex-wrap md:gap-2 md:h-fit md:justify-center lg:justify-between">
-                {strategies.map((strategy, idx) => (
-                    <li key={idx} className="bg-white/75 p-10 flex items-center justify-center text-center text-xl font-semibold md:px-8 md:w-[25%] md:h-52 md:text-base lg:w-[19%] lg:text-lg lg:h-60">{strategy}</li>
-                ))}
-            </ul>
+            <div className='flex flex-row items-center mt-10 w-full'>
+                <img src='https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689782100/Graphic2edit_sdj4gm.webp' className='w-[18%] hidden lg:flex' alt='soichi graphic'/>
+                <ul className="w-full lg:grow flex flex-col justify-between md:flex-row md:flex-wrap md:h-fit md:justify-center gap-x-2">
+                    {strategies.map((strategy, idx) => (
+                        <li key={idx} className="bg-white/75 p-10 flex items-center justify-center text-center font-semibold md:px-1 md:w-[130px] md:h-[170px] text-base lg:text-md ">{strategy}</li>
+                    ))}
+                </ul>
+            </div>
+            
         </div>
         
     )

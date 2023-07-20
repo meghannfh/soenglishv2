@@ -30,7 +30,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
           <h4>{capacity}</h4>
         </div>}
           <>
-          {sectionImg && <img src={sectionImg} className="w-1/6 float-right -scale-x-100" alt="graphic" />}
+          {sectionImg && <img src={sectionImg} className="w-[15%] float-right -scale-x-100" alt="graphic" />}
             {frequency && <h4 className="mt-3 text-lg md:text-xl" dangerouslySetInnerHTML={{__html: frequency}}/>}
             {details && details.map((detail, idx) => (
               <p key={idx} className="mt-3 indent-5 text-lg md:text-xl font-medium text-slate-900" dangerouslySetInnerHTML={{__html: detail}} />

@@ -15,7 +15,6 @@ export default function Nav({ scrollPastTop }) {
     function handleScroll() {
       const scrollPosition = window.scrollY;
 
-      console.log(scrollPosition)
       if (scrollPosition > 600 && isInitialScroll) {
         setOpen(false);
         isInitialScroll = false;
@@ -63,8 +62,8 @@ export default function Nav({ scrollPastTop }) {
           <span className={open ? `open hamburger-bottom ${scrollPastTop || (open) ? 'bg-black' : 'bg-white'}` : `hamburger-bottom ${scrollPastTop ? 'bg-black' : 'bg-white'}`}></span>
         </button>
       </div>
-      <div handleClose={handleLinkClick} className={open ? `menu show` : `menu`}>
-        <Menu />
+      <div className={open ? `menu show` : `menu`}>
+        <Menu handleClose={handleLinkClick}/>
       </div>
     </div>
   );

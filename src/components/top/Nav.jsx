@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import Menu from './Menu';
 
 export default function Nav({ scrollPastTop }) {
-  const [open, setOpen] = useState(true);
+  const isMobileScreen = window.innerWidth <= 767;
+  const [open, setOpen] = useState(!isMobileScreen);
 
   function handleClick() {
     setOpen(prevOpen => !prevOpen);
@@ -41,6 +42,13 @@ export default function Nav({ scrollPastTop }) {
     });
   };
 
+  //handle closing the menu when a link is clicked on smaller screens
+  const handleLinkClick = () => {
+    if(isMobileScreen){
+      setOpen(false)
+    }
+  }
+
   return (
     <div className="relative flex flex-row justify-between w-screen h-fit fixed-width-xlg-screens">
       <div className="pl-6 w-min absolute left-0 h-[53.98px] md:h-[77.99px] flex flex-col justify-center z-30">
@@ -55,7 +63,7 @@ export default function Nav({ scrollPastTop }) {
           <span className={open ? `open hamburger-bottom ${scrollPastTop || (open) ? 'bg-black' : 'bg-white'}` : `hamburger-bottom ${scrollPastTop ? 'bg-black' : 'bg-white'}`}></span>
         </button>
       </div>
-      <div className={open ? `menu show` : `menu`}>
+      <div handleClose={handleLinkClick} className={open ? `menu show` : `menu`}>
         <Menu />
       </div>
     </div>

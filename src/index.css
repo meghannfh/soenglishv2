@@ -472,7 +472,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
 
   /*strategy section 4 grid*/
   .grid-parent-strategy {
-    display: grid;
     grid-template-areas:
       "one one two two"
       "three three two two"

@@ -130,7 +130,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                 <li key={idx} className='mt-3 text-lg list-disc'>{item}</li>
               ))}
             </ul>
-            {list.listTitle === '一人用' && <div className='flex flex-col md:grid-parent-strategy w-full mt-10 gap-4'>
+            {list.listTitle === '一人用' && <div className='flex flex-col md:grid grid-parent-strategy mt-10 gap-4'>
               {list.contentMedia.map((mediumItem, idx) => {
                 const indexNames = {
                   0: 'strategy_one',
@@ -144,8 +144,8 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                   <div key={idx} className='relative' id={indexNames[idx]}>
                     {idx === 2 ? 
                     <>
-                      <h5 className='text-sm md:text-md absolute top-2 right-2 rounded-md bg-slate-800/90 text-white p-2 w-[250px]'>{mediumItem.title}</h5>
-                      <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='w-[350px] flex self-center'/>
+                      <h5 className='text-sm md:text-md absolute top-2 right-2 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
+                      <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} />
                     </> : 
                     <>
                       <h5 className='text-sm md:text-md absolute top-2 right-2 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
@@ -156,11 +156,11 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
             {list.listTitle === '複数人用' && <div className='flex flex-col gap-4 items-center w-full lg:flex-row mt-10 lg:h-96'>
             {list.contentMedia.map((mediumItem, idx) => (
                 <div key={idx} className='relative flex content-center md:w-full md:h-full'>
-                  <h5 className='text-sm md:text-md absolute top-2 right-2 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
+                  <h5 className='text-sm md:text-md absolute top-2 right-2 md:right-20 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
                   <div className='h-full w-full flex items-center justify-center'>
                     {idx === 1 ? (
-                      <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='h-full lg:h-full'/>
-                    ) : <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='lg:w-full'/> }
+                      <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='h-full md:w-2/3 lg:h-full'/>
+                    ) : <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='md:w-2/3 lg:w-full'/> }
                   </div>
                 </div>
               ))} 

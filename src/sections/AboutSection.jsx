@@ -16,7 +16,7 @@ export default function AboutSection() {
         '1989(平成元)年2月20日、東京都下で日本人の両親の元に生まれました。難産の末の2000グラム台の未熟児で、生まれた時は呼吸をしていなかった為泣き声を上げなかったようです。その3年後妹が生まれ、病弱だった私に対比してとても元気に育ちました。そのまた2年後に突発的な病気で1カ月間の入院。その後も小児喘息で病院通いの幼少期を過ごしました。助産師、医師の方々に二度命を救ってもらった事実を、今でもふと思い出しては、元気に生きられていることの有難さを深く噛みしめています。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688596431/Aboutsectionchildhoodphotoedit_cenav0.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_300/v1688596431/Aboutsectionchildhoodphotoedit_cenav0.webp'
       ],
       'decreaseImgSize': true
     },
@@ -59,7 +59,7 @@ export default function AboutSection() {
         '現地の学校に行く前の1か月の事前研修に、世界各地(日本、フランス、中国、台湾)から留学生17名集められたが、なんと私は、英語のクラス分けで一番下のレベルでした。ほぼ出川イングリッシュで他の国の人とコミュニケーションをとっていました。でも、楽しかった!あれから約20年経った今も、彼らとはたまに連絡を取っています。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688606075/Studyabroadtwophotoedit_1_trcoei.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_500/v1688606075/Studyabroadtwophotoedit_1_trcoei.webp'
       ]
     },
     {
@@ -77,7 +77,7 @@ export default function AboutSection() {
         'アメリカの高校は、日本の学校とは違うことだらけで、本当に毎日がカルチャーショックでした。一番の衝撃は、授業中に寝ている生徒がいないこと。それどころか、円に並べた机に座った生徒たちから出る、質問と意見の嵐。彼らの姿勢に影響を受けて、日本に帰国後、人が変わったように成績優秀者になり、クラスメイトに逆ショックを与えたことは忘れずに記しておきましょう。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688571656/Aboutsectiontwo_odqhdd.png',
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1690229323/Aboutsectiontwo750w_et55i5.webp',
       ],
       'increaseImgSize': true
     },
@@ -121,7 +121,8 @@ export default function AboutSection() {
         '限られた時間を充実させられるかどうかは、とにかく勇気を出した行動にかかっていると思います。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688575987/Aboutsectionthree_redhpq.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_750/v1688575987/Aboutsectionthree_redhpq.webp',
+        ''
       ],
       'increaseImgSize': true
     },

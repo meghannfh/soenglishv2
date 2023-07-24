@@ -2,7 +2,7 @@ import ContactForm from "../components/contact/ContactForm"
 
 export default function ContactSection(){
   return(
-    <div id="section8" className='w-full px-6 py-10 md:px-40 bg-blue-100'>
+    <div id="section8" className='w-full px-6 py-10 md:px-20 lg:px-60 bg-blue-100'>
       <h2 className="text-2xl md:text-3xl font-semibold text-blue-600">Contact</h2>
       <div className="mt-6 w-full flex flex-col md:flex-row gap-10">
         <div className='md:w-1/2 flex flex-col justify-start items-center'>

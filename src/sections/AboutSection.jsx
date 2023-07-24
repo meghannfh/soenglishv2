@@ -205,7 +205,7 @@ export default function AboutSection() {
   return(
     <div id="section5" className="bg-white">
       <AboutHero />
-      <div className="flex flex-col px-6 py-10 md:mx-40">
+      <div className="px-10 py-10 md:px-0 md:mx-40 lg:mx-60">
         <h2 className="text-2xl md:text-3xl font-semibold text-yellow-500">Who's SO? <br/>SOの生い立ちと3度の留学経験</h2>
         {paragraphs && paragraphs.map((paragraph, index) => (
           <SectionTextbox 

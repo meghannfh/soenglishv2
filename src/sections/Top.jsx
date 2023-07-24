@@ -50,14 +50,14 @@ export default function Top({isTopImageLoaded}){
 					onLoad={handleTopImageLoad}/>
       </div>
       <h1 className='title-font absolute top-28 md:bottom-64 flex justify-center w-full text-4xl md:text-6xl xl:text-8xl text-white z-20 font-extrabold'>
-        <div className='flex flex-col gap-y-3 md:gap-0 md:flex-row'> 
+        <div className='flex flex-col gap-y-3 lg:gap-0 lg:flex-row'> 
           <div className='flex flex-row'>
             <span className='text-[#FF7D7D]'>明</span>
             <span className='text-[#FDC56F]'>日</span>
             <span className='text-[#FDE06F]'>が</span>
             <p>もっと、</p>
           </div>
-          <div className='pl-16 flex flex-row'>
+          <div className='pl-16 flex flex-row lg:pl-0'>
             <span className='text-[#2FFF9B]'>楽</span>
             <span className='text-[#38B7FF]'>し</span>
             <span className='text-[#E587FF]'>み</span>

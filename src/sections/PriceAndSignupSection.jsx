@@ -59,7 +59,7 @@ export default function PriceAndSignupSection(){
 
   return(
     <div className="w-full bg-white pb-10" id="section7">
-      <div className="flex flex-col px-6 py-10 md:px-40">
+      <div className="px-10 py-10 md:px-0 md:mx-40 lg:mx-60">
         <h2 className="text-2xl md:text-3xl font-semibold text-lime-500">料金形態と受講方法(単発60分有料カウンセリングの受け方)</h2>
         {paragraphs && paragraphs.map((paragraph, index) => (
             <Fragment key={index}>

@@ -122,7 +122,8 @@ export default function AboutSection() {
       ],
       'imgURL': [
         'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_750/v1688575987/Aboutsectionthree_redhpq.webp',
-        ''
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_544/v1688575987/Aboutsectionthree_redhpq.webp',
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_448/v1688575987/Aboutsectionthree_redhpq.webp'
       ],
       'increaseImgSize': true
     },

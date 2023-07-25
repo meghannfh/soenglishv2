@@ -109,22 +109,7 @@ export default function SoPaintingsSection(){
             <img src={paintings[15]} alt='painting' className="h-full"/>
           </div>
           <div className="dieziseis">
-            <img src={paintings[20]} alt='painting' className="h-full"/>
-          </div>
-        </div>
-
-        <div className="parent5 mt-6">
-          <div className="trece">
-            <img src={paintings[14]} alt='painting' className="h-full"/>
-          </div>
-          <div className="quatorce">
-            <img src={paintings[18]} alt='painting' className="h-full"/>
-          </div>
-          <div className="quince">
-            <img src={paintings[15]} alt='painting' className="h-full"/>
-          </div>
-          <div className="dieziseis">
-            <img src={paintings[20]} alt='painting' className="h-full"/>
+            <img src={paintings[19]} alt='painting' className="h-full"/>
           </div>
         </div>
 

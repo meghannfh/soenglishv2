@@ -9,17 +9,17 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
     const hasAdviceReportExample = adviceReportExample && adviceReportExample.length > 0;
 
     const titleColors = [
-      'text-red-500',
-      'text-orange-500',
-      'text-yellow-500',
-      'text-green-500',
-      'text-emerald-500',
-      'text-teal-500',
-      'text-cyan-500',
-      'text-blue-500',
-      'text-indigo-500',
-      'text-fuchsia-500',
-      'text-pink-500'
+      'text-red-600',
+      'text-orange-600',
+      'text-yellow-600',
+      'text-green-600',
+      'text-emerald-600',
+      'text-teal-600',
+      'text-cyan-600',
+      'text-blue-600',
+      'text-indigo-600',
+      'text-fuchsia-600',
+      'text-pink-600'
     ]
   
     return (

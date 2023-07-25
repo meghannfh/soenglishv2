@@ -42,20 +42,20 @@ export default function Top({isTopImageLoaded}){
         <img 
           src='https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_1600,g_auto/v1688493246/UpdatedTopImageSoEnglish_f8anih.webp' 
           srcSet='https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_425/v1688494860/UpdatedTopImgSmallSoEnglish_y5xzwo.webp 425w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_768/v1688493246/UpdatedTopImageSoEnglish_f8anih.webp 768w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_1024/v1688493246/UpdatedTopImageSoEnglish_f8anih.webp 1024w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_1600,g_auto/v1688493246/UpdatedTopImageSoEnglish_f8anih.webp 1600w'
-          sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 1600px"
+          sizes="(max-width: 425px) 425px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 1600px"
           alt="Soichi smiling at camera against cobbled-road backdrop" 
           className='h-full w-full object-cover'
 					onLoad={handleTopImageLoad}/>
       </div>
-      <h1 className='title-font w-full flex justify-center text-4xl text-white z-20 font-extrabold absolute top-24 md:top-32 md:text-5xl lg:top-96 lg:text-7xl xl:text-8xl'>
-        <div className='flex flex-col gap-y-3 md:flex-row md:gap-0'> 
+      <h1 className='title-font w-full flex justify-center text-4xl text-white z-20 font-extrabold absolute top-28 md:top-28 md:text-6xl lg:top-[28rem] lg:text-7xl xl:text-8xl'>
+        <div className='flex flex-col gap-y-3 md:gap-y-5 lg:gap-0 lg:flex-row'> 
           <div className='flex flex-row'>
             <span className='text-[#FF7D7D]'>明</span>
             <span className='text-[#FDC56F]'>日</span>
             <span className='text-[#FDE06F]'>が</span>
             <p>もっと、</p>
           </div>
-          <div className='pl-16 flex flex-row md:pl-0'>
+          <div className='pl-16 flex flex-row md:pl-32 lg:pl-0'>
             <span className='text-[#2FFF9B]'>楽</span>
             <span className='text-[#38B7FF]'>し</span>
             <span className='text-[#E587FF]'>み</span>
@@ -64,7 +64,11 @@ export default function Top({isTopImageLoaded}){
         </div>
       </h1>
       <div className='absolute bottom-24 md:bottom-30 z-10 w-full flex justify-end pr-10'>
-        <img src='https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689074309/Hellotmrsoenglishtext_cufeyp.png'  className='w-[60%] md:w-[25%]' alt='hello, tomorrow so english!'/>
+        <img 
+        src='https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp'
+        srcSet='https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_320/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 425w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_320/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 768w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 1024w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 1440w'
+        sizes='(max-width: 425px) 425px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 1440px'  
+        alt='hello, tomorrow so english!'/>
       </div>
     </div>
   )

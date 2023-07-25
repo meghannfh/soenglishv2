@@ -10,12 +10,12 @@ export default function SoRainbowSection(){
   ]
 
   const soRainbowImg = [
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687408308/DSC_1980_auej2p.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687408308/DSC_2076_guhj1k.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687878823/0094_xlarge_pcxzrt.jpg',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687878823/0076_xlarge_ovvmbc.jpg',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687878823/DSC_1502_mccjph.jpg',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687878823/DSC_0810_ssxsla.jpg'
+    'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_332/v1687408308/DSC_1980_auej2p.webp',
+    'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_332/v1687408308/DSC_2076_guhj1k.webp',
+    'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_332/v1687878823/0094_xlarge_pcxzrt.jpg',
+    'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_332/v1687878823/0076_xlarge_ovvmbc.jpg',
+    'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_332/v1687878823/DSC_1502_mccjph.jpg',
+    'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_332/v1687878823/DSC_0810_ssxsla.jpg'
   ]
 
     return(
@@ -27,30 +27,30 @@ export default function SoRainbowSection(){
               <p className="mt-6 leading-relaxed md:leading-loose text-lg font-medium text-white" key={idx}>{text}</p>
             {idx === 1 && (
               <div className="mt-10 w-full flex flex-col gap-6 md:flex-row justify-center md:gap-10">
-                <div className='lg:w-[500px]'>
-                  <img src={soRainbowImg[0]} alt={''}/>
+                <div className='h-[221px] w-[322px]'>
+                  <img src={soRainbowImg[0]} alt={''} className='w-full h-full object-cover'/>
                 </div>
-                <div className='lg:w-[550px]'>
-                  <img src={soRainbowImg[1]} alt={''}  className='w-full h-full object-fill'/>
+                <div className='h-[221px] w-[322px]'>
+                  <img src={soRainbowImg[1]} alt={''} className='w-full h-full'/>
                 </div>
               </div>
             )}
             {idx === 2 && (
               <div className="mt-10 w-full flex flex-col gap-6 md:flex-row justify-center md:gap-10">
-                <div className='lg:w-[500px]'>
+                <div className='h-[221px] w-[322px]'>
                   <img src={soRainbowImg[2]} alt={''} className='w-full h-full' />
                 </div>
-                <div className='lg:w-[500px]'>
+                <div className='h-[221px] w-[322px]'>
                   <img src={soRainbowImg[3]} alt={''} className='w-full h-full' />
                 </div>                
               </div>
             )}
             {idx === 3 && (
               <div className="mt-10 w-full flex flex-col gap-6 md:flex-row justify-center md:gap-10">
-                <div className='lg:w-[500px]'>
+                <div className='h-[221px] w-[322px]'>
                   <img src={soRainbowImg[4]} alt={''} className='w-full h-full' />
                 </div>
-                <div className='lg:w-[500px]'>
+                <div className='h-[221px] w-[322px]'>
                   <img src={soRainbowImg[5]} alt={''} className='w-full h-full' />
                 </div>
               </div>

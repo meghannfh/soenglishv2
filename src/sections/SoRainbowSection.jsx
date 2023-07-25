@@ -20,7 +20,7 @@ export default function SoRainbowSection(){
 
     return(
         <div className="w-full bg-sorainbow-image bg-cover" id="section6">
-        <div className="px-10 py-10 md:px-0 md:mx-40 lg:mx-60">
+        <div className="px-10 py-10 md:px-0 md:mx-20 lg:mx-40 xl:mx-60">
           <h2 className="mb-10 text-2xl md:text-3xl font-semibold text-white">SO RAINBOW!<br/> 私が使命感を持って取り組んだもう一つの仕事～「日本だから結婚できない」と思われている方へ～</h2>
           {soRainbowText.map((text, idx) => (
             <Fragment key={idx}>

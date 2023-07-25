@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import Nav from '../components/top/Nav';
-import largeImg from '../media/images/UpdatedTopImageSoEnglish.webp';
-import smallImg from '../media/images/UpdatedTopImgSmallSoEnglish.webp'
 
 export default function Top({isTopImageLoaded}){
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -42,22 +40,22 @@ export default function Top({isTopImageLoaded}){
       <div id='top-image' className="font-bold h-screen md:h-screen relative overflow-hidden">
         <div className='absolute top-0 right-0 w-full h-full z-10 bg-black/25'></div>
         <img 
-          src={largeImg} 
-          srcSet={`${smallImg} 425w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_768/v1688493246/UpdatedTopImageSoEnglish_f8anih.webp 768w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_1024/v1688493246/UpdatedTopImageSoEnglish_f8anih.webp 1024w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_1600,g_auto/v1688493246/UpdatedTopImageSoEnglish_f8anih.webp 1600w`}
+          src='https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_1600,g_auto/v1688493246/UpdatedTopImageSoEnglish_f8anih.webp' 
+          srcSet='https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_425/v1688494860/UpdatedTopImgSmallSoEnglish_y5xzwo.webp 425w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_768/v1688493246/UpdatedTopImageSoEnglish_f8anih.webp 768w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_1024/v1688493246/UpdatedTopImageSoEnglish_f8anih.webp 1024w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_1600,g_auto/v1688493246/UpdatedTopImageSoEnglish_f8anih.webp 1600w'
           sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 1600px"
           alt="Soichi smiling at camera against cobbled-road backdrop" 
           className='h-full w-full object-cover'
 					onLoad={handleTopImageLoad}/>
       </div>
-      <h1 className='title-font absolute top-28 md:bottom-64 flex justify-center w-full text-4xl md:text-6xl xl:text-8xl text-white z-20 font-extrabold'>
-        <div className='flex flex-col gap-y-3 lg:gap-0 lg:flex-row'> 
+      <h1 className='title-font w-full flex justify-center text-4xl text-white z-20 font-extrabold absolute top-24 md:top-32 md:text-5xl lg:top-96 lg:text-7xl xl:text-8xl'>
+        <div className='flex flex-col gap-y-3 md:flex-row md:gap-0'> 
           <div className='flex flex-row'>
             <span className='text-[#FF7D7D]'>明</span>
             <span className='text-[#FDC56F]'>日</span>
             <span className='text-[#FDE06F]'>が</span>
             <p>もっと、</p>
           </div>
-          <div className='pl-16 flex flex-row lg:pl-0'>
+          <div className='pl-16 flex flex-row md:pl-0'>
             <span className='text-[#2FFF9B]'>楽</span>
             <span className='text-[#38B7FF]'>し</span>
             <span className='text-[#E587FF]'>み</span>

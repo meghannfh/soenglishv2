@@ -362,34 +362,34 @@ export default function ServicesSection(){
         {
           "title": "専門学校教員(都内3校)",
           "detail": "著名な先生方と共に、日常英会話・TOEIC・接客英会話のクラスを持っていました。",
-          "imgURL": "https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688780597/Positiveteacherimgedit_upwprf.webp",
+          "imgURL": "https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_320/v1688780597/Positiveteacherimgedit_upwprf.webp",
           "feedback": [
             {
               "category": "専門学校生徒たちからの感想(ウエディング系)",
               "imgURLs": [
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705348/Reviews/1_j9zxw3.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705349/Reviews/2_gr9ozp.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705349/Reviews/3_p1omus.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705349/Reviews/4_cmlael.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705349/Reviews/5_o6uust.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705350/Reviews/6_s7hl5w.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705350/Reviews/7_dqkieb.webp'
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705348/Reviews/1_j9zxw3.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705349/Reviews/2_gr9ozp.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705349/Reviews/3_p1omus.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705349/Reviews/4_cmlael.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705349/Reviews/5_o6uust.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705350/Reviews/6_s7hl5w.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705350/Reviews/7_dqkieb.webp'
               ]
             },
             {
               "category": "専門学校生徒たちからの感想(英語系)",
               "imgURLs": [
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705345/Reviews/1-1_mzfnwo.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705345/Reviews/1-2_tovf6o.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705345/Reviews/1-3_m46fwp.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705347/Reviews/1-4_qebfk5.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705345/Reviews/1-5_sjybft.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705347/Reviews/1-6_iop0qd.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705348/Reviews/1-7_hqm0hl.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705347/Reviews/1-8_mcdueb.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705347/Reviews/1-9_xcjw1n.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705347/Reviews/1-10_xhuz5o.webp',
-                'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1687705348/Reviews/1-11_nid6ye.webp'
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705345/Reviews/1-1_mzfnwo.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705345/Reviews/1-2_tovf6o.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705345/Reviews/1-3_m46fwp.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705347/Reviews/1-4_qebfk5.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705345/Reviews/1-5_sjybft.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705347/Reviews/1-6_iop0qd.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705348/Reviews/1-7_hqm0hl.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705347/Reviews/1-8_mcdueb.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705347/Reviews/1-9_xcjw1n.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705347/Reviews/1-10_xhuz5o.webp',
+                'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1687705348/Reviews/1-11_nid6ye.webp'
               ]
             }
           ]
@@ -412,7 +412,7 @@ export default function ServicesSection(){
 
     return (
         <div className="w-full bg-white" id="section3">
-            <div className="px-10 py-10 md:px-0 md:mx-40 lg:mx-60">
+            <div className="px-10 py-10 md:px-0 md:mx-20 lg:mx-40 xl:mx-60">
                 <h2 className="text-2xl md:text-3xl font-semibold text-emerald-500">SOがお手伝いできること・してきたこと</h2>
                 <p className="indent-5 mt-6 text-xl md:text-lg font-medium text-slate-900">英語の先生ですが、LGBTQ+の相談も、翻訳も、日本語の先生も、ラジオパーソナリティーもやります。</p>
                 {services ? services.map((service, idx) => (

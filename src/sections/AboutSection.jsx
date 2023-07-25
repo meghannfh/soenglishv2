@@ -16,9 +16,8 @@ export default function AboutSection() {
         '1989(平成元)年2月20日、東京都下で日本人の両親の元に生まれました。難産の末の2000グラム台の未熟児で、生まれた時は呼吸をしていなかった為泣き声を上げなかったようです。その3年後妹が生まれ、病弱だった私に対比してとても元気に育ちました。そのまた2年後に突発的な病気で1カ月間の入院。その後も小児喘息で病院通いの幼少期を過ごしました。助産師、医師の方々に二度命を救ってもらった事実を、今でもふと思い出しては、元気に生きられていることの有難さを深く噛みしめています。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_300/v1688596431/Aboutsectionchildhoodphotoedit_cenav0.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_500/v1688596431/Aboutsectionchildhoodphotoedit_cenav0.webp'
       ],
-      'decreaseImgSize': true
     },
     {
       'subtitle': '一味も二味も違った、本間家の教育。',
@@ -77,7 +76,8 @@ export default function AboutSection() {
         'アメリカの高校は、日本の学校とは違うことだらけで、本当に毎日がカルチャーショックでした。一番の衝撃は、授業中に寝ている生徒がいないこと。それどころか、円に並べた机に座った生徒たちから出る、質問と意見の嵐。彼らの姿勢に影響を受けて、日本に帰国後、人が変わったように成績優秀者になり、クラスメイトに逆ショックを与えたことは忘れずに記しておきましょう。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1690229323/Aboutsectiontwo750w_et55i5.webp',
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_750/v1690289233/Aboutsectiontwo750w_ovidpy.webp',
+        // 'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_544,g_auto/v1690289233/Aboutsectiontwo750w_ovidpy.webp'
       ],
       'increaseImgSize': true
     },
@@ -89,7 +89,7 @@ export default function AboutSection() {
         '下手くそでも、チャレンジをみんなで応援する国、それがアメリカだと思います。私にとって、もしかすると初めて、居心地が良いと思えた場所だったかもしれません。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688575331/Aboutsectiontwo2_evq9sb.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_750/v1688575331/Aboutsectiontwo2_evq9sb.webp'
       ],
       'increaseImgSize': true
     },
@@ -102,7 +102,7 @@ export default function AboutSection() {
         '日本に帰国する際、Motherから「あなたは私たちの本当の家族よ、いつでも帰ってきてね」と言われたことは一生忘れません。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688590421/Hostfamilyphotoedit_hvevxp.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_500/v1688590421/Hostfamilyphotoedit_hvevxp.webp'
       ]
     },
     {
@@ -122,8 +122,8 @@ export default function AboutSection() {
       ],
       'imgURL': [
         'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_750/v1688575987/Aboutsectionthree_redhpq.webp',
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_544/v1688575987/Aboutsectionthree_redhpq.webp',
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_448/v1688575987/Aboutsectionthree_redhpq.webp'
+        // 'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_544/v1688575987/Aboutsectionthree_redhpq.webp',
+        // 'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_448/v1688575987/Aboutsectionthree_redhpq.webp'
       ],
       'increaseImgSize': true
     },
@@ -161,7 +161,7 @@ export default function AboutSection() {
         '結果的には、多くの人に支えられ、友人ができた1年間になりました。この経験を通して、何歳になってからでも楽しい留学はできる!という結論にいたりました。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688605926/Sodinnertablephotoedit_1_tm2unj.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_500/v1688605926/Sodinnertablephotoedit_1_tm2unj.webp'
       ]
     },
     {
@@ -172,7 +172,7 @@ export default function AboutSection() {
         '大切なのは、どんな生き方をするか、それに尽きると思います。だからSOは、これからも止まりません。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688596438/Socastlephotoedit_tvozdp.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_500/v1688596438/Socastlephotoedit_tvozdp.webp'
       ]
     },
     {
@@ -182,7 +182,7 @@ export default function AboutSection() {
         'その時Motherが私に"You have always been a part of our family(あなたはずっと、私たちの大事な家族よ)"と言ってくれ、留学後もこうして英語を勉強を続け、連絡を取り続けていて良かった、と心から思いました。'
       ],
       'imgURL': [
-        'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688593992/Familytripphotoedit_y0thsh.webp'
+        'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_500/v1688593992/Familytripphotoedit_y0thsh.webp'
       ]
     },
     {
@@ -200,14 +200,13 @@ export default function AboutSection() {
         '私は毎日、英語を一緒に頑張ってくれている生徒の方々から、エネルギーと勇気をもらっていますから。',
         '英語と少しの勇気で、一緒に明日へ踏み出してみませんか？'
       ],
-      'imgURL': []
     },
   ]
 
   return(
     <div id="section5" className="bg-white">
       <AboutHero />
-      <div className="px-10 py-10 md:px-0 md:mx-40 lg:mx-60">
+      <div className="px-10 py-10 md:px-0 md:mx-20 lg:mx-40 xl:mx-60">
         <h2 className="text-2xl md:text-3xl font-semibold text-yellow-500">Who's SO? <br/>SOの生い立ちと3度の留学経験</h2>
         {paragraphs && paragraphs.map((paragraph, index) => (
           <SectionTextbox 

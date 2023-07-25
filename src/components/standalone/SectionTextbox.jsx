@@ -29,7 +29,12 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, increaseI
         {imgURL && imgURL.map((img, index) => (
         <div className="mt-6 w-full flex justify-center" key={index}>
           {/*the sections that have a large image of multiple images needed to be increased to fit the needs of the client so a key was added to those sections equal to a boolean indicating whether to increase or decrease the size of the image and those widths would be conditionally added in the class on the img tag. only the single */}
-          <img src={img} alt={''} className={increaseImgSize ? "w-[750px]" : decreaseImgSize ? "w-[300px]" : "w-[500px]"}/>
+          <img 
+            src={img} 
+            srcSet={``}
+            sizes={``}
+            alt={''} 
+            className=''/>
         </div>
         ))}
       </div>

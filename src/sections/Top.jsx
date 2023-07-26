@@ -47,7 +47,7 @@ export default function Top({isTopImageLoaded}){
           className='h-full w-full object-cover'
 					onLoad={handleTopImageLoad}/>
       </div>
-      <h1 className='title-font w-full flex justify-center text-4xl text-white z-20 font-extrabold absolute top-28 md:top-28 md:text-6xl lg:top-[28rem] lg:text-7xl xl:text-8xl'>
+      <h1 className='title-font w-full flex justify-center text-4xl text-white z-20 font-extrabold absolute top-28 md:top-28 md:text-6xl lg:top-[20rem] lg:text-7xl xl:text-8xl'>
         <div className='flex flex-col gap-y-3 md:gap-y-5 lg:gap-0 lg:flex-row'> 
           <div className='flex flex-row'>
             <span className='text-[#FF7D7D]'>明</span>
@@ -65,7 +65,7 @@ export default function Top({isTopImageLoaded}){
       </h1>
       <div className='absolute bottom-24 md:bottom-30 z-10 w-full flex justify-end pr-10'>
         <img 
-        src='https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp'
+        src='https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_320/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp'
         srcSet='https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_320/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 425w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_320/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 768w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 1024w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 1440w'
         sizes='(max-width: 425px) 425px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 1440px'  
         alt='hello, tomorrow so english!'/>

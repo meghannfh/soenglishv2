@@ -475,8 +475,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
     grid-template-areas:
       "one one two two"
       "three three two two"
-      "four four four four"
-      ". five five .";
+      "four four four five";
     gap: 30px;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -499,4 +498,5 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
 
   #strategy_five{
     grid-area: five;
+    width: 350px;
   }

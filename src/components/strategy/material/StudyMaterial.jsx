@@ -23,7 +23,7 @@ export default function StudyMaterial(){
 
 	const textbooks = [
 		{
-			'url': "",
+			'url': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_200,h_286/v1688755530/section4PPTImg_dgj7up.webp',
 			'title': 'SO ENGLISH!オリジナル'
 		},
 		{

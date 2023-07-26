@@ -141,16 +141,9 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                 }
                 
                 return (  
-                  <div key={idx} className='relative' id={indexNames[idx]}>
-                    {idx === 2 ? 
-                    <>
-                      <h5 className='text-sm md:text-md absolute top-2 right-2 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
-                      <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} />
-                    </> : 
-                    <>
-                      <h5 className='text-sm md:text-md absolute top-2 right-2 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
-                      <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} />
-                    </>}
+                  <div key={idx} className='relative flex justify-center' id={indexNames[idx]}>
+                    <h5 className='text-sm md:text-md absolute top-2 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
+                    <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} />
                   </div>)})}    
             </div>}
             {list.listTitle === '複数人用' && <div className='flex flex-col gap-4 items-center w-full lg:flex-row mt-10 lg:h-96'>

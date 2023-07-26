@@ -12,11 +12,7 @@ export default function TextbooksCard({ textbooks, position, textbookSizes, left
               ? 'md:text-lg'
               : `textbook-${textbookSizes[idx]}`
           }`} style={{"left": `${newPosition} `}} key={idx}>
-            {book.url ? <Textbook img={book.url} title={book.title} /> : (
-              <div className="bg-white w-[100px] md:w-[200px] rounded-lg overflow-hidden hover:cursor-pointer h-full flex items-center px-3 text-center font-semibold">
-                <p className='text-3xl'>SO ENGLISH!<br/>オリジナル</p>
-              </div>
-            )}
+            {book.url && <Textbook img={book.url} title={book.title} />}
           </div> 
         ))}
       </div>

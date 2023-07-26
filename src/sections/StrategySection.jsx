@@ -160,18 +160,18 @@ export default function StrategySection(){
             },
             {
               'title': `Podcastラジオ:That's So Carrot! ~英語があれば結局ポジティブLife~`,
-              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689545311/Spotify_edit_ir7sij.webp',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_300/v1689545311/Spotify_edit_ir7sij.webp',
               'imgAlt': ''
             },
             {
               'title': `YouTube:That's So Carrot!`,
               'text': '15歳だった頃の私があったら嬉しかったアカウント"をテーマに海外の同性婚・LGBT事情、英語学習、海外生活、カルチャーショック、価値観、生き方などについて発信しています。',
-              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689608982/Ytedit2_xwzypr.webp',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_567/v1689608982/Ytedit2_xwzypr.webp',
               'imgAlt': `that's so carrot youtube channel screenshot`
             },
             {
               'title': 'Instagram:@so_english_gay',
-              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689545312/Insta_edit_eewu1i.webp',
+              'imgUrl': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,h_392/v1689545312/Insta_edit_eewu1i.webp',
               'imgAlt': 'so engilsh instagram examples'
             },
           ]

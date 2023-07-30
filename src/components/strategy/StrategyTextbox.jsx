@@ -130,7 +130,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                 <li key={idx} className='mt-3 text-lg list-disc'>{item}</li>
               ))}
             </ul>
-            {list.listTitle === '一人用' && <div className='flex flex-col md:grid grid-parent-strategy mt-10 gap-4'>
+            {list.listTitle === '一人用' && <div className='flex flex-col md:grid grid-parent-strategy justify-center items-center mt-10'>
               {list.contentMedia.map((mediumItem, idx) => {
                 const indexNames = {
                   0: 'strategy_one',
@@ -141,7 +141,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                 }
                 
                 return (  
-                  <div key={idx} className='relative flex justify-center' id={indexNames[idx]}>
+                  <div key={idx} className='relative flex justify-center gap-4' id={indexNames[idx]}>
                     <h5 className='text-sm md:text-md absolute top-2 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
                     <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} />
                   </div>)})}    

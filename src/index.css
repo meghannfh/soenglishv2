@@ -337,6 +337,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   }
+
+  @media screen and (min-width: 425px) {
+    .parent1 {
+      display: grid;
+      grid-template-areas:
+        "one one two two"
+        "one one three three";
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    }
+  }
   
   .uno {
     grid-area: one;
@@ -352,13 +364,23 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
     display: grid;
     grid-template-areas:
       "one one two two"
-      "one one two two"
-      "one one two two"
       "one one two two";
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* @media screen and (min-width: 425px) {
+    .parent2 {
+      display: grid;
+      grid-template-areas:
+        "one one two two"
+        "one one two two";
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
+    grid-template-rows: repeat(2, 1fr);
+    }
+  } */
 
   .quatro {
     grid-area: one;
@@ -371,14 +393,25 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
     display: grid;
     grid-template-areas:
       "one one two two"
-      "one one two two"
       "three three two two"
-      "three three four four"
       "three three four four";
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  }
+
+  /* @media screen and (min-width: 425px) {
+    .parent3 {
+      display: grid;
+      grid-template-areas:
+        "one one two two"
+        "three three two two"
+        "three three four four";
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-  }
+    grid-template-rows: repeat(3, 1fr);
+    }
+  } */
 
   .seis {
     grid-area: one;
@@ -397,13 +430,23 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
     display: grid;
     grid-template-areas:
       "one one three three"
-      "one one three three"
-      "two two three three"
       "two two three three";
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  }
+/* 
+  @media screen and (min-width: 425px) {
+    .parent4 {
+      display: grid;
+      grid-template-areas:
+        "one one three three"
+        "two two three three";
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
+    grid-template-rows: repeat(2, 1fr);
+    }
+  } */
 
   .diez {
     grid-area: one;
@@ -425,6 +468,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+/* 
+  @media screen and (min-width: 425px) {
+    .parent5 {
+      display: grid;
+      grid-template-areas:
+        "one one three three"
+        "two two three three";
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    }
+  } */
 
   .trece {
     grid-area: one;
@@ -454,19 +509,19 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
   .diezisiete {
     grid-area: one;
   }
-  .dieziocho{
+  .dieziocho {
     grid-area: two;
   }
-  .diezinueve{
+  .diezinueve {
     grid-area: three;
   }
-  .vente{
+  .vente {
     grid-area: four;
   }
-  .ventiuno{
+  .ventiuno {
     grid-area: five;
   }
-  .ventidos{
+  .ventidos {
     grid-area: six;
   }
 

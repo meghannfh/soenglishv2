@@ -42,8 +42,8 @@ export default function SoPaintingsSection(){
         ))}
        <div className="mt-10">
         <div className="parent1">
-          <div className="uno">
-            <img src={paintings[0]} alt='painting' className="h-full"/>
+          <div className="uno h-full">
+            <img src={paintings[0]} alt='painting' className="h-full object-cover"/>
           </div>
           <div className="dos">
             <img src={paintings[1]} alt='painting' className="h-full"/>

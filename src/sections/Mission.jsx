@@ -18,7 +18,7 @@ export default function Mission(){
   return(
     <div className="w-full bg-white" id="section1">
       <div className="px-10 py-10 md:px-0 md:mx-20 lg:mx-40 xl:mx-60">
-        <h2 className="text-2xl md:text-3xl font-semibold text-purple-500">SO ENGLISH!のMissionは、英語学習を通して「明日がもっと、楽しみになる」こと</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold text-purple-500 mb-10">SO ENGLISH!のMissionは、英語学習を通して「明日がもっと、楽しみになる」こと</h2>
         {paragraphs ? paragraphs.map((paragraph, index) => (
           <SectionTextbox 
             key={index}

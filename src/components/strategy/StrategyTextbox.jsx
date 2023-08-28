@@ -50,7 +50,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
               <h4 className="mt-10 text-xl md:text-2xl font-semibold text-slate-900">{item.listTitle}</h4>
               <ul className="w-full pl-5 list-disc flex flex-col">
                 {item.list.map((listItem, listItemIndex) => (
-                  <li className="mt-5 text-xl md:text-lg font-medium text-slate-900" key={listItemIndex}>{listItem}</li>
+                  <li className="mt-3 text-lg md:mt-5 md:text-lg font-medium text-slate-900" key={listItemIndex}>{listItem}</li>
                 ))}
               </ul>
             </Fragment>

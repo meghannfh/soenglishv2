@@ -1,31 +1,8 @@
 export default function SoPaintingsSection(){
 
-  const paintings = [
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908443/1_qk2qnz.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908444/2_v5nbew.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908443/3_y8bnmw.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908443/4_xnnflf.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908444/5_k7vdgg.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908444/6_g3g1e9.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908444/7_z99rdk.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908445/8_ni92bm.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908445/9_jmtyag.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908445/10_zs7n91.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908445/11_shrqpv.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908445/12_b8x9ot.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908446/13_pamdkp.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908446/14_znfpjg.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908446/15_s5bei2.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908443/16_aww0ut.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908443/17_tjxmu1.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908443/18_eipvk4.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908444/19_wogodl.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908444/20_sdtmfq.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908445/21_pkssgr.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908447/22_uxl5ja.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688908447/23_xhrzf8.webp',
-    'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688925009/24_gpt34g.webp'
-  ]
+  // const paintingImages = [
+  //   'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688925009/24_gpt34g.webp'
+  // ]
 
   const paragraphs = [
     '最後にあと少しだけ',
@@ -36,106 +13,39 @@ export default function SoPaintingsSection(){
   return(
     <div className="w-full bg-white pb-10" id="section9">
       <div className="px-10 py-10 md:px-0 md:mx-20 lg:mx-40 xl:mx-60">
-      <h2 className="text-2xl md:text-3xl font-semibold text-lime-500">SO's PAINTINGS<br/>アートでちょっと、人生が豊かになる</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold text-lime-500">SO's PAINTINGS<br/>アートでちょっと、人生が豊かになる</h2>
         {paragraphs.map((text, idx) => (
           <p className="mt-3 indent-5 leading-relaxed md:leading-loose text-lg font-medium text-slate-900" key={idx} dangerouslySetInnerHTML={{__html: text}} />
         ))}
+
        <div className="mt-10">
-        <div className="parent1">
-          <div className="uno h-full">
-            <img src={paintings[0]} alt='painting' className="h-full object-cover"/>
-          </div>
-          <div className="dos">
-            <img src={paintings[1]} alt='painting' className="h-full"/>
-          </div>
-          <div className="tres">
-            <img src={paintings[2]} alt='painting' className="h-full"/>
-          </div>
-        </div>
-
-        <div className="parent2 mt-6">
-          <div className="quatro">
-            <img src={paintings[3]} alt='painting' className="h-full"/>
-          </div>
-          <div className="cinco">
-            <img src={paintings[4]} alt='painting' className="h-full"/>
-          </div>
-        </div>
-
-        <div className="parent3 mt-6">
-          <div className="seis">
-            <img src={paintings[5]} alt='painting' className="h-full"/>
-          </div>
-          <div className="siete">
-            <img src={paintings[6]} alt='painting' className="h-full"/>
-          </div>
-          <div className="ocho">
-            <img src={paintings[7]} alt='painting' className="h-full"/>
-          </div>
-          <div className="nueve">
-            <img src={paintings[8]} alt='painting' className="h-full"/>
-          </div>
-        </div>
-
-        <div className="parent2 mt-6">
-          <div className="quatro">
-            <img src={paintings[9]} alt='painting' className="h-full"/>
-          </div>
-          <div className="cinco">
-            <img src={paintings[10]} alt='painting' className="h-full"/>
-          </div>
-        </div>
-
-        <div className="parent4 mt-6">
-          <div className="diez">
-            <img src={paintings[11]} alt='painting' className="h-full"/>
-          </div>
-          <div className="once">
-            <img src={paintings[12]} alt='painting' className="h-full"/>
-          </div>
-          <div className="doce">
-            <img src={paintings[13]} alt='painting' className="h-full"/>
-          </div>
-        </div>
-
-        <div className="parent5 mt-6">
-          <div className="trece">
-            <img src={paintings[14]} alt='painting' className="h-full"/>
-          </div>
-          <div className="quatorce">
-            <img src={paintings[18]} alt='painting' className="h-full"/>
-          </div>
-          <div className="quince">
-            <img src={paintings[15]} alt='painting' className="h-full"/>
-          </div>
-          <div className="dieziseis">
-            <img src={paintings[19]} alt='painting' className="h-full"/>
-          </div>
-        </div>
-
-        <div className="parent6 mt-6">
-          <div className="diezisiete">
-            <img src={paintings[17]} alt='painting' className="h-full"/>
-          </div>
-          <div className="dieziocho">
-            <img src={paintings[16]} alt='painting' className="h-full"/>
-          </div>
-          <div className="diezinueve">
-            <img src={paintings[20]} alt='painting' className="h-full"/>
-          </div>
-          <div className="vente">
-            <img src={paintings[21]} alt='painting' className="h-full"/>
-          </div>
-          <div className="ventiuno">
-            <img src={paintings[22]} alt='painting' className="h-full"/>
-          </div>
-          <div className="ventidos">
-            <img src={paintings[23]} alt='painting' className="h-full"/>
-          </div>
-        </div>
-
-
+       <div class="parent">
+    <div class="div1"> </div>
+<div class="div2"> </div>
+<div class="div3"> </div>
+<div class="div4"> </div>
+<div class="div5"> </div>
+<div class="div6"> </div>
+<div class="div7"> </div>
+<div class="div8"> </div>
+<div class="div9"> </div>
+<div class="div10"> </div>
+<div class="div11"> </div>
+<div class="div12"> </div>
+<div class="div13"> </div>
+<div class="div14"> </div>
+<div class="div15"> </div>
+<div class="div16"> </div>
+<div class="div17"> </div>
+<div class="div18"> </div>
+<div class="div19"> </div>
+<div class="div20"> </div>
+<div class="div21"> </div>
+<div class="div22"> </div>
+<div class="div23"> </div>
+  </div>
        </div>
+
       </div>
     </div>
   )

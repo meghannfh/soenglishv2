@@ -499,7 +499,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
   }
 
   .div24 { 
-    grid-area: 19 / 2 / 20 / 3; 
+    grid-area: 18 / 2 / 19 / 3; 
     background-image: url("https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688925009/24_gpt34g.webp");
     background-size: 100% 100%; 
   }

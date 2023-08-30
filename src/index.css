@@ -498,6 +498,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
     background-size: 100% 100%; 
   }
 
+  .div24 { 
+    grid-area: 19 / 2 / 20 / 3; 
+    background-image: url("https://res.cloudinary.com/dc1aiqs4p/image/upload/v1688925009/24_gpt34g.webp");
+    background-size: 100% 100%; 
+  }
+
 
 /*strategy section 4 grid*/
   .grid-parent-strategy {

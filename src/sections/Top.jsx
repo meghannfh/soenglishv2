@@ -66,10 +66,12 @@ export default function Top({isTopImageLoaded}){
       <div className='absolute bottom-24 md:bottom-30 z-10 w-full flex justify-end pr-10'>
         <img 
         src='https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_320/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp'
-        srcSet='https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_320/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 425w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_320/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 768w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 1024w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 1440w'
+        srcSet='https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_320/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 768w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 1024w, https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 1440w'
         sizes='(max-width: 425px) 425px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 1440px'  
         alt='hello, tomorrow so english!'/>
       </div>
     </div>
   )
 }
+
+//https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_320/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp 425w,

@@ -27,30 +27,30 @@ export default function SoRainbowSection(){
               <p className="mt-6 leading-relaxed md:leading-loose text-lg font-medium text-white" key={idx}>{text}</p>
             {idx === 1 && (
               <div className="mt-10 w-full flex flex-col gap-6 md:flex-row justify-center md:gap-10">
-                <div className='h-[221px] w-[322px]'>
+                <div className='md:h-[221px] md:w-[322px]'>
                   <img src={soRainbowImg[0]} alt={''} className='w-full h-full object-cover'/>
                 </div>
-                <div className='h-[221px] w-[322px]'>
+                <div className='md:h-[221px] w-auto md:w-[322px]'>
                   <img src={soRainbowImg[1]} alt={''} className='w-full h-full'/>
                 </div>
               </div>
             )}
             {idx === 2 && (
               <div className="mt-10 w-full flex flex-col gap-6 md:flex-row justify-center md:gap-10">
-                <div className='h-[221px] w-[322px]'>
+                <div className='md:h-[221px] md:w-[322px]'>
                   <img src={soRainbowImg[2]} alt={''} className='w-full h-full' />
                 </div>
-                <div className='h-[221px] w-[322px]'>
+                <div className='md:h-[221px] md:w-[322px]'>
                   <img src={soRainbowImg[3]} alt={''} className='w-full h-full' />
                 </div>                
               </div>
             )}
             {idx === 3 && (
               <div className="mt-10 w-full flex flex-col gap-6 md:flex-row justify-center md:gap-10">
-                <div className='h-[221px] w-[322px]'>
+                <div className='md:h-[221px] md:w-[322px]'>
                   <img src={soRainbowImg[4]} alt={''} className='w-full h-full' />
                 </div>
-                <div className='h-[221px] w-[322px]'>
+                <div className='md:h-[221px] md:w-[322px]'>
                   <img src={soRainbowImg[5]} alt={''} className='w-full h-full' />
                 </div>
               </div>

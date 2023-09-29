@@ -12,9 +12,7 @@ export default function Footer() {
     return (
         <div className="h-80">
             <div className="w-full h-[80%] flex flex-row">
-                <div className="flex-1 w-full object-contain flex justify-center">
-                    <img src={"https://res.cloudinary.com/dc1aiqs4p/image/upload/v1684280698/IMG_4054-removebg-preview_x9ibmw.png"} alt={'so english logo'} className="h-full"/>
-                </div>
+                <img src={"https://res.cloudinary.com/dc1aiqs4p/image/upload/v1684280698/IMG_4054-removebg-preview_x9ibmw.png"} alt={'so english logo'} className="h-full w-1/2 object-contain"/>
                 <div className="h-full flex-1">
                     <ul className="h-full flex flex-row footer-list">
                         <li className="flex w-full h-full justify-center">

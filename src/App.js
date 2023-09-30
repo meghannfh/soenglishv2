@@ -35,23 +35,23 @@ function App() {
   return (
     <div className={isTopImageLoaded ? 'relative fixed-width-xlg-screens show-background' : 'relative fixed-width-xlg-screens'}>
       <Top isTopImageLoaded={handleTopImageLoad}/>
-      <div className='h-[300px]'/>
+      <div className='h-96 lg:h-[300px]'/>
       <Mission />
-      <div className='h-[100px]'/>
+      <div className='h-96 lg:h-[300px]'/>
       <MediaSection />
-      <div className='h-[100px]'/>
+      <div className='h-96 lg:h-[300px]'/>
       <ServicesSection />
-      <div className='h-[100px]'/>
+      <div className='h-96 lg:h-[300px]'/>
       <StrategySection />
-      <div className='h-[100px]'/>
+      <div className='h-96 lg:h-[300px]'/>
       <AboutSection />
-      <div className='h-[100px]'/>
+      <div className='h-96 lg:h-[300px]'/>
       <SoRainbowSection />
-      <div className='h-[100px]'/>
+      <div className='h-96 lg:h-[300px]'/>
       <PriceAndSignupSection />
-      <div className='h-[100px]'/>
+      <div className='h-96 lg:h-[300px]'/>
       <SoPaintingsSection />
-      <div className='h-[100px]'/>
+      <div className='h-96 lg:h-[300px]'/>
       <ContactSection />
       <FooterSection />
       <div className='fixed right-0 bottom-0 z-10'>

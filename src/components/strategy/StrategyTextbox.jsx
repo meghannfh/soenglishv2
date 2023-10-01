@@ -146,7 +146,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                     <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} />
                   </div>)})}    
             </div>}
-            {list.listTitle === '複数人用' && <div className='flex flex-col gap-4 items-center w-full lg:flex-row mt-10 lg:h-96'>
+            {list.listTitle === '複数人用' && <div className='flex flex-col gap-4 px-4 lg:px-0 items-center w-full lg:flex-row mt-10'>
             {list.contentMedia.map((mediumItem, idx) => (
                 <div key={idx} className='relative flex content-center md:w-full md:h-full'>
                   <h5 className='text-sm md:text-md absolute top-2 right-2 md:right-20 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>

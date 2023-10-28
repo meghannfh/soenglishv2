@@ -284,7 +284,7 @@ export default function ServicesSection(){
         '大人気の公開収録は年に2回ほど。大体いつも6月と12月、参加型収録で大盛り上がり。<b>皆さんの英語学習での気づきや、海外生活でおかしかった話を聞かせてください!</b>',
         `合言葉は、Oh my goodness! "That's So Carrot!`
       ],
-      'lessonVideo': <iframe width="100%" height="400px" src="https://www.youtube.com/embed/05ITvNeqS0U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/05ITvNeqS0U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
       'feedback': [
         {
           "studentName": "",

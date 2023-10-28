@@ -54,7 +54,7 @@ function App() {
       <div className='lg:h-[300px]'/>
       <ContactSection />
       <FooterSection />
-      <div className='fixed right-0 bottom-0 z-10'>
+      <div className='w-full md:w-auto fixed right-0 bottom-0 z-10'>
         <ConsultingBanner handleBannerClick={handleBannerClick} />
       </div>
     </div>

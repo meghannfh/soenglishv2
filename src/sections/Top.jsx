@@ -48,13 +48,13 @@ export default function Top({isTopImageLoaded}){
       </div>
       <h1 className='title-font w-full flex justify-center text-4xl text-white z-20 font-extrabold absolute top-28 md:top-28 md:text-6xl lg:top-[15rem] lg:text-7xl xl:text-8xl'>
         <div className='flex flex-col gap-y-3 md:gap-y-5 lg:gap-0 lg:flex-row'> 
-          <div className='flex flex-row'>
+          <div className='flex flex-row content-center'>
             <span className='text-[#FF7D7D]'>明</span>
             <span className='text-[#FDC56F]'>日</span>
             <span className='text-[#FDE06F]'>が</span>
             <p>もっと、</p>
           </div>
-          <div className='pl-16 flex flex-row md:pl-32 lg:pl-0'>
+          <div className='flex flex-row md:pl-32 lg:pl-0 content-center'>
             <span className='text-[#2FFF9B]'>楽</span>
             <span className='text-[#38B7FF]'>し</span>
             <span className='text-[#E587FF]'>み</span>
@@ -62,7 +62,7 @@ export default function Top({isTopImageLoaded}){
           </div>  
         </div>
       </h1>
-      <div className='absolute bottom-24 md:bottom-30 z-10 w-full flex justify-end md:pr-10 h-24 md:h-auto'>
+      <div className='absolute bottom-24 md:bottom-30 z-10 w-full flex justify-center md:justify-end md:pr-10 h-24 md:h-auto'>
         <img 
           src='https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_420/v1690301492/Hellotmrsoenglishtext_a9dyk3.webp'
           alt='hello, tomorrow so english!'/>

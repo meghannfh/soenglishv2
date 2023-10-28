@@ -39,7 +39,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
         
         {hasLessonVideo && (
           <div className="w-full flex justify-center">
-            <div className="w-full h-[400px] md:h-[400px] md:w-[600px] mt-6">
+            <div className="w-full h-auto md:h-[400px] md:w-[600px] mt-6">
               {lessonVideo} {/* Assuming the lessonVideo prop is a valid JSX element */}
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
                 <p className="text-lg md:text-xl font-medium text-slate-900">{item.detail}</p>
                 {item.imgURL && (
                   <div className="w-full mt-6 flex justify-center">
-                    <img src={item.imgURL} alt={item.title} className="w-1/2 xl:w-1/3"/>
+                    <img src={item.imgURL} alt={item.title} className="md:w-1/2 xl:w-1/3"/>
                   </div>
                   )}
                 {item.feedback && <ImgReviews feedback={item.feedback} />}

@@ -277,7 +277,7 @@ export default function ServicesSection(){
     {
       'service' : `10. Podcastラジオ配信『That's So Carrot! ~英語があれば結局ポジティブLife~』(学習法・マインド)`,
       'startDate': '2021年~基本週1回土曜18時に配信。',
-      'capacity': '無料。',
+      'capacity': '',
       'frequency': '',
       'details': [
         '留学経験豊富なラジオパートナーのキャロ先生と一緒にゆるく話しています。',

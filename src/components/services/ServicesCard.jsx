@@ -25,12 +25,12 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
     return (
       <div>
         <h3 className={`mt-16 text-xl lg:text-2xl font-semibold ${titleColors[currentIdx]}`}>{serviceTitle}</h3>
-        {startDate && capacity && startDate !== '' && capacity !== '' && <div className="flex flex-row gap-3 mt-6 text-lg md:text-xl">
-          <h4>{startDate + ','}</h4>
-          <h4>{capacity}</h4>
+        {(startDate || capacity) && <div className="flex flex-col gap-3 mt-6 text-lg md:text-xl">
+          {startDate !== '' && <h4>{startDate}</h4>}
+          {capacity !== '' && <h4>{capacity}</h4>}
         </div>}
           <>
-          {sectionImg && <img src={sectionImg} className="w-[15%] hidden md:inline-block float-right -scale-x-100" alt="graphic" />}
+          {sectionImg && <img src={sectionImg} className="w-[20%] inline-block float-right md:w-[15%] -scale-x-100" alt="graphic" />}
             {frequency && <h4 className="mt-3 text-lg md:text-xl" dangerouslySetInnerHTML={{__html: frequency}}/>}
             {details && details.map((detail, idx) => (
               <p key={idx} className="mt-3 indent-5 text-lg md:text-xl font-medium text-slate-900" dangerouslySetInnerHTML={{__html: detail}} />
@@ -69,7 +69,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
           </>
         )}
         {hasFeedbackImgURL && hasAdviceReportExample && (
-          <div className="w-full flex md:flex-row justify-evenly mt-10">
+          <div className="w-full flex flex-col md:flex-row justify-evenly mt-10">
             <div className="md:w-[40%]">
               {feedbackImgURL.map((url, idx) => (
                   <img src={url} alt={'chat feedback screenshots'} key={idx}/>

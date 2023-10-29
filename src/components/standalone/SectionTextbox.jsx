@@ -38,7 +38,7 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, increaseI
         </div>
         ))}
       </div>
-      {sectionImg && <img src={sectionImg} className="w-1/5 hidden md:inline-block md:float-left -scale-x-100" alt="graphic" />}
+      {sectionImg && <img src={sectionImg} className="w-1/5 inline-block float-left -scale-x-100" alt="graphic" />}
       {text && text.map((paragraph, index) => (
         <p className="mt-4 indent-5 text-lg font-medium md:leading-loose text-slate-900 clear-right" key={index} dangerouslySetInnerHTML={{__html: paragraph}} />
       ))}

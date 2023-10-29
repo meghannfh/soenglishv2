@@ -54,7 +54,7 @@ export default function Top({isTopImageLoaded}){
             <span className='text-[#FDE06F]'>が</span>
             <p>もっと、</p>
           </div>
-          <div className='flex flex-row md:pl-32 lg:pl-0 content-center'>
+          <div className='flex flex-row md:pl-32 lg:pl-0 justify-center'>
             <span className='text-[#2FFF9B]'>楽</span>
             <span className='text-[#38B7FF]'>し</span>
             <span className='text-[#E587FF]'>み</span>

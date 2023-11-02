@@ -16,25 +16,28 @@ export default function ServicesSection(){
       'sectionImg': 'https://res.cloudinary.com/dc1aiqs4p/image/upload/v1689782100/Graphic3edit_stnzqh.webp'
     },
     {
-      'service' : '2. 朝活グループセッション(瞑想音読™でリフレッシュ!)',
+      'service' : '2. CLUB CARROT -Learn Like Parrots!- サブスク型オンライン英語グループセッション',
       'startDate': '2023年~開講',
-      'capacity': '年間定員10名。',
-      'frequency': '一か月定額で朝活グループセッションが受け放題! 週4回、Zoomで行います。',
+      // 'capacity': '',
+      // 'frequency': '',
       'details': [
-        '<b>「瞑想音読™」</b>という言葉はSOの造語ですが、ある生徒が「毎日音読をしてたら、ゾーン状態に入ることができて、それが心地良い」と言っていたことが由来です。<b>瞑想</b>は言わずと知れた健康法で、幸せホルモンのオキシトシンが出るものですね。音読は最強の英語学習法と、学習者の中で長い間言われ続けていますね。もちろん音読だけでなく、和訳や文法や背景の解説もする予定です!', 
-        'お香を焚いたり、<b>太陽の光を浴びながらぜひご参加ください!</b>'
+        '英語のポッドキャストラジオをしているキャロラインとSOが、サブスク型オンライン英語グループセッションを運営しています。', 
+        '孤独になりがちな英語学習、キャロはアイルランド留学などを通して、SOは専門学校や英会話スクールで教鞭をとっていた経験から、グループで学ぶことには大きな意味があることを痛いほど知りました。ちょっと愉快な英語コーチ6年目のキャロと、英語マニアの講師12年目のSOが、今ある知恵をすべて注いで「英語の心地よさと面白さとオシャレさ」をちゃんと感じていただけるカリキュラムを作ったつもりです。',
+        '5,500円で4回レッスンを体験できるプランもありますので、お気軽に参加してみてください!'
       ],
-      'lessonVideo': '',
+      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VnaIQkyLu3U?si=Zh-F5GYIIQvLPO5f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+      'materalsUrl': 'https://docs.google.com/presentation/d/1CTzvWT_FCd9eYWW-Jbi8otbJTJZ7BYcbM5fsOI69Z6Q/edit?usp=sharing',
+      'signupFormUrl': 'https://docs.google.com/forms/d/e/1FAIpQLSfONa5AwoPzgzn8RUiiSdc1l0UFhA1CZH6Z57mVT4eodU0MHA/viewform?usp=send_form',
       'feedback': []
     },
     {
-      'service' : `3. SO's Bar 夜活グループセッション(お酒の力で饒舌トーク!)`,
-      'startDate': '2023年~開講',
-      'capacity': '年間定員10名。',
-      'frequency': '一か月定額で夜活グループセッションが受け放題! 週1回、Zoomで行います。',
+      'service' : `3. SO's Bar (お酒の力で饒舌トーク!) (開講未定)`,
+      'startDate': '開講未定。',
+      'capacity': '',
+      'frequency': '',
       'details': [
-        'お酒を飲みながら参加できる<b>掟破りの授業</b>、開講です!もちろんシラフでの参加もOK!雰囲気に酔っぱらってください!よく聞く<b>「酔っている時だとなんか話せる」</b>をヒントにしました。テーマを決めてざっくばらんに英会話をします。時事や自分ニュースについて、楽しく意見交換しましょう。', 
-        'お酒が入ることで、「上手く話せなかったらどうしよう」という余計な不安が和らぎます。いつでも<b>力が抜けた状態</b>を目指す為の、練習の場にぜひ！'
+        'お酒を飲みながら参加できる掟破りの授業、開講です!もちろんシラフでの参加もOK!雰囲気に酔っぱらってください!よく聞く「酔っている時だとなんか話せる」をヒントにしました。テーマを決めてざっくばらんに英会話をします。時事や自分ニュースについて、楽しく意見交換しましょう。', 
+        'お酒が入ることで、「上手く話せなかったらどうしよう」という余計な不安が和らぎます。いつでも力が抜けた状態を目指す為の、練習の場にぜひ！'
       ],
       'lessonVideo': '',
       'feedback': []

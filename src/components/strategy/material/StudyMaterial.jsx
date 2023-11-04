@@ -112,13 +112,13 @@ export default function StudyMaterial(){
   		return (
   		  <div key={idx}>
   		    {categoryIndex >= 0 && (
-  		      <h3 className="mt-10 text-xl font-bold text-slate-900">
+  		      <h5>
   		        {textbookCategories[categoryIndex]}
-  		      </h3>
+  		      </h5>
   		    )}
-  		    <h3 className="mt-2 text-lg font-medium text-slate-900">
+  		    <h6 className="mt-2 text-lg font-medium text-slate-900">
   		      {book.title}
-  		    </h3>
+  		    </h6>
   		  </div>
   		);
 		})}

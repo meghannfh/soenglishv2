@@ -8,7 +8,7 @@ export default function MediaCard({ icon, explanation, type, url }){
       	 		{icon.length > 0 && icon.map((icon, idx) => (
       	   			<span className="text-4xl" key={idx}>{icon}</span>
       	 		))}
-      			<p className="text-md">{explanation}</p>
+      			<p className="mt-0 text-md">{explanation}</p>
       		</div>
 			{type === 'spotify' ? (<PodcastWidget />) : type === 'youtube' ? (<YoutubeWidget />) : null}
     	</a>

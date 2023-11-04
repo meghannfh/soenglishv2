@@ -12,6 +12,12 @@ export default function MediaSection(){
       'explanation': 'SO ENGLISH!🏳‍🌈Warm Familyを築きたいGayのEnglish Teacher',
     },
     {
+      'key': 'apple',
+      'icon': [<FaPodcast />],
+      'url': 'https://podcasts.apple.com/jp/podcast/so-caros-thats-so-carrot-%E8%8B%B1%E8%AA%9E%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E7%B5%90%E5%B1%80%E3%83%9D%E3%82%B8%E3%83%86%E3%82%A3%E3%83%96life/id1553711559',
+      'explanation': `So & Caro's That's So Carrot!~英語があれば結局ポジティブLife~`,
+    },
+    {
       'key': 'spotify',
       'icon': [<BsSpotify />],
       'url': 'https://podcasters.spotify.com/pod/show/thatssocarrot/episodes/3-SoCaro----Our-favorite-English-quotes--Part1-erah16?%24web_only=true&_branch_match_id=1207702973486861218&utm_source=web&utm_campaign=web-share&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq0zMS87IL9ItT03SSywo0MvJzMvWT9XPTYz0z45IS81ySgIAsbZb5zAAAAA%3D',
@@ -21,12 +27,6 @@ export default function MediaSection(){
       'key': 'youtube',
       'icon': [<BsYoutube />],
       'url': 'https://www.youtube.com/@socarosthatssocarrotlife3496',
-      'explanation': `So & Caro's That's So Carrot!~英語があれば結局ポジティブLife~`,
-    },
-    {
-      'key': 'apple',
-      'icon': [<FaPodcast />],
-      'url': 'https://podcasts.apple.com/jp/podcast/so-caros-thats-so-carrot-%E8%8B%B1%E8%AA%9E%E3%81%8C%E3%81%82%E3%82%8C%E3%81%B0%E7%B5%90%E5%B1%80%E3%83%9D%E3%82%B8%E3%83%86%E3%82%A3%E3%83%96life/id1553711559',
       'explanation': `So & Caro's That's So Carrot!~英語があれば結局ポジティブLife~`,
     },
     {

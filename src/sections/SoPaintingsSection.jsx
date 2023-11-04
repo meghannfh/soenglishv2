@@ -9,9 +9,9 @@ export default function SoPaintingsSection(){
   return(
     <div className="w-full bg-white pb-10" id="section9">
       <div className="px-6 sm:px-10 py-10 md:px-0 md:mx-20 lg:mx-40 xl:mx-60">
-        <h2 className="text-2xl md:text-3xl font-semibold text-lime-500">SO's PAINTINGS<br/>アートでちょっと、人生が豊かになる</h2>
+        <h2 className="text-lime-500">SO's PAINTINGS<br/>アートでちょっと、人生が豊かになる</h2>
         {paragraphs.map((text, idx) => (
-          <p className="mt-3 indent-5 leading-relaxed md:leading-loose text-lg font-medium text-slate-900" key={idx} dangerouslySetInnerHTML={{__html: text}} />
+          <p key={idx} dangerouslySetInnerHTML={{__html: text}} />
         ))}
 
       <div className="mt-10">

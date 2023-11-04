@@ -21,10 +21,10 @@ export default function SoRainbowSection(){
     return(
         <div className="w-full bg-sorainbow-image bg-cover" id="section6">
         <div className="px-6 sm:px-10 py-10 md:px-0 md:mx-20 lg:mx-40 xl:mx-60">
-          <h2 className="mb-10 text-2xl md:text-3xl font-semibold text-white">SO RAINBOW!<br/> 私が使命感を持って取り組んだもう一つの仕事～「日本だから結婚できない」と思われている方へ～</h2>
+          <h2 className="text-white">SO RAINBOW!<br/> 私が使命感を持って取り組んだもう一つの仕事～「日本だから結婚できない」と思われている方へ～</h2>
           {soRainbowText.map((text, idx) => (
             <Fragment key={idx}>
-              <p className="mt-6 leading-relaxed md:leading-loose text-lg font-medium text-white" key={idx}>{text}</p>
+              <p className="text-white" key={idx}>{text}</p>
             {idx === 1 && (
               <div className="mt-10 w-full flex flex-col gap-6 md:flex-row justify-center md:gap-10">
                 <div className='md:h-[221px] md:w-[322px]'>

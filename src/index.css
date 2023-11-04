@@ -35,9 +35,42 @@ code {
 
 /***** TEXT STYLING ******/
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 600;
   margin-bottom: 2.5rem;
+}
+
+h3 {
+  margin-top: 3rem;
+  font-size: 1.35rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  margin: 2rem 0 1.25rem 0;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+h5 {
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+p {
+  margin-top: 1rem;
+  line-height: 1.625rem;
+  font-size: 1.125rem;
+  --tw-text-opacity: 1;
+    color: rgb(15 23 42 / var(--tw-text-opacity));
+    font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -45,36 +78,34 @@ h2 {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
-}
-
-h3 {
-  margin-top: 3rem;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-}
-
-@media (min-width: 768px) {
   h3 {
-    font-size: 1.75rem;
+    font-size: 1.675rem;
+    line-height: 2rem;
+  }
+  h4 {
+    font-size: 1.475rem;
+    line-height: 1.75rem;
+  }
+  h5 {
+    margin-top: 2rem;
+    font-size: 1.385rem;
+    line-height: 1.5rem;
+  }
+  p{
     line-height: 2rem;
   }
 }
 
-h4 {
-  margin: 1.5rem 0 1.25rem 0;
-  font-size: 1.15rem;
-  line-height: 1.25rem;
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
+p.indent {
+  text-indent: 1.25rem;
 }
 
-@media (min-width: 768px) {
-  h4 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
+p.reviews {
+  margin: 1rem 0 1rem 0;
+}
+
+h5.reviews {
+  margin: 1rem 0 0 0;
 }
 
 /*top socials and button transition*/

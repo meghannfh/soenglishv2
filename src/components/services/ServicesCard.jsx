@@ -45,7 +45,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
         
         {hasLessonVideo && (
           <div className="w-full flex justify-center">
-            <div className="w-full h-auto md:h-[400px] md:w-[600px] mt-6">
+            <div className="w-full h-[175px] md:h-[400px] md:w-[600px] mt-6">
               {lessonVideo} {/* Assuming the lessonVideo prop is a valid JSX element */}
             </div>
           </div>

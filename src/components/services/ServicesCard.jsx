@@ -36,9 +36,11 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
               <p key={idx} className="mt-3 indent-5 text-lg lg:text-xl font-medium text-slate-900" dangerouslySetInnerHTML={{__html: detail}} />
           ))}
           {materialsUrl && signupFormUrl && (
-            <div className="mt-4 w-full flex flex-col gap-2 md:flex-row md:gap-0 justify-evenly">
-              <a href="materialsUrl" className="font-medium text-white md:w-1/3 py-2 text-center rounded-sm bg-gradient-to-r from-pink-500 via-orange-500 to-yellow-500 transition-transform ease-in-out hover:cursor-pointer hover:scale-110">資料</a>
-              <a href="signupFormUrl" className="font-medium text-white md:w-1/3 py-2 text-center rounded-sm bg-gradient-to-r from-pink-500 via-orange-500 to-yellow-500 transition-transform ease-in-out hover:cursor-pointer hover:scale-110">お申し込みフォーム</a>
+            <div className="mt-4 w-full flex flex-col gap-2 justify-evenly text-lg lg:text-xl">
+              <p>資料⇩</p>
+              <a href="materialsUrl" className="font-medium cursor-pointer break-words">https://docs.google.com/presentation/d/1CTzvWT_FCd9eYWW-Jbi8otbJTJZ7BYcbM5fsOI69Z6Q/edit?usp=sharing</a>
+              <p>お申し込みフォーム⇩</p>
+              <a href="signupFormUrl" className="font-medium cursor-pointer break-words">https://forms.gle/2EoT399odh8JHZCj7</a>
             </div>
           )}
           </>
@@ -63,7 +65,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
             {otherList.map((item, idx) => (
               <div key={idx}>
                 <h4 className="mt-6 text-2xl font-semibold text-slate-900">{item.title}</h4>
-                <p className="text-lg md:text-xl font-medium text-slate-900">{item.detail}</p>
+                <p className="mt-2 text-lg md:text-xl font-medium text-slate-900">{item.detail}</p>
                 {item.imgURL && (
                   <div className="w-full mt-6 flex justify-center">
                     <img src={item.imgURL} alt={item.title} className="md:w-1/2 xl:w-1/3"/>

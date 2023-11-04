@@ -40,7 +40,7 @@ export default function MediaSection(){
   return (
     <div className="bg-red-100" id="section2">
       <div className="px-6 sm:px-10 py-10 md:px-0 md:mx-20 lg:mx-60">
-      <h2 className="text-2xl md:text-3xl font-semibold text-[#AD4173]">SO's MEDIA</h2>
+      <h2 className="text-[#AD4173]">SO's MEDIA</h2>
       <div className="mt-10 flex flex-col md:grid md:grid-cols-2 md:auto-cols-fr gap-4 place-content-center items-stretch w-full">
         {socialMedia && socialMedia.map((medium, idx) => (
           <MediaCard icon={medium.icon} explanation={medium.explanation} type={medium.key} url={medium.url} key={idx}/>

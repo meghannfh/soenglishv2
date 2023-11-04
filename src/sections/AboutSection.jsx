@@ -207,7 +207,7 @@ export default function AboutSection() {
     <div id="section5" className="bg-white">
       <AboutHero />
       <div className="px-6 sm:px-10 py-10 md:px-0 md:mx-20 lg:mx-40 xl:mx-60">
-        <h2 className="text-2xl md:text-3xl font-semibold text-yellow-500">Who's SO? <br/>SOの生い立ちと3度の留学経験</h2>
+        <h2 className="text-yellow-500">Who's SO? <br/>SOの生い立ちと3度の留学経験</h2>
         {paragraphs && paragraphs.map((paragraph, index) => (
           <SectionTextbox 
             subtitle={paragraph.subtitle}
@@ -215,7 +215,7 @@ export default function AboutSection() {
             imgURL={paragraph.imgURL}
             text={paragraph.text}
             increaseImgSize={paragraph.increaseImgSize && paragraph.increaseImgSize}
-            decreaseImgSize={paragraph.decreaseImgSize && paragraph.decreaseImgSize}
+            // decreaseImgSize={paragraph.decreaseImgSize && paragraph.decreaseImgSize}
             currentIdx={index}
           />
         ))}

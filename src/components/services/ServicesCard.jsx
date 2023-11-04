@@ -24,14 +24,14 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
   
     return (
       <div>
-        <h3 className={`mt-16 text-xl lg:text-2xl font-semibold ${titleColors[currentIdx]}`}>{serviceTitle}</h3>
+        <h3 className={`${titleColors[currentIdx]}`}>{serviceTitle}</h3>
         {(startDate || capacity) && <div className="flex flex-col gap-3 mt-6">
-          {startDate !== '' && <h4>{startDate}</h4>}
-          {capacity !== '' && <h4>{capacity}</h4>}
+          {startDate !== '' && <p>{startDate}</p>}
+          {capacity !== '' && <p>{capacity}</p>}
         </div>}
           <>
           {sectionImg && <img src={sectionImg} className="w-[20%] inline-block float-right md:w-[15%] -scale-x-100" alt="graphic" />}
-            {frequency && <h4 className="mt-3 font-medium text-slate-900" dangerouslySetInnerHTML={{__html: frequency}}/>}
+            {frequency && <p className="mt-3 font-medium text-slate-900" dangerouslySetInnerHTML={{__html: frequency}}/>}
             {details && details.map((detail, idx) => (
               <p key={idx} className="mt-3 indent-5 text-lg lg:text-xl font-medium text-slate-900" dangerouslySetInnerHTML={{__html: detail}} />
           ))}
@@ -64,7 +64,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
           <>
             {otherList.map((item, idx) => (
               <div key={idx}>
-                <h4 className="mt-6 text-2xl font-semibold text-slate-900">{item.title}</h4>
+                <h4>{item.title}</h4>
                 <p className="mt-2 text-lg md:text-xl font-medium text-slate-900">{item.detail}</p>
                 {item.imgURL && (
                   <div className="w-full mt-6 flex justify-center">

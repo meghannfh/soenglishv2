@@ -24,7 +24,7 @@ body {
   font-family: 'Kiwi Maru', serif;;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -33,8 +33,52 @@ code {
     monospace;
 }
 
+/***** TEXT STYLING ******/
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+h3 {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
+h4 {
+  margin: 1.5rem 0 1.25rem 0;
+  font-size: 1.15rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
 /*top socials and button transition*/
-button.icon-transition,
+/* button.icon-transition,
 span.icon-transition {
   transition: transform 0.3s;
 }
@@ -42,9 +86,9 @@ span.icon-transition {
 button.icon-transition:hover,
 span.icon-transition:hover {
   transform: scale(1.1);
-}
+} */
 
-/*rainbow bg*/
+/*** MENU RAINBOW BG ***/
 .rainbow-bg {
   background: rgb(255,110,110);
 background: -moz-linear-gradient(48deg, rgba(255,110,110,1) 0%, rgba(114,191,250,1) 43%, rgba(214,255,93,1) 88%);

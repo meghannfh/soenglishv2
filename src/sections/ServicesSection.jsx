@@ -414,7 +414,7 @@ export default function ServicesSection(){
     return (
         <div className="w-full bg-white" id="section3">
             <div className="px-6 sm:px-10 py-10 md:px-0 md:mx-20 lg:mx-40 xl:mx-60">
-                <h2 className="text-2xl md:text-3xl font-semibold text-emerald-500">SOがお手伝いできること・してきたこと</h2>
+                <h2 className="text-emerald-500">SOがお手伝いできること・してきたこと</h2>
                 <p className="indent-5 mt-6 font-medium text-slate-900">英語の先生ですが、LGBTQ+の相談も、翻訳も、日本語の先生も、ラジオパーソナリティーもやります。</p>
                 {services ? services.map((service, idx) => (
                     <div key={idx}>

@@ -80,7 +80,7 @@ export default function StudyMaterial(){
 
   return (
     <div className="flex flex-col mt-10">
-		<div className="flex flex-row gap-2 items-center justify-center mb-20">
+		<div className="flex flex-row gap-2 items-center justify-center">
 			<button className="text-5xl" onClick={moveToPreviousImage}>
 				<GrRewind />
 			</button>

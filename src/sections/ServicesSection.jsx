@@ -18,15 +18,13 @@ export default function ServicesSection(){
     {
       'service' : '2. CLUB CARROT -Learn Like Parrots!- サブスク型オンライン英語グループセッション',
       'startDate': '2023年~開講',
-      // 'capacity': '',
-      // 'frequency': '',
       'details': [
         '英語のポッドキャストラジオをしているキャロラインとSOが、サブスク型オンライン英語グループセッションを運営しています。', 
         '孤独になりがちな英語学習、キャロはアイルランド留学などを通して、SOは専門学校や英会話スクールで教鞭をとっていた経験から、グループで学ぶことには大きな意味があることを痛いほど知りました。ちょっと愉快な英語コーチ6年目のキャロと、英語マニアの講師12年目のSOが、今ある知恵をすべて注いで「英語の心地よさと面白さとオシャレさ」をちゃんと感じていただけるカリキュラムを作ったつもりです。',
         '5,500円で4回レッスンを体験できるプランもありますので、お気軽に参加してみてください!'
       ],
       'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VnaIQkyLu3U?si=Zh-F5GYIIQvLPO5f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
-      'materalsUrl': 'https://docs.google.com/presentation/d/1CTzvWT_FCd9eYWW-Jbi8otbJTJZ7BYcbM5fsOI69Z6Q/edit?usp=sharing',
+      'materialsUrl': 'https://docs.google.com/presentation/d/1CTzvWT_FCd9eYWW-Jbi8otbJTJZ7BYcbM5fsOI69Z6Q/edit?usp=sharing',
       'signupFormUrl': 'https://docs.google.com/forms/d/e/1FAIpQLSfONa5AwoPzgzn8RUiiSdc1l0UFhA1CZH6Z57mVT4eodU0MHA/viewform?usp=send_form',
       'feedback': []
     },
@@ -417,22 +415,24 @@ export default function ServicesSection(){
         <div className="w-full bg-white" id="section3">
             <div className="px-6 sm:px-10 py-10 md:px-0 md:mx-20 lg:mx-40 xl:mx-60">
                 <h2 className="text-2xl md:text-3xl font-semibold text-emerald-500">SOがお手伝いできること・してきたこと</h2>
-                <p className="indent-5 mt-6 text-xl md:text-lg font-medium text-slate-900">英語の先生ですが、LGBTQ+の相談も、翻訳も、日本語の先生も、ラジオパーソナリティーもやります。</p>
+                <p className="indent-5 mt-6 font-medium text-slate-900">英語の先生ですが、LGBTQ+の相談も、翻訳も、日本語の先生も、ラジオパーソナリティーもやります。</p>
                 {services ? services.map((service, idx) => (
                     <div key={idx}>
                       <ServicesCard 
-                        serviceTitle={service.service} 
-                        startDate={service.startDate} 
-                        capacity={service.capacity} 
-                        frequency={service.frequency} 
-                        details={service.details} 
+                        serviceTitle={service.service && service.service} 
+                        startDate={service.startDate && service.startDate} 
+                        capacity={service.capacity && service.capacity} 
+                        frequency={service.frequency && service.frequency} 
+                        details={service.details && service.details} 
                         projectsList={service.projectsList} 
+                        materialsUrl={service.materialsUrl && service.materialsUrl}
+                        signupFormUrl={service.signupFormUrl && service.signupFormUrl}
                         lessonVideo={service.lessonVideo && service.lessonVideo} 
                         sectionImg={service.sectionImg && service.sectionImg}
                         feedback={service.feedback && service.feedback}
-                        otherList={service.otherList}
-                        feedbackImgURL={service.feedbackImgURL}
-                        adviceReportExample={service.adviceReportExample}
+                        otherList={service.otherList && service.otherList}
+                        feedbackImgURL={service.feedbackImgURL && service.feedbackImgURL}
+                        adviceReportExample={service.adviceReportExample && service.adviceReportExample}
                         currentIdx={idx} 
                       />
                     </div>

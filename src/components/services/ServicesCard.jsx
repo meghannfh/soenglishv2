@@ -1,7 +1,7 @@
 import Reviews from "../kansou/Reviews";
 import ImgReviews from "../kansou/ImgReviews";
 
-export default function ServicesCard({ serviceTitle, startDate, capacity, frequency, details, projectsList, lessonVideo, feedback, otherList, feedbackImgURL, adviceReportExample, sectionImg, currentIdx }) {
+export default function ServicesCard({ serviceTitle, startDate, capacity, frequency, details, projectsList, materialsUrl, signupFormUrl, lessonVideo, feedback, otherList, feedbackImgURL, adviceReportExample, sectionImg, currentIdx }) {
     const hasLessonVideo = lessonVideo && lessonVideo !== '';
     const hasProjectsList = projectsList && projectsList.length > 0;
     const hasOtherList = otherList && otherList.length > 0;
@@ -25,16 +25,22 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
     return (
       <div>
         <h3 className={`mt-16 text-xl lg:text-2xl font-semibold ${titleColors[currentIdx]}`}>{serviceTitle}</h3>
-        {(startDate || capacity) && <div className="flex flex-col gap-3 mt-6 text-lg md:text-xl">
+        {(startDate || capacity) && <div className="flex flex-col gap-3 mt-6">
           {startDate !== '' && <h4>{startDate}</h4>}
           {capacity !== '' && <h4>{capacity}</h4>}
         </div>}
           <>
           {sectionImg && <img src={sectionImg} className="w-[20%] inline-block float-right md:w-[15%] -scale-x-100" alt="graphic" />}
-            {frequency && <h4 className="mt-3 text-lg md:text-xl" dangerouslySetInnerHTML={{__html: frequency}}/>}
+            {frequency && <h4 className="mt-3 font-medium text-slate-900" dangerouslySetInnerHTML={{__html: frequency}}/>}
             {details && details.map((detail, idx) => (
-              <p key={idx} className="mt-3 indent-5 text-lg md:text-xl font-medium text-slate-900" dangerouslySetInnerHTML={{__html: detail}} />
+              <p key={idx} className="mt-3 indent-5 text-lg lg:text-xl font-medium text-slate-900" dangerouslySetInnerHTML={{__html: detail}} />
           ))}
+          {materialsUrl && signupFormUrl && (
+            <div className="mt-4 w-full flex flex-col gap-2 md:flex-row md:gap-0 justify-evenly">
+              <a href="materialsUrl" className="font-medium text-white md:w-1/3 py-2 text-center rounded-sm bg-gradient-to-r from-pink-500 via-orange-500 to-yellow-500 transition-transform ease-in-out hover:cursor-pointer hover:scale-110">資料</a>
+              <a href="signupFormUrl" className="font-medium text-white md:w-1/3 py-2 text-center rounded-sm bg-gradient-to-r from-pink-500 via-orange-500 to-yellow-500 transition-transform ease-in-out hover:cursor-pointer hover:scale-110">お申し込みフォーム</a>
+            </div>
+          )}
           </>
         
         {hasLessonVideo && (

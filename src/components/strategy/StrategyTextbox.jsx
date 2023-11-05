@@ -23,7 +23,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                 {img && <div className="my-10 w-full flex justify-center">
                     <img src={img} alt="diagram" className="w-full lg:w-[70%]" />
                 </div>}
-                <p key={index + 1}>
+                <p className="indent" key={index + 1}>
                   {paragraph}
                 </p>
               </Fragment>
@@ -37,7 +37,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
           {text &&
             text.map((paragraph, index) => {
               return (
-                <p key={index}>
+                <p className="indent" key={index}>
                   {paragraph}
                 </p>
               );
@@ -62,7 +62,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
             </div>
           </div>
             {text && text.map((paragraph, index) => (
-                <p key={index}>
+                <p className="indent" key={index}>
                     {paragraph}
                 </p>
             ))}
@@ -76,7 +76,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                     </div>
                    
                     {example.text.map((paragraph, idx) => (
-                        <p key={idx}>
+                        <p className="indent" key={idx}>
                           {paragraph}
                         </p>
                     ))}
@@ -85,7 +85,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
         </Fragment>
     )}
     {(subtitle === '4. 授業外時間のモチベーション維持の仕組み' || subtitle === '5. 密な対話') && text.map((paragraph, index) => {
-      return (<p key={index}>
+      return (<p className="indent" key={index}>
       {paragraph}
     </p>)
     })}
@@ -102,7 +102,7 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
               </h4>
               {subcategory.text &&
                 subcategory.text.map((text, idx) => (
-                  <p key={idx}>
+                  <p className="indent" key={idx}>
                     {text}
                   </p>
                 ))}
@@ -130,14 +130,14 @@ export default function StrategyTextbox({ subtitle, text, img, subcategories, tr
                 
                 return (  
                   <div key={idx} className='relative flex justify-center gap-4' id={indexNames[idx]}>
-                    <h5 className='text-sm md:text-md absolute top-2 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
+                    <h5 className='mt-0 text-sm md:text-md absolute top-2 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
                     <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} />
                   </div>)})}    
             </div>}
             {list.listTitle === '複数人用' && <div className='flex flex-col gap-4 px-4 lg:px-0 items-center w-full lg:flex-row mt-10'>
             {list.contentMedia.map((mediumItem, idx) => (
                 <div key={idx} className='relative flex content-center md:w-full md:h-full'>
-                  <h5 className='text-sm md:text-md absolute top-2 right-2 md:right-20 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
+                  <h5 className='mt-0 text-sm md:text-md absolute top-2 right-2 md:right-20 rounded-md bg-slate-800/90 text-white p-2'>{mediumItem.title}</h5>
                   <div className='h-full w-full flex items-center justify-center'>
                     {idx === 1 ? (
                       <img src={mediumItem.imgUrl} alt={mediumItem.imgAlt} className='h-full md:w-2/3 lg:h-full'/>

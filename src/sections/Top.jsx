@@ -52,13 +52,13 @@ export default function Top({isTopImageLoaded}){
             <span className='text-[#FF7D7D]'>明</span>
             <span className='text-[#FDC56F]'>日</span>
             <span className='text-[#FDE06F]'>が</span>
-            <p>もっと、</p>
+            <span>もっと、</span>
           </div>
           <div className='flex flex-row md:pl-32 lg:pl-0 justify-center'>
             <span className='text-[#2FFF9B]'>楽</span>
             <span className='text-[#38B7FF]'>し</span>
             <span className='text-[#E587FF]'>み</span>
-            <p>になる</p>  
+            <span>になる</span>  
           </div>  
         </div>
       </h1>

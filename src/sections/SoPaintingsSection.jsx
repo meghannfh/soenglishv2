@@ -11,7 +11,7 @@ export default function SoPaintingsSection(){
       <div className="px-6 sm:px-10 py-10 md:px-0 md:mx-20 lg:mx-40 xl:mx-60">
         <h2 className="text-lime-500">SO's PAINTINGS<br/>アートでちょっと、人生が豊かになる</h2>
         {paragraphs.map((text, idx) => (
-          <p key={idx} dangerouslySetInnerHTML={{__html: text}} />
+          <p className="indent" key={idx} dangerouslySetInnerHTML={{__html: text}} />
         ))}
 
       <div className="mt-10">

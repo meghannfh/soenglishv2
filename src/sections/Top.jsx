@@ -33,7 +33,7 @@ export default function Top({isTopImageLoaded}){
 
   return(
     <div className='relative' id="top">
-      {imageLoaded && (<div className="fixed top-0 z-30">
+      {imageLoaded && (<div className="fixed top-0 z-30 w-full fixed-width-xlg-screens">
         <Nav scrollPastTop={scrollPastTop} />
       </div>
 			)}

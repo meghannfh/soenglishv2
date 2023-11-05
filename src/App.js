@@ -33,31 +33,33 @@ function App() {
   }
 
   return (
-    <div className={isTopImageLoaded ? 'relative fixed-width-xlg-screens show-background' : 'relative fixed-width-xlg-screens'}>
-      <Top isTopImageLoaded={handleTopImageLoad}/>
-      <div className='lg:h-[300px]'/>
-      <Mission />
-      <div className='lg:h-[300px]'/>
-      <MediaSection />
-      <div className='lg:h-[300px]'/>
-      <ServicesSection />
-      <div className='lg:h-[300px]'/>
-      <StrategySection />
-      <div className='lg:h-[300px]'/>
-      <AboutSection />
-      <div className='lg:h-[300px]'/>
-      <SoRainbowSection />
-      <div className='lg:h-[300px]'/>
-      <PriceAndSignupSection />
-      <div className='lg:h-[300px]'/>
-      <SoPaintingsSection />
-      <div className='lg:h-[300px]'/>
-      <ContactSection />
-      <FooterSection />
-      <div className='w-full md:w-auto fixed right-0 bottom-0 z-10'>
-        <ConsultingBanner handleBannerClick={handleBannerClick} />
+    <main className="grid place-content-center w-screen">
+      <div className={isTopImageLoaded ? 'relative show-background w-screen' : 'relative w-screen'}>
+        <Top isTopImageLoaded={handleTopImageLoad}/>
+        <div className='lg:h-[300px]'/>
+        <Mission />
+        <div className='lg:h-[300px]'/>
+        <MediaSection />
+        <div className='lg:h-[300px]'/>
+        <ServicesSection />
+        <div className='lg:h-[300px]'/>
+        <StrategySection />
+        <div className='lg:h-[300px]'/>
+        <AboutSection />
+        <div className='lg:h-[300px]'/>
+        <SoRainbowSection />
+        <div className='lg:h-[300px]'/>
+        <PriceAndSignupSection />
+        <div className='lg:h-[300px]'/>
+        <SoPaintingsSection />
+        <div className='lg:h-[300px]'/>
+        <ContactSection />
+        <FooterSection />
+        <div className='w-full md:w-auto fixed right-0 bottom-0 z-10'>
+          <ConsultingBanner handleBannerClick={handleBannerClick} />
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
 

@@ -38,9 +38,9 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
           {materialsUrl && signupFormUrl && (
             <div className="mt-4 w-full flex flex-col gap-2 justify-evenly text-lg lg:text-xl">
               <p>資料⇩</p>
-              <a href="materialsUrl" className="font-medium cursor-pointer break-words">https://docs.google.com/presentation/d/1CTzvWT_FCd9eYWW-Jbi8otbJTJZ7BYcbM5fsOI69Z6Q/edit?usp=sharing</a>
+              <a href="materialsUrl" className="font-medium cursor-pointer break-words underline text-blue-500">https://docs.google.com/presentation/d/1CTzvWT_FCd9eYWW-Jbi8otbJTJZ7BYcbM5fsOI69Z6Q/edit?usp=sharing</a>
               <p>お申し込みフォーム⇩</p>
-              <a href="signupFormUrl" className="font-medium cursor-pointer break-words">https://forms.gle/2EoT399odh8JHZCj7</a>
+              <a href="signupFormUrl" className="font-medium cursor-pointer break-words underline text-blue-500">https://forms.gle/2EoT399odh8JHZCj7</a>
             </div>
           )}
           </>

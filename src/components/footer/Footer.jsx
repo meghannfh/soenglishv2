@@ -31,7 +31,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="h-[20%] text-center">
-                <h5>© SOENGLISH | All Rights Reserved</h5>
+                <h5 className="text-sm">© SOENGLISH | All Rights Reserved</h5>
             </div>
         </div>
     )

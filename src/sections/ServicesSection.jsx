@@ -221,9 +221,7 @@ export default function ServicesSection(){
       'capacity': '',
       'frequency': '',
       'details': [
-        'Private lessonとcoachingとgroup classの3種類の形態で教えています。',
-        '<b>英語教授法をそのまま活かし、英語で日本語を教える、独自のやり方</b>です。',
-        '年間100レッスンほど行っています。'
+        'Private lessonとcoachingとgroup classの3種類の形態で教えています。<b>英語教授法をそのまま活かし、英語で日本語を教える、独自のやり方</b>です。年間100レッスンほど行っています。',
       ],
       'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0dufpsj1mUw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
       'feedback': [

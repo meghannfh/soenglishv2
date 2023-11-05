@@ -108,17 +108,6 @@ h5.reviews {
   margin: 1rem 0 0 0;
 }
 
-/*top socials and button transition*/
-/* button.icon-transition,
-span.icon-transition {
-  transition: transform 0.3s;
-}
-
-button.icon-transition:hover,
-span.icon-transition:hover {
-  transform: scale(1.1);
-} */
-
 /*** MENU RAINBOW BG ***/
 .rainbow-bg {
   background: rgb(255,110,110);
@@ -168,71 +157,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
 .hamburger-bottom.open {
   transform: translate(0px, 12px) rotate(45deg);
 }
-
-/*=== Trigger  ===*/
-.animate {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-/*==== FADE IN UP ===*/
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-    -webkit-transform: none;
-  }
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-    -webkit-transform: none;
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
-.one {
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  }
-  
-  .two {
-  -webkit-animation-delay: .5s;
-  -moz-animation-delay: .5s;
-  animation-delay: .5s;
-  }
-  
-  .three {
-  -webkit-animation-delay: .8s;
-  -moz-animation-delay: .8s;
-  animation-delay: .8s;
-  }
-  
-  .four {
-  -webkit-animation-delay: 1.1s;
-  -moz-animation-delay: 1.1s;
-  animation-delay: 1.1s;
-  }
 
 /*MENU LI*/
 
@@ -293,8 +217,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6e6e",endCo
 
 /*nav-width large screens*/
 @media screen and (min-width: 1700px) {
-  .fixed-width-xlg-screens,
-  .menu {
+  .fixed-width-xlg-screens {
     max-width: 1700px;
   }
 }

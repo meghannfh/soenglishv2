@@ -39,12 +39,6 @@ export default function AboutSection() {
         '12歳の時、初めて男性に興味があると自覚しました。あの頃は、他の人にばれたらもう生きていられないと思っていたものです。神社に行けば「普通の人に戻れますように!」と本気で神頼みをしていました。'
       ]
     },
-    // {
-    //   'subtitle': '発音から始まった、英語の旅。',
-    //   'text': [
-    //     '英会話スクールで最初に学んだのはフォニックスです。今でこそ周知の英語のスペルと音の関係を学ぶものですが、あの頃にカリキュラムに取り入れていたスクールは少なかったと思います。私は日本語に無いRの音がとても好きでした。Rabbit、Run、Really?と、Rが付く単語を知っていくことや、スペルと音のルールを覚えたことで、誰の助けも無く、いわば自転車の補助輪なしで、今まで読めなかったものが読めるようになったのも嬉しかった。横田基地のネイティブの先生と、発音ネイティブの日本人の先生の会話もとってもかっこよかったですし、それを真似て自分の口から英語っぽい音が出てくるのもとても心地よかったのです。'
-    //   ]
-    // },
     {
       'subtitle': '変わりたい一心で決断した、初めての留学。',
       'text': [
@@ -77,7 +71,6 @@ export default function AboutSection() {
       ],
       'imgURL': [
         'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_750/v1690289233/Aboutsectiontwo750w_ovidpy.webp',
-        // 'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_544,g_auto/v1690289233/Aboutsectiontwo750w_ovidpy.webp'
       ],
       'increaseImgSize': true
     },
@@ -122,8 +115,6 @@ export default function AboutSection() {
       ],
       'imgURL': [
         'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_750/v1688575987/Aboutsectionthree_redhpq.webp',
-        // 'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_544/v1688575987/Aboutsectionthree_redhpq.webp',
-        // 'https://res.cloudinary.com/dc1aiqs4p/image/upload/c_thumb,w_448/v1688575987/Aboutsectionthree_redhpq.webp'
       ],
       'increaseImgSize': true
     },
@@ -215,7 +206,6 @@ export default function AboutSection() {
             imgURL={paragraph.imgURL}
             text={paragraph.text}
             increaseImgSize={paragraph.increaseImgSize && paragraph.increaseImgSize}
-            // decreaseImgSize={paragraph.decreaseImgSize && paragraph.decreaseImgSize}
             currentIdx={index}
           />
         ))}

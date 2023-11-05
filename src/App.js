@@ -34,7 +34,7 @@ function App() {
 
   return (
     <main className="grid place-content-center w-screen">
-      <div className={isTopImageLoaded ? 'relative show-background w-screen' : 'relative w-screen'}>
+      <div className={isTopImageLoaded ? 'relative show-background w-screen fixed-width-xlg-screens' : 'relative w-screen fixed-width-xlg-screens'}>
         <Top isTopImageLoaded={handleTopImageLoad}/>
         <div className='lg:h-[300px]'/>
         <Mission />
@@ -55,7 +55,7 @@ function App() {
         <div className='lg:h-[300px]'/>
         <ContactSection />
         <FooterSection />
-        <div className='w-full md:w-auto fixed right-0 bottom-0 z-10'>
+        <div className='w-full fixed-width-xlg-screens fixed bottom-0 z-10'>
           <ConsultingBanner handleBannerClick={handleBannerClick} />
         </div>
       </div>

@@ -1,4 +1,5 @@
-export default function SectionTextbox({ subtitle, imgURL, text, list, increaseImgSize, decreaseImgSize, currentIdx, sectionImg }){
+export default function SectionTextbox({ subtitle, imgURL, text, list, currentIdx, sectionImg }){
+
 
   const titleColors = [
     'text-rose-500',
@@ -28,11 +29,8 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, increaseI
       {subtitle !== '' &&  <h3 className={`mb-6 ${subtitleColor}`}>{subtitle}</h3>}
         {imgURL && imgURL.map((img, index) => (
         <div className="mt-6 w-full flex justify-center" key={index}>
-          {/*the sections that have a large image of multiple images needed to be increased to fit the needs of the client so a key was added to those sections equal to a boolean indicating whether to increase or decrease the size of the image and those widths would be conditionally added in the class on the img tag. only the single */}
           <img 
             src={img} 
-            srcSet={``}
-            sizes={``}
             alt={''} 
             className=''/>
         </div>

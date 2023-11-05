@@ -2,6 +2,7 @@ import Reviews from "../kansou/Reviews";
 import ImgReviews from "../kansou/ImgReviews";
 
 export default function ServicesCard({ serviceTitle, startDate, capacity, frequency, details, projectsList, materialsUrl, signupFormUrl, lessonVideo, feedback, otherList, feedbackImgURL, adviceReportExample, sectionImg, currentIdx }) {
+
     const hasLessonVideo = lessonVideo && lessonVideo !== '';
     const hasProjectsList = projectsList && projectsList.length > 0;
     const hasOtherList = otherList && otherList.length > 0;

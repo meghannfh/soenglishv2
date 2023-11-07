@@ -22,10 +22,12 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
       'text-fuchsia-600',
       'text-pink-600'
     ]
+
+    const addClass = serviceTitle === "10. Podcastラジオ配信『That's So Carrot! ~英語があれば結局ポジティブLife~』(学習法・マインド)";
   
     return (
       <div>
-        <h3 className={`${titleColors[currentIdx]}`}>{serviceTitle}</h3>
+        <h3 className={`${titleColors[currentIdx]} ${ addClass ? 'services-custom-text-size' : ''}`}>{serviceTitle}</h3>
         {(startDate || capacity) && <div className="flex flex-col mt-6">
           {startDate !== '' && <p>{startDate}</p>}
           {capacity !== '' && <p>{capacity}</p>}
@@ -99,9 +101,3 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
       </div>
     );
   }
-  
-  
-  
-  
-  
-  

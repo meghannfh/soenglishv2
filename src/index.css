@@ -74,6 +74,22 @@ p {
     font-weight: 500;
 }
 
+@media (min-width: 390px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3.services-custom-text-size {
+    font-size: 1.5rem;
+  }
+  h3.increase-text {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  h3, h4 {
+    font-size: 1.45rem;
+  }
+}
+
 @media (min-width: 768px) {
   h2 {
     font-size: 1.875rem;

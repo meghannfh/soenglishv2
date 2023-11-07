@@ -71,7 +71,7 @@ export default function PriceAndSignupSection(){
             </Fragment>
         ))}
       </div>
-      <div className="flex w-full justify-center">
+      <div className="flex w-full justify-center px-4 md:px-0">
         <ConsultingBanner handleBannerClick={handleBannerClick} />
       </div>
     </div>

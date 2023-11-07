@@ -55,7 +55,7 @@ function App() {
         <div className='lg:h-[300px]'/>
         <ContactSection />
         <FooterSection />
-        <div className='w-full fixed-width-xlg-screens fixed bottom-0 z-10'>
+        <div className='w-full fixed-width-xlg-screens fixed bottom-0 z-10 flex justify-end'>
           <ConsultingBanner handleBannerClick={handleBannerClick} />
         </div>
       </div>

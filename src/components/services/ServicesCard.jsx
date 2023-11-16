@@ -24,6 +24,8 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
     ]
 
     const addClass = serviceTitle === "10. Podcastラジオ配信『That's So Carrot! ~英語があれば結局ポジティブLife~』(学習法・マインド)";
+
+    const feedbackTitle = serviceTitle === "10. Podcastラジオ配信『That's So Carrot! ~英語があれば結局ポジティブLife~』(学習法・マインド)" ? "リスナーからの感想" : "参加者からの感想"
   
     return (
       <div>
@@ -96,7 +98,7 @@ export default function ServicesCard({ serviceTitle, startDate, capacity, freque
           </div>
         )}
         <div className={ feedback?.length > 0 ? 'block' : 'hidden'}>
-          <Reviews feedback={feedback} alt={'advice report example'}/>
+          <Reviews feedback={feedback} feedbackTitle={feedbackTitle} alt={'advice report example'}/>
         </div>
       </div>
     );

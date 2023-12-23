@@ -25,7 +25,7 @@ export default function ServicesSection(){
         '孤独になりがちな英語学習、キャロはアイルランド留学などを通して、SOは専門学校や英会話スクールで教鞭をとっていた経験から、グループで学ぶことには大きな意味があることを痛いほど知りました。ちょっと愉快な英語コーチ6年目のキャロと、英語マニアの講師12年目のSOが、今ある知恵をすべて注いで「英語の心地よさと面白さとオシャレさ」をちゃんと感じていただけるカリキュラムを作ったつもりです。',
         '5,500円で4回レッスンを体験できるプランもありますので、お気軽に参加してみてください!'
       ],
-      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VnaIQkyLu3U?si=Zh-F5GYIIQvLPO5f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+      'lessonVideo': <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VnaIQkyLu3U?si=Zh-F5GYIIQvLPO5f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
       'materialsUrl': 'https://docs.google.com/presentation/d/1CTzvWT_FCd9eYWW-Jbi8otbJTJZ7BYcbM5fsOI69Z6Q/edit?usp=sharing',
       'signupFormUrl': 'https://docs.google.com/forms/d/e/1FAIpQLSfONa5AwoPzgzn8RUiiSdc1l0UFhA1CZH6Z57mVT4eodU0MHA/viewform?usp=send_form',
       'feedback': []

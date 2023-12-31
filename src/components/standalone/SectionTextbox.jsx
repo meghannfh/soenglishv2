@@ -1,6 +1,5 @@
 export default function SectionTextbox({ subtitle, imgURL, text, list, currentIdx, sectionImg }){
 
-
   const titleColors = [
     'text-rose-500',
     'text-red-500',
@@ -27,23 +26,36 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, currentId
 
   const addClass = titlesToIncrease.includes(subtitle);
 
+  const paragraphText = text?.map((paragraph, index) => {
+    return (
+      <p className="indent clear-right" key={index} dangerouslySetInnerHTML={{__html: paragraph}} />
+    )
+  })
+
+  const sectionGraphicImg = sectionImg && (
+    <img src={sectionImg} className="w-1/4 md:w-auto md:h-72 float-left -scale-x-100" alt="graphic" />
+  )
+
   return (
-    <>
-      <div className="w-full">
+    <div className="w-full h-auto">
       {subtitle !== '' &&  <h3 className={`mb-6 ${subtitleColor} ${ addClass ? 'increase-text' : ''}`}>{subtitle}</h3>}
-        {imgURL && imgURL.map((img, index) => (
+      {imgURL && imgURL.map((img, index) => (
         <div className="mt-6 w-full flex justify-center" key={index}>
           <img 
             src={img} 
             alt={''} 
             className=''/>
         </div>
-        ))}
-      </div>
-      {sectionImg && <img src={sectionImg} className="w-1/5 inline-block float-left -scale-x-100" alt="graphic" />}
-      {text && text.map((paragraph, index) => (
-        <p className="indent clear-right" key={index} dangerouslySetInnerHTML={{__html: paragraph}} />
       ))}
+
+      {sectionImg && text ? (
+        <div className="h-auto">
+          {sectionGraphicImg}
+          <div>
+            {paragraphText}
+          </div>
+        </div>
+      ) : paragraphText}
 
       {list && (
         <ul>
@@ -52,6 +64,6 @@ export default function SectionTextbox({ subtitle, imgURL, text, list, currentId
           ))}
         </ul>
       )}
-    </>
+    </div>
   )
 }

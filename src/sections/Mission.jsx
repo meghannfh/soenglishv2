@@ -15,8 +15,7 @@ export default function Mission(){
   ]
 
   return(
-    <div className="w-full bg-white" id="section1">
-      <div className="px-6 sm:px-10 py-10 md:px-0 md:mx-20 lg:mx-40 xl:mx-60">
+    <section className="w-full h-auto bg-white border-2 border-blue-600 py-10 px-6 sm:px-10 md:px-20 lg:px-40 xl:px-60" id="section1">
         <h2 className="text-purple-500">SO ENGLISH!のMissionは、英語学習を通して「明日がもっと、楽しみになる」こと</h2>
         {paragraphs ? paragraphs.map((paragraph, index) => (
           <SectionTextbox 
@@ -26,7 +25,8 @@ export default function Mission(){
             sectionImg={paragraph.sectionImg && paragraph.sectionImg}
           />
         )) : 'nada'}
-      </div>
-    </div>
+    </section>
   )
 }
+
+//px-6 sm:px-10 py-10 md:px-0 md:mx-20 lg:mx-40 xl:mx-60

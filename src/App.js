@@ -9,7 +9,7 @@ import AboutSection from './sections/AboutSection';
 import StrategySection from'./sections/StrategySection';
 import SoRainbowSection from './sections/SoRainbowSection';
 import PriceAndSignupSection from './sections/PriceAndSignupSection';
-import ContactSection from './sections/ContactSection';
+// import ContactSection from './sections/ContactSection';
 import SoPaintingsSection from './sections/SoPaintingsSection';
 import FooterSection from './sections/FooterSection';
 

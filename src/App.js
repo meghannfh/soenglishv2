@@ -23,14 +23,14 @@ function App() {
     setIsTopImageLoaded(true);
   };
 
-  const handleBannerClick = (e, id) => {
-    e.preventDefault();
-    const element = document.getElementById(id);
-    element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-    });
-  }
+  // const handleBannerClick = (e, id) => {
+  //   e.preventDefault();
+  //   const element = document.getElementById(id);
+  //   element.scrollIntoView({
+  //       behavior: 'smooth',
+  //       block: 'start',
+  //   });
+  // }
 
   return (
     <main className="grid place-content-center w-screen">

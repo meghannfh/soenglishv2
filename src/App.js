@@ -13,7 +13,7 @@ import PriceAndSignupSection from './sections/PriceAndSignupSection';
 import SoPaintingsSection from './sections/SoPaintingsSection';
 import FooterSection from './sections/FooterSection';
 
-import ConsultingBanner from './components/standalone/ConsultingBanner';
+// import ConsultingBanner from './components/standalone/ConsultingBanner';
 
 function App() {
 
@@ -52,12 +52,12 @@ function App() {
         <PriceAndSignupSection />
         <div className='lg:h-[300px]'/>
         <SoPaintingsSection />
-        <div className='lg:h-[300px]'/>
+        {/* <div className='lg:h-[300px]'/> */}
         {/* <ContactSection /> */}
         <FooterSection />
-        <div className='w-full fixed-width-xlg-screens fixed bottom-0 z-10 flex justify-end'>
+        {/* <div className='w-full fixed-width-xlg-screens fixed bottom-0 z-10 flex justify-end'>
           <ConsultingBanner handleBannerClick={handleBannerClick} />
-        </div>
+        </div> */}
       </div>
     </main>
   );

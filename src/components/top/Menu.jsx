@@ -39,9 +39,9 @@ export default function Menu({ handleClose }){
         <li>
           <a href="#section9" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section9')}>paintings</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#section8" className="hover-underline-animation" onClick={(e) => handleLinkClick(e, 'section8')}>contact</a>
-        </li>
+        </li> */}
       </ul>
     </div>
   )

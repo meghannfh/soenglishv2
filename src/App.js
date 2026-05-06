@@ -9,11 +9,11 @@ import AboutSection from './sections/AboutSection';
 import StrategySection from'./sections/StrategySection';
 import SoRainbowSection from './sections/SoRainbowSection';
 import PriceAndSignupSection from './sections/PriceAndSignupSection';
-// import ContactSection from './sections/ContactSection';
+import ContactSection from './sections/ContactSection';
 import SoPaintingsSection from './sections/SoPaintingsSection';
 import FooterSection from './sections/FooterSection';
 
-// import ConsultingBanner from './components/standalone/ConsultingBanner';
+import ConsultingBanner from './components/standalone/ConsultingBanner';
 
 function App() {
 
@@ -23,14 +23,14 @@ function App() {
     setIsTopImageLoaded(true);
   };
 
-  // const handleBannerClick = (e, id) => {
-  //   e.preventDefault();
-  //   const element = document.getElementById(id);
-  //   element.scrollIntoView({
-  //       behavior: 'smooth',
-  //       block: 'start',
-  //   });
-  // }
+  const handleBannerClick = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+    });
+  }
 
   return (
     <main className="grid place-content-center w-screen">
@@ -52,12 +52,12 @@ function App() {
         <PriceAndSignupSection />
         <div className='lg:h-[300px]'/>
         <SoPaintingsSection />
-        {/* <div className='lg:h-[300px]'/> */}
-        {/* <ContactSection /> */}
+        <div className='lg:h-[300px]'/>
+        <ContactSection />
         <FooterSection />
-        {/* <div className='w-full fixed-width-xlg-screens fixed bottom-0 z-10 flex justify-end'>
+        <div className='w-full fixed-width-xlg-screens fixed bottom-0 z-10 flex justify-end'>
           <ConsultingBanner handleBannerClick={handleBannerClick} />
-        </div> */}
+        </div>
       </div>
     </main>
   );
